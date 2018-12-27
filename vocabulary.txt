@@ -18,6 +18,12 @@ Braso | Arm | Makati ang braso ko | My arm is itchy
 Siko | Elbow | Ang siko ko ay marumi | My elbow is dirty
 Kamay | Hand | Masakit ba ang kamay mo? | Does your hand hurt?
 Daliri | Finger | Malinis ba mga daliri mo? | Are your fingers clean?
+Baywang | Hip | 
+Pwet | Bootie
+Binti | Leg
+Tuhod | Knee
+Paa | Foot
+
 
 *Colors
 

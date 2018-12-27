@@ -1,0 +1,411 @@
+@media screen and (min-width: 481px) {
+		html, body {
+				background-color: #ffffff;
+		}
+
+		#MainContent {
+				min-height: 600px;
+				background-color: rgb(200,200,200);
+				background-image: url('../images/pattern.png'); repeat-x; center bottom;
+				height: 100%;
+				padding-top: 15px;
+				width: 100%;
+		}
+
+		#sidenav_open{
+			display: none;
+		}
+
+		#sidenav_close{
+			display: none;
+		}
+		#sidebar_link{
+			display: none;
+		}
+
+
+		ul.tab {
+
+			font-size: 1.2em;
+			width: 100%;
+			list-style-type: none;
+			/*overflow: hidden;*/
+			color: #F2F2F2;
+			background-color: #1D5DC1;
+		}
+
+		/* Float the list items side by side */
+		ul.tab li {
+			width: 33%; 
+			float: left;
+			text-align: center;
+			}
+
+		/* Style the links inside the list items */
+		ul.tab li a {
+				display: inline-block;
+				color: #253947; //rgb(90,90,90);
+				background-color: white; 
+				text-align: center;
+				padding: 12px 1px;
+				text-decoration: none;
+				transition: 0.1s;
+				font-family: 'Nobile', sans-serif;
+			}
+
+		/* Change background color of links on hover */
+		ul.tab li a:hover {
+			color: #FFFFFF;
+			background-color: rgb(100,100,100);
+			}
+
+		/* Create an active/current tablink class */
+		ul.tab li a:focus, .active {
+			font-size: 1.1em;
+			color: #253947;
+			font-weight: bold;	
+			}
+
+		/* Style the tab content */
+		.tabcontent {
+				overflow: hidden;
+				width: 93%;
+				margin: 0px auto;
+				height: 100%;
+				text-align: center;
+				display: none;
+				color: #F2F2F2;
+				border-top: none;
+				border-bottom: none;
+		}
+
+
+		/*******************************************************************************
+		Full-Width Styles
+		*******************************************************************************/
+
+
+		#forkme_banner {
+			display: block;
+			top:0;
+			right: 10px;
+			z-index: 10;
+			padding: 10px 50px 10px 10px;
+			color: #fff;
+			background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+			font-weight: 700;
+			box-shadow: 0 0 10px rgba(0,0,0,.5);
+			border-bottom-left-radius: 2px;
+			border-bottom-right-radius: 2px;
+		}
+
+		#header_wrap {
+			background: white;
+			height: 25px;
+			width: 100%;
+		}
+
+		/*******************************************************************************
+		Theme Styles
+		*******************************************************************************/
+
+		body {
+				margin: 0;
+				height: 100vh;
+			width: 100vw;
+				background-color: #ffffff;
+			color:#373737;
+				font-family: 'Nobile', sans-serif;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			margin: 10px 0;
+			font-weight: 700;
+			color:#222222;
+			font-family: 'Nobile', sans-serif;  
+			letter-spacing: -1px;
+		}
+
+		h1 {
+			font-size: 2.3em;
+			font-weight: 700;
+		}
+
+		h2 {
+			padding-bottom: 10px;
+			font-size: 32px;
+			background: url('../images/bg_hr.png') repeat-x bottom;
+		}
+
+		h3 {
+			font-size: 24px;
+		}
+
+		h4 {
+			font-size: 21px;
+		}
+
+		h5 {
+			font-size: 18px;
+		}
+
+		h6 {
+			font-size: 16px;
+		}
+
+		p {
+			text-align: justify; 
+			text-indent: 1cm;
+			font-size: 0.9em;
+			margin: 10px 3.5% 15px 5px;
+		}
+
+
+
+		a {
+			text-decoration: none;
+			color: #007edf;
+			text-shadow: none;
+			width: 100%; 
+
+			transition: color 0.5s ease;
+			transition: text-shadow 0.5s ease;
+			-webkit-transition: color 0.5s ease;
+			-webkit-transition: text-shadow 0.5s ease;
+			-moz-transition: color 0.5s ease;
+			-moz-transition: text-shadow 0.5s ease;
+			-o-transition: color 0.5s ease;
+			-o-transition: text-shadow 0.5s ease;
+			-ms-transition: color 0.5s ease;
+			-ms-transition: text-shadow 0.5s ease;
+		}
+
+		a:hover, a:focus {
+		text-decoration: underline;}
+
+
+
+
+		code {
+			padding: 3px;
+			margin: 0 3px;
+			box-shadow: 0 0 10px rgba(0,0,0,.1);
+		}
+
+
+
+		ul {
+			margin: 0px;
+			list-style-position: inside;
+			list-style: disc;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************
+Small Device Styles
+*******************************************************************************/
+
+@media screen and (max-width: 480px) {
+		#header_wrap {
+		  position:relative;
+		  height: 0px;
+		  width: 100%;
+		  }
+
+		#MainContent {
+		    background-color: rgb(200,200,200);
+		    background-image: url('../images/pattern.png'); repeat-x; center bottom;
+		    padding-top: 0;
+		    width: 100%;
+		}
+
+
+		#sidenav_div{
+		    position: fixed;
+			border-radius: 5px 5px 5px 5px;
+			display: none;
+			width: 30%;
+			box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.29);
+			cursor: pointer;
+			background-color: #FFFFFF;
+		}
+		#sidenav_open{
+		    position: fixed;
+			text-align: center;
+			width: 35px;
+			border-radius: 4px;
+			font-size: 30px;
+			cursor: pointer;
+			background-color: #FFFFFF;
+	        box-shadow: 0 2px 6px 0 rgba(0,0,0,0.8), 0 2px 6px 0 rgba(0,0,0,0.49);
+			transition: 0.5s;
+		}
+
+
+		#sidenav_close{
+			color: rgb(90,90,90);
+		}
+		#sidebar_link{
+			display: block;
+		}
+
+		#tab_list{
+			border-radius: 5px;
+			color:red;
+		}
+
+		ul.tab {
+			margin: 0px;
+			list-style-position: inside;
+			list-style: disc;
+			padding-left: 0px;
+			padding-right: 0px;
+			font-size: 1.2em;
+			list-style-type: none;
+			overflow: hidden;
+			color: #F2F2F2;
+		}
+
+		/* Float the list items side by side */
+		ul.tab li {
+			text-align: center;
+			}
+
+		/* Style the links inside the list items */
+		ul.tab li a {
+			width: 100%; 
+		    display: inline-block;
+		    color: rgb(90,90,90);
+		    background-color: white;
+		    text-align: center;
+		    padding: 12px 1px;
+		    text-decoration: none;
+		    transition: 0.1s;
+		    font-family: 'Nobile', sans-serif;
+			}
+
+		/* Change background color of links on hover */
+		ul.tab li a:hover {
+			color: #FFFFFF;
+			background-color: rgb(100,100,100);
+			}
+
+		/* Create an active/current tablink class */
+		ul.tab li a:focus, .active {
+			color: #000000;
+			background-color: #FFFFFF;	  
+			font-weight: bold;	
+			}
+
+		/* Style the tab content */
+		.tabcontent {
+		    overflow: hidden;
+		    width: 97%;
+		    margin: 0px auto;
+		    text-align: center;
+		    display: none;
+		    color: #F2F2F2;
+		    border-top: none;
+		    border-bottom: none;
+
+		}
+
+
+		/*******************************************************************************
+		Full-Width Styles
+		*******************************************************************************/
+
+
+		#forkme_banner {
+		  display: block;
+		  top:0;
+		  right: 10px;
+		  z-index: 10;
+		  padding: 10px 50px 10px 10px;
+		  color: #fff;
+		  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+		  font-weight: 700;
+		  box-shadow: 0 0 10px rgba(0,0,0,.5);
+		  border-bottom-left-radius: 2px;
+		  border-bottom-right-radius: 2px;
+		}
+
+
+		/*******************************************************************************
+		Theme Styles
+		*******************************************************************************/
+
+		body {
+			margin: 0;
+			height: 100vh;
+			width: 100vw;
+			background-color: #ffffff;
+			color:#373737;
+			font-family: 'Nobile', sans-serif;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+		  margin: 10px 0;
+		  font-weight: 700;
+		  color:#222222;
+		  font-family: 'Nobile', sans-serif;  
+		  letter-spacing: -1px;
+		}
+
+		h1 {
+		  font-size: 2.3em;
+		  font-weight: 700;
+		}
+
+		h2 {
+		  padding-bottom: 10px;
+		  font-size: 32px;
+		  background: url('../images/bg_hr.png') repeat-x bottom;
+		}
+
+		h3 {
+		  font-size: 24px;
+		}
+
+		h4 {
+		  font-size: 21px;
+		}
+
+		h5 {
+		  font-size: 18px;
+		}
+
+		h6 {
+		  font-size: 16px;
+		}
+
+		p {
+			text-align: justify; 
+			text-indent: 1cm;
+			font-size: 0.9em;
+			margin: 10px 3.5% 15px 5px;
+		}
+
+}

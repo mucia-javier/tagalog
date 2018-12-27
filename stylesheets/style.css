@@ -1,0 +1,64 @@
+
+/*******************************************************************************
+Theme Styles
+*******************************************************************************/
+html {
+    background-color: #f0f0f0;
+	font-family: 'Nobile', sans-serif;
+	color: #19262f;
+	}
+
+p {
+	font-size: 1em;
+	text-indent: 20px;
+	line-height: 1;
+	font-style: nomal;
+	}
+h3{
+	padding-left:3em;
+
+	}
+
+row{
+	font-size: 1em;
+	}
+rownote{
+	font-size: 0.8em;
+	}
+t0{
+	color: #253947;
+	padding-left:2em;
+	text-align:center;
+	font-weight: bold;
+	font-size: 1.1em;
+	}
+t1{
+	padding-left:0em;
+	font-weight: bold;
+	font-size: 1.2em;
+	}
+t2{
+	padding-left:1em;
+	font-weight: bold;
+	font-size: 1.1em;
+	}
+ilo{
+	font-size: 1em;
+	color: #19262f;
+	}
+trans{
+	font-size: 0.8em;
+	color: #888888;
+	}
+
+#content{
+	/*background: white;*/
+	}
+
+.entry{
+	/*background: white;*/
+	background-color: #ffffff;
+	padding: 4px;
+	margin-bottom: 10px;
+    line-height: 1.3;
+	}

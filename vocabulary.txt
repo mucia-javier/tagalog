@@ -1,138 +1,37 @@
 *Subjective Pronouns
-ako |i
-ikaw |you
-siya (sha) |he/she
-kami |we (excluding listener)
-kita |we (incliding listener)
-kamo |you (plural)
-sila |they
 
 *Numbers (1-10)
-isa |1
-duha |2
-tatlo |3
-apat |4
-lima |5
-anum |6
-pito |7
-walo |8
-siyam (shiyam) |9 
-pulò |10
 
 *Body Parts
-ulo |head 
-buhok |hair
-hitsura |face
-dulunggan | ear
-agtang |forehead
-kilay | eyebrow
-amimilok |eyelashes
-mata |eye 
-bàbà |mouth 
-bibig |lip 
-dila |tongue
-ngipon | tooth
-guya, pisngi |cheek
-ilong |nose
-braso |arm 
-ilok |armpit
-likod |back
-lawas |body
-tul-an |bone
-titi |breasts
-bulí |buttocks
-dughan |chest
-siko |elbow
-tiil |feet
-kamot |finger
-kamot |hand
-korason |heart
-sakong |heel
-balikawang |hip
-paa |leg
-kuko |nail
-palad |palm
-buto/pisot |penis
-abaga |shoulder
-panit |skin
-talampakan |sole
-tiyan |stomach
-paa |thigh
-kuko sang tiil | toe
-putay/monay |vagina
-hawak |waist
+Ulo | Head | Masakit ang ulo ko | My head hurts
+Buhok | Hair | Maiksi ang buhok mo | Your hair is short
+Taynga | Ears | Ang taynga ko ay marumi | My ears are dirty
+Kilay | Eyebrows | Ang kilay niya ay manipis | Her/his eyebrows are thin
+Mata | Eye | Gusto ko ang mata mo | I like your eyes
+Ilong | Nose | Ang ilong mo ay maliit | Your nose is small
+Baba | Chin | Palagi kong kinukurot ang baba ko | I am always pinching my chin
+Labi | Lips | Ang labi niya ay makapa | His/Her lips are thick
+Leeg | Neck | Makati ang leeg ko | My neck is itchy
+Dibdib | Chest | Masakit ang dibdib ko | My chest hurts
+Likod | Back | Ang likod ni Fredi ay malaki | Fredi's back is big/long
+Braso | Arm | Makati ang braso ko | My arm is itchy
+Siko | Elbow | Ang siko ko ay marumi | My elbow is dirty
+Kamay | Hand | Masakit ba ang kamay mo? | Does your hand hurt?
+Daliri | Finger | Malinis ba mga daliri mo? | Are your fingers clean?
 
 *Colors
-itom |black
-puti |white
-pula |red
-asul |blue
-yelo |yellow
-orens |orange
-rosas |pink
-kape |brown
-kaki |brown
-tsokolate |brown   
-berde |green
-abo |gray
-abohon |gray
-biyolet, lila |violet
 
 *People Descriptors
-akig | angry
-malain | bad
-matahom | beautiful, pretty
-guapa | beautiful, pretty
-manami | beautiful, pretty
-daku | big
-hambog |braggart
-mainandamon | careful, cautios
-ma-amlig | careful, cautios
-matinlo, malimpyo | clean
-mahigko |dirty
-hambog |conceited, boastful
-tikalon |conceited, boastful
-maitum | dark-complexioned
-matinahuron |gentlemanly
-matinahaon |gentlemanly
-guap@ | handsome
-masadya | happy, cheerful
-sinsero | honest, sincere
-mapainubuson | humble
-gago | ignorant
-ignorante | ignorant
-maalam | intelligent, wise
-tamad | lazy
-butigon |liar
-piyo |mischievous, naughty
-piya |mischievous, naughty
-mahinhin |modest, refined
-maugdang |modest, refined
-magahud, kagamo |noisy
-tigulang | old
-kalolo-oy |pitiful
-makalolo-oy | pitiful
-matinahuron |polite, courteous
-manggaranon |rich
-mapisan |diligent, hardworking
-hubog |drunk
-maputi | fair-complexioned
-masubo | sad
-putot/gamay |short
-mahuloy-on |shy
-natuyo | sleepy
-mahinay |slow
-gamay | small
-suplad@ | snobbish
-matambok |stout/fat
-istrikto | strict
-makusog |strong
-hangag/mango | stupid/dumb
-mataas | tall
-baba-an |talkative
-palawakal |talkative
-palahambai | talkative
-maniwang |thin/slim
-kalaw-ay | ugly
-bataon/hoben | young
-buntis | pregnant
+
+
+
+
+
+
+
+
+
+
+
+
+

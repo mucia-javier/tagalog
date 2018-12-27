@@ -5,12 +5,12 @@
 *Body Parts
 Ulo | Head | Masakit ang ulo ko | My head hurts
 Buhok | Hair | Maiksi ang buhok mo | Your hair is short
-Taynga | Ears | Ang taynga ko ay marumi | My ears are dirty
-Kilay | Eyebrows | Ang kilay niya ay manipis | Her/his eyebrows are thin
+Taynga | Ear | Ang taynga ko ay marumi | My ears are dirty
+Kilay | Eyebrow | Ang kilay niya ay manipis | Her/his eyebrows are thin
 Mata | Eye | Gusto ko ang mata mo | I like your eyes
 Ilong | Nose | Ang ilong mo ay maliit | Your nose is small
 Baba | Chin | Palagi kong kinukurot ang baba ko | I am always pinching my chin
-Labi | Lips | Ang labi niya ay makapa | His/Her lips are thick
+Labi | Lip  Ang labi niya ay makapa | His/Her lips are thick
 Leeg | Neck | Makati ang leeg ko | My neck is itchy
 Dibdib | Chest | Masakit ang dibdib ko | My chest hurts
 Likod | Back | Ang likod ni Fredi ay malaki | Fredi's back is big/long

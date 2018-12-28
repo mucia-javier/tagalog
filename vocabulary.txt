@@ -32,7 +32,26 @@ Paa | Foot
 *People Descriptors
 
 
-
+* Fruits | Mga prutas
+apple | mansanas
+avocado | abukado
+bananas | saging
+coconuts | buko
+grapes | ubas
+guava | bayabas
+jackfruit | langka
+lime | dayap
+mandarin orange | dalanghita
+mango | mangga
+native blackberry | duhat
+native lemon | dalandan / lemonsito
+orange | kahel
+pineapple | pinya
+starfruit / carambola | balimbing
+sugar apple | atis
+tamarind | sampalok
+tomato | kamatis
+watermelon | pakwan
 
 
 

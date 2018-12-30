@@ -3,7 +3,7 @@ const mq = window.matchMedia( "(min-width: 481px)" );
 
 function init(){    // Get the initial Height of the document
     //loadVocabulary();
-    document.body.style.height = 200+"vh";
+    document.body.style.height = 320+"vh";
     }
 function loadVocabulary() {
     var pageTitle = document.title;
@@ -55,6 +55,12 @@ btn.id =bt_id;
   btn.onclick = function(){
        alert(this.id+" clicked");
        };
-  document.body.appendChild(btn);
+   
+  //document.body.appendChild(btn);
+  document.getElementById("answer").appendChild(btn);
   }
   }
+  
+  
+ 
+ 

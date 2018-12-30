@@ -1,7 +1,7 @@
 *Subjective Pronouns
 Ako | I | 
 Ikaw | You | Singular 
-Ka | You
+Ka | You | Singular
 Siya | He
 Siya | She
 Kami | We | Excluding listener

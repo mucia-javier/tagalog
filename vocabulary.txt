@@ -1,4 +1,13 @@
 *Subjective Pronouns
+Ako | I | 
+Ikaw | You | Singular 
+Ka | You
+Siya | He
+Siya | She
+Kami | We | Excluding listener
+Tayo | We | Including listener
+Kayo | You | Plural
+Sila | They
 
 *Numbers (1-10)
 
@@ -38,7 +47,7 @@ Abukado | Avocado
 Saging | Bananas
 Buko | Coconuts
 Ubas | Grapes
-Guayabas | Guavas
+Buayabas | Guavas
 Langka | Jackfruit
 Dayap | Lime
 Dalanghita | Mandarines

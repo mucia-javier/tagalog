@@ -35,4 +35,3 @@ function loadVocabulary() {
     }, 'text');
     //console.log("Finished Loading: ",pageTitle);
     }
-

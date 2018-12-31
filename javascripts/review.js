@@ -40,27 +40,40 @@ function loadVocabulary() {
 
 
 
-//Make 5 buttons on click
-function myFunction() {
-  var i;
-  for(i=0; i<5; i++)
-  {
-  var btn = document.createElement("BUTTON");
-  var bt_id = "button"+i;
-  var t =  document.createTextNode(bt_id);
-  btn.appendChild(t);
-  btn.value = bt_id;
-btn.id =bt_id;
-  btn.classList.add("review_btn");
-  btn.onclick = function(){
+//First mode.of review
+function MatchTranslationMode() {
+    document.getElementById("instruction").innerHTML = "<h4>Match Words or Phrases?</h4>";
+    document.getElementById("question").innerHTML = "";
+    document.getElementById("question").style.display = "none";
+    document.getElementById("answer").innerHTML = "";
+    document.getElementById("answer").style.display = "block";
+    
+    var w_btn = document.createElement("button");
+    var bt_id = "words_btn";
+    var t =  document.createTextNode("Match Words");
+    w_btn.appendChild(t);
+    w_btn.value = bt_id;
+    w_btn.id =bt_id;
+    w_btn.classList.add("review_btn");
+    w_btn.onclick = function(){
        alert(this.id+" clicked");
        };
-   
-  //document.body.appendChild(btn);
-  document.getElementById("answer").appendChild(btn);
-  }
-  document.getElementById("answer").style.display = "block";
-  
+    document.getElementById("answer").innerHTML += "<br>";
+    document.getElementById("answer").appendChild(w_btn);
+    document.getElementById("answer").innerHTML += "<br><br>";
+
+    var p_btn = document.createElement("button");
+    bt_id = "phrases_btn";
+    t =  document.createTextNode("Match Phrases");
+    p_btn.appendChild(t);
+    p_btn.value = bt_id;
+    p_btn.id = bt_id;
+    p_btn.classList.add("review_btn");
+    p_btn.onclick = function(){
+       alert(this.id+" clicked");
+       }; 
+    document.getElementById("answer").appendChild(p_btn);
+    document.getElementById("answer").innerHTML += "<br><br>";
   }
   
   

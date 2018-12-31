@@ -4,8 +4,8 @@ Theme Styles
 *******************************************************************************/
 html {
     background-color: #f0f0f0;
-	font-family: 'Nobile', sans-serif;
 	color: #19262f;
+	font-family: 'Open Sans';
 	}
 
 p {
@@ -16,8 +16,10 @@ p {
 	}
 h3{
 	padding-left:3em;
-
 	}
+h4{
+	font-size: 1.3em;
+    }
 
 row{
 	font-size: 1em;

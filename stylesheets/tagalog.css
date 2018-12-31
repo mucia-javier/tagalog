@@ -1,7 +1,8 @@
 @media screen and (min-width: 481px) {
 		html, body {
 				background-color: #ffffff;
-		}
+		font-family: 'Open Sans';
+        }
 
 		#MainContent {
 				min-height: 600px;
@@ -50,7 +51,6 @@
 				padding: 12px 1px;
 				text-decoration: none;
 				transition: 0.1s;
-				font-family: 'Nobile', sans-serif;
 			}
 
 		/* Change background color of links on hover */
@@ -61,7 +61,7 @@
 
 		/* Create an active/current tablink class */
 		ul.tab li a:focus, .active {
-			font-size: 1.1em;
+			font-size: 1.2em;
 			color: #253947;
 			font-weight: bold;	
 			}
@@ -115,14 +115,13 @@
 			width: 100vw;
 				background-color: #ffffff;
 			color:#373737;
-				font-family: 'Nobile', sans-serif;
+				font-family: 'Open Sans';
 		}
 
 		h1, h2, h3, h4, h5, h6 {
 			margin: 10px 0;
 			font-weight: 700;
 			color:#222222;
-			font-family: 'Nobile', sans-serif;  
 			letter-spacing: -1px;
 		}
 
@@ -228,6 +227,11 @@ Small Device Styles
 *******************************************************************************/
 
 @media screen and (max-width: 480px) {
+	html {
+		font-family: 'Open Sans';
+        }
+	
+	
 		#header_wrap {
 		  position:relative;
 		  height: 0px;
@@ -246,7 +250,7 @@ Small Device Styles
 		    position: fixed;
 			border-radius: 5px 5px 5px 5px;
 			display: none;
-			width: 30%;
+			width: 35%;
 			box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.29);
 			cursor: pointer;
 			background-color: #FFFFFF;
@@ -303,7 +307,6 @@ Small Device Styles
 		    padding: 12px 1px;
 		    text-decoration: none;
 		    transition: 0.1s;
-		    font-family: 'Nobile', sans-serif;
 			}
 
 		/* Change background color of links on hover */
@@ -363,14 +366,13 @@ Small Device Styles
 			width: 100vw;
 			background-color: #ffffff;
 			color:#373737;
-			font-family: 'Nobile', sans-serif;
+			font-family: 'Open Sans';
 		}
 
 		h1, h2, h3, h4, h5, h6 {
 		  margin: 10px 0;
 		  font-weight: 700;
 		  color:#222222;
-		  font-family: 'Nobile', sans-serif;  
 		  letter-spacing: -1px;
 		}
 

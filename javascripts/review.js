@@ -3,7 +3,7 @@ const mq = window.matchMedia( "(min-width: 481px)" );
 
 function init(){    // Get the initial Height of the document
     //loadVocabulary();
-    document.body.style.height = 320+"vh";
+    document.body.style.height = 100+"vh";
     }
 function loadVocabulary() {
     var pageTitle = document.title;

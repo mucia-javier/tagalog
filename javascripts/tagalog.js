@@ -42,6 +42,9 @@ function openTab(evt, tabName) {
 	var newPageHeight = document.getElementById(frame_name).contentWindow.document.body.offsetHeight+20;
     document.getElementById(frame_name).style.height = newPageHeight+'px';
     newPageHeight +=50;
+    //if(tabName = "review"){
+    //    newPageHeight += 200;
+    //    }
     document.body.style.height = newPageHeight+'px';
     }
 

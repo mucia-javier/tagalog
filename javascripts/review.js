@@ -3,7 +3,7 @@ const mq = window.matchMedia( "(min-width: 481px)" );
 
 function init(){    // Get the initial Height of the document
     //loadVocabulary();
-    document.body.style.height = 100+"vh";
+   
     }
 function loadVocabulary() {
     var pageTitle = document.title;
@@ -51,7 +51,7 @@ function myFunction() {
   btn.appendChild(t);
   btn.value = bt_id;
 btn.id =bt_id;
-  btn.classList.add("orange");
+  btn.classList.add("review_btn");
   btn.onclick = function(){
        alert(this.id+" clicked");
        };
@@ -59,6 +59,8 @@ btn.id =bt_id;
   //document.body.appendChild(btn);
   document.getElementById("answer").appendChild(btn);
   }
+  document.getElementById("answer").style.display = "block";
+  
   }
   
   

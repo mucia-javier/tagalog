@@ -1,8 +1,11 @@
 html {
     text-align:center;
     font-family: 'Open Sans';
+    
 	}
-
+body {
+	height: 320vh;
+	}
 #instruction {
 	color: #808080;
 	}
@@ -12,7 +15,7 @@ button {
 	font-weight: bold;
 	font-family: 'Open Sans';
 	}
-.orange{
+.review_btn{
     display: inline-block;
         outline: none;
         cursor: pointer;
@@ -34,7 +37,7 @@ button {
         background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
         filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
 }
-.orange:hover {
+.review_btn:hover {
         text-decoration: none;
         background: #f47c20;
         background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
@@ -42,7 +45,7 @@ button {
         filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
 }
 
-.orange:active {
+.review_btn:active {
     position: relative;
     top: 1;
     }

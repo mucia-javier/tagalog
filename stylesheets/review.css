@@ -1,3 +1,7 @@
+html {
+    text-align:center;
+	}
+
 .orange{
     display: inline-block;
         outline: none;
@@ -18,18 +22,22 @@
         border: solid 1px #da7c0c;
 1d;
         background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
-background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+        background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
         filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
 }
 .orange:hover {
-    text-decoration: none;
+        text-decoration: none;
         background: #f47c20;
-background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+        background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
         background: -moz-linear-gradient(top,  #f88e11,  #f06015);
         filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
 }
 
 .orange:active {
     position: relative;
-        top: 1;
-}
+    top: 1;
+    }
+
+
+
+

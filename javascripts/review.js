@@ -43,7 +43,7 @@ function loadVocabulary() {
 //First mode.of review
 function MatchTranslationMode() {
     document.getElementById("instruction").innerHTML = "<h4>Match Words or Phrases?</h4>";
-    document.getElementById("question").innerHTML = "";
+    //document.getElementById("question").innerHTML = "";
     document.getElementById("question").style.display = "block";
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "none";
@@ -56,9 +56,10 @@ function MatchTranslationMode() {
     words_btn.id = bt_id;
     words_btn.classList.add("review_btn");
     words_btn.onclick = MatchWords;
-    document.getElementById("question").innerHTML += "<br>";
+    document.getElementById("question").innerHTML = "<br>";
     document.getElementById("question").appendChild(words_btn);
-    //document.getElementById("question").innerHTML += "<br><br>";
+    document.getElementById("question").appendChild(document.createElement("br"));
+    document.getElementById("question").appendChild(document.createElement("br"));
 
     var phrases_btn = document.createElement("button");
     bt_id = "phrases_btn";
@@ -73,14 +74,14 @@ function MatchTranslationMode() {
         alert(this.id+" clicked");
        }
     document.getElementById("question").appendChild(phrases_btn);
-    //document.getElementById("question").innerHTML += "<br><br>";
-
+    document.getElementById("question").appendChild(document.createElement("br"));
+    document.getElementById("question").appendChild(document.createElement("br"));
   }
 
 function MatchWords(){
     document.getElementById("answer").innerHTML = "Words button clicked";
     document.getElementById("answer").style.display = "block";
-    alert("clicked");
+    alert(this.id+" clicked");
 	}
   
   

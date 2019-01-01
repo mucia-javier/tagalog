@@ -44,37 +44,44 @@ function loadVocabulary() {
 function MatchTranslationMode() {
     document.getElementById("instruction").innerHTML = "<h4>Match Words or Phrases?</h4>";
     document.getElementById("question").innerHTML = "";
-    document.getElementById("question").style.display = "none";
+    document.getElementById("question").style.display = "block";
     document.getElementById("answer").innerHTML = "";
-    document.getElementById("answer").style.display = "block";
+    document.getElementById("answer").style.display = "none";
     
-    var w_btn = document.createElement("button");
+    var words_btn = document.createElement("button");
     var bt_id = "words_btn";
-    var t =  document.createTextNode("Match Words");
-    w_btn.appendChild(t);
-    w_btn.value = bt_id;
-    w_btn.id =bt_id;
-    w_btn.classList.add("review_btn");
-    w_btn.onclick = function(){
-       alert(this.id+" clicked");
-       };
-    document.getElementById("answer").innerHTML += "<br>";
-    document.getElementById("answer").appendChild(w_btn);
-    document.getElementById("answer").innerHTML += "<br><br>";
+    var t =  document.createTextNode("Words");
+    words_btn.appendChild(t);
+    words_btn.value = bt_id;
+    words_btn.id = bt_id;
+    words_btn.classList.add("review_btn");
+    words_btn.onclick = MatchWords;
+    document.getElementById("question").innerHTML += "<br>";
+    document.getElementById("question").appendChild(words_btn);
+    //document.getElementById("question").innerHTML += "<br><br>";
 
-    var p_btn = document.createElement("button");
+    var phrases_btn = document.createElement("button");
     bt_id = "phrases_btn";
-    t =  document.createTextNode("Match Phrases");
-    p_btn.appendChild(t);
-    p_btn.value = bt_id;
-    p_btn.id = bt_id;
-    p_btn.classList.add("review_btn");
-    p_btn.onclick = function(){
-       alert(this.id+" clicked");
-       }; 
-    document.getElementById("answer").appendChild(p_btn);
-    document.getElementById("answer").innerHTML += "<br><br>";
+    t =  document.createTextNode("Phrases");
+    phrases_btn.appendChild(t);
+    phrases_btn.value = bt_id;
+    phrases_btn.id = bt_id;
+    phrases_btn.classList.add("review_btn");
+    phrases_btn.onclick = function(){
+        document.getElementById("answer").innerHTML = "Phrases button clicked";
+        document.getElementById("answer").style.display = "block";
+        alert(this.id+" clicked");
+       }
+    document.getElementById("question").appendChild(phrases_btn);
+    //document.getElementById("question").innerHTML += "<br><br>";
+
   }
+
+function MatchWords(){
+    document.getElementById("answer").innerHTML = "Words button clicked";
+    document.getElementById("answer").style.display = "block";
+    alert("clicked");
+	}
   
   
  

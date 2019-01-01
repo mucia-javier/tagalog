@@ -43,7 +43,6 @@ function loadVocabulary() {
 //First mode.of review
 function MatchTranslationMode() {
     document.getElementById("instruction").innerHTML = "<h4>Match Words or Phrases?</h4>";
-    //document.getElementById("question").innerHTML = "";
     document.getElementById("question").style.display = "block";
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "none";

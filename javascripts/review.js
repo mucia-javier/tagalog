@@ -2,46 +2,30 @@ window.onload = init;
 const mq = window.matchMedia( "(min-width: 481px)" );
 
 function init(){    // Get the initial Height of the document
-    //loadVocabulary();
+
    
     }
-function loadVocabulary() {
-    var pageTitle = document.title;
-    var fileName = 'vocabulary.txt'; // By default load vocabulary
-    if(pageTitle == 'Phrases')
-        fileName = 'phrases.txt';
-    
-    $.get(fileName, function(data) {
-       //alert(data);
-       //process text file line by line
-        var lines = data.split("\n");
-        var allEntries = "<br><br>"; // "<div class='entry'>";
-        for (var i = 0, len = lines.length; i < len; i++) {
-            var row = lines[i];
-            if(row){
-                if(row.startsWith("*")){ //This is a title/header
-                    row = row.slice(1, ); // ignore the '*' character
-                    allEntries += "</div><div class='entry'><t0>"+row+"</t0><br>";
-                    }
-                else{
-                    row = row.split("|")
-                    allEntries +="<row><ilo>"+row[0]+"</ilo>&nbsp; <trans>"+row[1]+"</trans></row><br>";
-                    }
-                }
-            else
-                allEntries +="<br>"
-        }
-        allEntries += "</div>";
-        $('#content').html(allEntries);
-    }, 'text');
-    //console.log("Finished Loading: ",pageTitle);
-    }
 
 
 
 
-//First mode.of review
+// First mode of review is to choose to match words or phrases
+// with their translations
 function MatchTranslationMode() {
+	var back_btn = document.createElement("button");
+	back_btn.value = "back_btn";
+	back_btn.id = "back_btn";
+	back_btn.appendChild(document.createTextNode("Main Menu"));
+	back_btn.classList.add("back_btn");
+	back_btn.onclick = function(){
+		 window.location.href = window.location.href;
+		}
+	document.getElementById("navigation_section").innerHTML = "";
+	document.getElementById("navigation_section").appendChild(back_btn);
+	document.getElementById("navigation_section").style.textAlign = "left"; 
+	
+    // Clear page and populate it with new stuff
+    document.getElementById("question").appendChild(document.createElement("br"));
     document.getElementById("instruction").innerHTML = "<h4>Match Words or Phrases?</h4>";
     document.getElementById("question").style.display = "block";
     document.getElementById("answer").innerHTML = "";
@@ -54,7 +38,7 @@ function MatchTranslationMode() {
     words_btn.value = bt_id;
     words_btn.id = bt_id;
     words_btn.classList.add("review_btn");
-    words_btn.onclick = MatchWords;
+    words_btn.onclick = MatchWordsOrPhrases;
     document.getElementById("question").innerHTML = "<br>";
     document.getElementById("question").appendChild(words_btn);
     document.getElementById("question").appendChild(document.createElement("br"));
@@ -67,22 +51,125 @@ function MatchTranslationMode() {
     phrases_btn.value = bt_id;
     phrases_btn.id = bt_id;
     phrases_btn.classList.add("review_btn");
-    phrases_btn.onclick = function(){
-        document.getElementById("answer").innerHTML = "Phrases button clicked";
-        document.getElementById("answer").style.display = "block";
-        alert(this.id+" clicked");
-       }
+    phrases_btn.onclick = MatchWordsOrPhrases;
     document.getElementById("question").appendChild(phrases_btn);
     document.getElementById("question").appendChild(document.createElement("br"));
     document.getElementById("question").appendChild(document.createElement("br"));
   }
 
-function MatchWords(){
-    document.getElementById("answer").innerHTML = "Words button clicked";
-    document.getElementById("answer").style.display = "block";
-    alert(this.id+" clicked");
+// User has chosen to match words or phrases
+// List all available cathegories to the user
+function MatchWordsOrPhrases(){
+	var back_btn = document.createElement("button");
+	back_btn.value = "back_btn";
+	back_btn.id = "back_btn";
+	back_btn.appendChild(document.createTextNode("Previous Menu"));
+	back_btn.classList.add("back_btn");
+	back_btn.onclick = MatchTranslationMode;
+	document.getElementById("navigation_section").innerHTML = "";
+	document.getElementById("navigation_section").appendChild(back_btn);
+	document.getElementById("navigation_section").style.textAlign = "left"; 
+	
+	
+	// Clear page and populate it with new stuff to give the feeling of a new window
+	document.getElementById("question").innerHTML = "";
+    document.getElementById("instruction").innerHTML = "<h4>Select A Cathegory</h4>";
+    document.getElementById("question").style.display = "block";
+    document.getElementById("answer").innerHTML = "";
+    document.getElementById("answer").style.display = "none";
+	
+	var fileName = 'vocabulary.txt'; // By default load vocabulary
+	if(this.id == "phrases_btn"){    // But load Phrases if user choses so
+		fileName = 'phrases.txt';
+		}
+    $.get(fileName, function(data) {
+       //process text file line by line
+        var lines = data.split("\n");
+        
+        for (var i = 0, len = lines.length; i < len; i++) {
+            var row = lines[i];
+            if(row){ // Ignore empty lines in text file
+                if(row.startsWith("*")){ //This is a title/header
+                    row = row.slice(1, ); // ignore the '*' character
+                    var button_i = document.createElement("button");
+                    var bt_id = row;//.replace(/\s+/g, '_');;
+                    var t =  document.createTextNode(row);
+                    button_i.appendChild(t);
+                    button_i.fileName = fileName;
+                    button_i.id = bt_id;
+                    button_i.classList.add("review_btn");
+                    button_i.onclick = PlayMatch;
+                    document.getElementById("question").appendChild(button_i);
+                    document.getElementById("question").appendChild(document.createElement("br"));
+                    document.getElementById("question").appendChild(document.createElement("br"));                    
+                    
+                    }
+                }
+            }
+        }, 'text');
 	}
+
+
+function PlayMatch(){
+	var sectionContent = "";
+    //alert("ID = "+this.id+" , Filename = "+this.fileName);
+    var sectionName = this.id;
+    $.get(this.fileName, function(data) {
+       //process text file line by line
+        var lines = data.split("\n");
+        sectionContent = "";
+        var copyEntry = false;
+        for (var i = 0, len = lines.length; i < len; i++) {
+            var row = lines[i];
+            var row_trimmed = row.slice(1, );
+            if(row){ // Ignore empty lines in text file
+                if(row.startsWith("*") && sectionName == row_trimmed && copyEntry == false ){ //This is a title/header
+                    copyEntry = true;
+                    continue;                    
+                    }
+                else if(row.startsWith("*") && sectionName != row_trimmed && copyEntry == true ){
+                	copyEntry = false;                 
+                    break;    
+                    }
+                else if(copyEntry == true){
+                	sectionContent += row+"<br>";
+                	/*
+                    var button_i = document.createElement("button");
+                    var bt_id = row_trimmed;//.replace(/\s+/g, '_');;
+                    var t =  document.createTextNode(row_trimmed);
+                    button_i.appendChild(t);
+                    
+                    button_i.id = bt_id;
+                    button_i.classList.add("review_btn");
+                    button_i.onclick = PlayMatch;
+                    document.getElementById("question").appendChild(button_i);
+                    document.getElementById("question").appendChild(document.createElement("br"));
+                    document.getElementById("question").appendChild(document.createElement("br"));                    
+                    */
+                	}
+                }
+            }
+            document.getElementById("answer").innerHTML = sectionContent;
+            document.getElementById("answer").style.display = "block";
+            //alert(sectionContent);
+        }, 'text');
+    }
   
-  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  

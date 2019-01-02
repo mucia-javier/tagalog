@@ -4,18 +4,18 @@ html {
     
 	}
 body {
-	height: 320vh;
+	
 	}
 #instruction {
 	color: #808080;
 	}
 
 button {
-	font-size: 1.1em;
-	font-weight: bold;
 	font-family: 'Open Sans';
 	}
 .review_btn{
+	font-weight: bold;
+	font-size: 1.1em;
     display: inline-block;
         outline: none;
         cursor: pointer;
@@ -46,6 +46,44 @@ button {
 }
 
 .review_btn:active {
+    position: relative;
+    top: 1;
+    }
+
+.back_btn {
+	margin-left: 1em;
+   // font-weight: bold;
+	font-size: .8em;
+    display: inline-block;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        padding: .5em .5em .55em;
+        //text-shadow: 0 1px 1px rgba(0,0,0,.3);
+        -webkit-border-radius: .5em;
+        -moz-border-radius: .5em;
+        border-radius: .5em;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+
+        -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+        box-shadow: 0 1px 2px rgba(0,0,0,.2);
+        color: #fef4e9;
+        border: solid 1px #da7c0c;
+1d;
+        background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+        background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+        filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+.back_btn:hover {
+        text-decoration: none;
+        background: #f47c20;
+        background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+        background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+        filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+
+.back_btn:active {
     position: relative;
     top: 1;
     }

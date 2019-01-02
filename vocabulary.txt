@@ -13,7 +13,7 @@ Sila | They
 
 *Body Parts
 Ulo | Head | Masakit ang ulo ko | My head hurts
-Mukha | Face | <strike> Marumi ang mukha ko | My face is dirty
+Mukha | Face | <strike> Marumi ang mukha ko | My face is dirty</strike>
 Buhok | Hair | Maiksi ang buhok mo | Your hair is short
 Taynga | Ear | Ang taynga ko ay marumi | My ears are dirty
 Kilay | Eyebrow | Ang kilay niya ay manipis | Her/his eyebrows are thin

@@ -2,10 +2,11 @@ window.onload = init;
 const mq = window.matchMedia( "(min-width: 481px)" );
 
 function init(){    // Get the initial Height of the document
-
-   
+    // Loads the previous URL in the history list
+    // window.history.back();
     }
 
+	
 
 
 
@@ -26,7 +27,7 @@ function MatchTranslationMode() {
 	
     // Clear page and populate it with new stuff
     document.getElementById("question").appendChild(document.createElement("br"));
-    document.getElementById("instruction").innerHTML = "<h4>Match Words or Phrases?</h4>";
+    document.getElementById("instruction").innerHTML = "<br><br><h4>Match Words or Phrases?</h4>";
     document.getElementById("question").style.display = "block";
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "none";
@@ -199,7 +200,7 @@ function PlayMatch(sectionContent, i){
                 button_i.appendChild(t);
                 button_i.id = i;
                 button_i.value = sectionContent.english[i];
-                button_i.classList.add("review_btn");
+                button_i.classList.add("choice_btn");
                 button_i.onclick = function(){
                     alert("May Tama Ka\n"+sectionContent.tagalog[this.id]+"="+sectionContent.english[this.id]+"\n"+sectionContent.tag_example[this.id]);
                     PlayMatch(sectionContent, i+1);
@@ -221,7 +222,7 @@ function PlayMatch(sectionContent, i){
                 button_i.appendChild(t);
                 button_i.id = randomElementIndex;
                 button_i.value = sectionContent.english[randomElementIndex];
-                button_i.classList.add("review_btn");
+                button_i.classList.add("choice_btn");
                 button_i.onclick = function(){
                     alert("Try Again "+sectionContent.english[this.id]+"="+sectionContent.tagalog[this.id]);
                     }

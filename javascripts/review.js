@@ -98,7 +98,7 @@ function MatchWordsOrPhrases(){
                     button_i.fileName = fileName;
                     button_i.id = bt_id;
                     button_i.classList.add("review_btn");
-                    button_i.onclick = PlayMatch;
+                    button_i.onclick = GetSectionContent;
                     document.getElementById("question").appendChild(button_i);
                     document.getElementById("question").appendChild(document.createElement("br"));
                     document.getElementById("question").appendChild(document.createElement("br"));                    
@@ -110,14 +110,32 @@ function MatchWordsOrPhrases(){
 	}
 
 
-function PlayMatch(){
-	var sectionContent = "";
-    //alert("ID = "+this.id+" , Filename = "+this.fileName);
+function GetSectionContent(){
+	// Clear page and populate it with new stuff to give the feeling of a new window
+	document.getElementById("question").innerHTML = "";
+    document.getElementById("question").style.display = "none";
+    document.getElementById("answer").innerHTML = "";
+    document.getElementById("answer").style.display = "none";
+	document.getElementById("instruction").innerHTML = "<h4>Match The Pairs</h4>";
+	
+	var sec_type = "phrases";
+	if(this.fileName == "vocabulary.txt"){
+        sec_type = "words";
+        }
+	
+	var sectionContent = {
+		section_type:sec_type,
+        tagalog:[],
+        english:[],
+        tag_example:[],
+        eng_example:[],
+        };
+	
     var sectionName = this.id;
+    
     $.get(this.fileName, function(data) {
        //process text file line by line
         var lines = data.split("\n");
-        sectionContent = "";
         var copyEntry = false;
         for (var i = 0, len = lines.length; i < len; i++) {
             var row = lines[i];
@@ -132,30 +150,106 @@ function PlayMatch(){
                     break;    
                     }
                 else if(copyEntry == true){
-                	sectionContent += row+"<br>";
-                	/*
-                    var button_i = document.createElement("button");
-                    var bt_id = row_trimmed;//.replace(/\s+/g, '_');;
-                    var t =  document.createTextNode(row_trimmed);
-                    button_i.appendChild(t);
-                    
-                    button_i.id = bt_id;
-                    button_i.classList.add("review_btn");
-                    button_i.onclick = PlayMatch;
-                    document.getElementById("question").appendChild(button_i);
-                    document.getElementById("question").appendChild(document.createElement("br"));
-                    document.getElementById("question").appendChild(document.createElement("br"));                    
-                    */
+                	row = row.split("|");
+                    sectionContent.tagalog.push(row[0]);
+                    sectionContent.english.push(row[1]);
+                    if(sectionContent.section_type == "words"){
+                    	if(!(typeof row[2] === 'undefined')){
+                            sectionContent.tag_example.push(row[2]);
+                            }
+                        else{
+                        	sectionContent.tag_example.push("");
+                        	}
+                        if(!(typeof row[3] === 'undefined')){
+                            sectionContent.eng_example.push(row[3]);
+                            }
+                        else{
+                        	sectionContent.eng_example.push("");
+                            }
+                    	}
                 	}
                 }
             }
-            document.getElementById("answer").innerHTML = sectionContent;
-            document.getElementById("answer").style.display = "block";
-            //alert(sectionContent);
+            if(sectionContent.tagalog.length != 0){
+                PlayMatch(sectionContent, 0);
+                }
         }, 'text');
     }
   
- 
+function PlayMatch(sectionContent, i){
+    if(i == sectionContent.tagalog.length){
+    	return MatchTranslationMode();
+    	}
+       
+    var completedElements = [];
+        document.getElementById("question").style.display = "block";
+        document.getElementById("question").innerHTML = "<br><div class='question'>"+sectionContent.tagalog[i]+"<div><br>";
+        document.getElementById("answer").style.display = "block";
+        document.getElementById("answer").innerHTML = "";
+        
+        
+        var answerHasBeenGiven = false;
+        var maxNumOfChoices = Math.min(sectionContent.tagalog.length, 5);
+        var optionsShown = [];
+        for(var j=1; j<=maxNumOfChoices; j++){
+            var showAnswer = Math.floor(Math.random() * 10); // Get random between 0 to 1. Flip coin to decide cronological position of answer
+            if(answerHasBeenGiven == false && ( j == maxNumOfChoices || showAnswer >= 7)){
+        	    var button_i = document.createElement("button");
+                var t =  document.createTextNode(sectionContent.english[i]);
+                button_i.appendChild(t);
+                button_i.id = i;
+                button_i.value = sectionContent.english[i];
+                button_i.classList.add("review_btn");
+                button_i.onclick = function(){
+                    alert("May Tama Ka\n"+sectionContent.tagalog[this.id]+"="+sectionContent.english[this.id]+"\n"+sectionContent.tag_example[this.id]);
+                    PlayMatch(sectionContent, i+1);
+                    }
+                document.getElementById("answer").appendChild(button_i);
+                //document.getElementById("question").appendChild(document.createElement("br"));
+                //document.getElementById("question").appendChild(document.createElement("br"));
+                answerHasBeenGiven = true;
+        	    }
+            else{
+            	var randomElementIndex = Math.floor(Math.random() * sectionContent.tagalog.length);
+                if(randomElementIndex == i || optionsShown.includes(randomElementIndex)){
+                	j--;
+                    continue;
+                	}
+                optionsShown.push(randomElementIndex);
+                var button_i = document.createElement("button");
+                var t =  document.createTextNode(sectionContent.english[randomElementIndex]);
+                button_i.appendChild(t);
+                button_i.id = randomElementIndex;
+                button_i.value = sectionContent.english[randomElementIndex];
+                button_i.classList.add("review_btn");
+                button_i.onclick = function(){
+                    alert("Try Again "+sectionContent.english[this.id]+"="+sectionContent.tagalog[this.id]);
+                    }
+                document.getElementById("answer").appendChild(button_i);
+                //document.getElementById("answer").innerHTML += "<p>"+sectionContent.english[randomElementIndex]+"</p";
+                }
+        	
+        	
+            }
+            
+    /*
+        (right amswer hasnt been given &(last spot for answers OR random says say it))
+            show right answer
+                    var button_i = document.createElement("button");
+                    var t =  document.createTextNode(sectionContent.english[i]);
+                    button_i.appendChild(t);
+                    button_i.id = i;
+                    button_i.value = sectionContent.english[i];
+                    button_i.classList.add("review_btn");
+                    button_i.onclick = function(){
+                    	alert(this.id+", value"+this.value);
+                        }
+                    document.getElementById("answer").appendChild(button_i);
+                    //document.getElementById("question").appendChild(document.createElement("br"));
+                    //document.getElementById("question").appendChild(document.createElement("br"));
+    */
+        
+	}
  
  
  

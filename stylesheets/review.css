@@ -7,7 +7,13 @@ body {
 	
 	}
 #instruction {
-	color: #808080;
+	color: #a0a0a0;
+	}
+.question{
+	font-size: 2.2em;
+	font-weight: bold;
+	font-family: 'Open Sans';
+	color: #19262f;
 	}
 
 button {

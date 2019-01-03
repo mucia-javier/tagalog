@@ -1,12 +1,11 @@
 *Subjective Pronouns
-Ako | I | 
-Ikaw | You | Singular 
-Ka | You | Singular
-Siya | He
-Siya | She
-Kami | We | Excluding listener
-Tayo | We | Including listener
-Kayo | You | Plural
+Ako | I 
+Ikaw | You Singular 
+Ka | You Singular Informal
+Siya | He/She
+Kami | We Excluding listener
+Tayo | We Including listener
+Kayo | You Guys Plural
 Sila | They
 
 *Numbers (1-10)

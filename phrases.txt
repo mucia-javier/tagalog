@@ -6,7 +6,7 @@ Kumusta ka na | How are you (friendly)
 Kumusta na po kayo | How are you (polite)
 Mabuti. Ikaw? | Fine. You?
 Mabuti rin. | Fine too
-Ingat | Tale care
+Ingat | Take care
 
 *Common Expressions
 Salamat | Thank You
@@ -18,6 +18,11 @@ Pwede niya | She/He can
 Kailangan nila | They need | They should
 Dapat namin | We should
 
+*Common Questions
+Anong pangalan mo? | What is your name?
+Ako si Javier | I am Javier
+Taga-saan ka? | Where are you from?
+Taga-earth ako | I am from earth
 
 *Question feelings
 Kumusta ang ulo mo? | How is your head?

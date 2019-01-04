@@ -64,7 +64,6 @@ button {
 	margin-top: 1em;
 	margin-left: 2em;
 	font-size: .8em;
-	
     display: inline-block;
         outline: none;
         cursor: pointer;
@@ -76,18 +75,12 @@ button {
         box-shadow: 0 1px 2px rgba(0,0,0,.2);
         color: #fef4e9;
         border: none;
-1d;
-        background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
-        background: -moz-linear-gradient(top,  #30a0e0,  #2590d9);
-        filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
-}
+        background: #c0c0c0;
+    }
 .back_btn:hover {
-        text-decoration: none;
-        background: #f47c20;
-        background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
-        background: -moz-linear-gradient(top,  #30a0e0,  #2590d9);
-        filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
-}
+    text-decoration: none;
+    background: #a0a0a0;
+    }
 
 .back_btn:active {
     position: relative;
@@ -97,21 +90,30 @@ button {
 	content:"";
 	border-top: 1.2em solid transparent; 
     border-bottom: 1.2em solid transparent; 
-    border-right: 1.1em solid #3498db;
-    position: fixed; 
+    border-right: 1.1em solid #c0c0c0;
+    position: absolute; 
     left: 4.1em; 
     margin-top: -.47em;
 	}
+	
+.back_btn:hover:before {
+    content:"";
+	border-top: 1.2em solid transparent; 
+    border-bottom: 1.2em solid transparent; 
+    border-right: 1.1em solid #a0a0a0;
+    position: absolute; 
+    left: 4.1em; 
+    margin-top: -.47em;
+   }
 
-/*3498db*/
+
 
 .choice_btn {
 	margin: .5em;
-   // font-weight: bold;
 	font-size: .8em;
     display: inline-block;
-        outline: none;
-        cursor: pointer;
+    outline: none;
+    cursor: pointer;
         text-align: center;
         text-decoration: none;
         padding: .5em 1em .55em;

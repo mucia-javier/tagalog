@@ -95,12 +95,12 @@ button {
     
 .back_btn:before {
 	content:"";
-	border-top: 1.25em solid transparent; 
-    border-bottom: 1.25em solid transparent; 
+	border-top: 1.2em solid transparent; 
+    border-bottom: 1.2em solid transparent; 
     border-right: 1.1em solid #3498db;
     position: fixed; 
     left: 4.1em; 
-    margin-top: -.5em;
+    margin-top: -.47em;
 	}
 
 /*3498db*/

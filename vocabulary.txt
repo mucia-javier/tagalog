@@ -8,8 +8,6 @@ Tayo | We Including listener
 Kayo | You Plural/Formal
 Sila | They
 
-*Numbers (1-10)
-
 *Body Parts
 Ulo | Head | Masakit ang ulo ko | My head hurts
 Mukha | Face | <strike> Marumi ang mukha ko | My face is dirty</strike>
@@ -33,12 +31,6 @@ Pwet | Bootie
 Binti | Leg
 Tuhod | Knee
 Paa | Foot
-
-
-*Colors
-
-*People Descriptors
-
 
 * Fruits -> Mga prutas
 Mansanas | Apple

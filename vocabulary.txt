@@ -32,6 +32,21 @@ Binti | Leg
 Tuhod | Knee
 Paa | Foot
 
+*Common Adjetives
+Maganda | Beautiful
+Masaya | Fun
+Masakit | Painful
+Makati | Itchy
+Malaki | Big
+Maliit | Small
+Malinis | Clean
+Marumi | Dirty
+Mahabi | Long
+Maiksi | Short
+Nakakainis | Annoying
+Manipis | Thin
+Makapa | Thick
+
 * Fruits -> Mga prutas
 Mansanas | Apple
 Abukado | Avocado

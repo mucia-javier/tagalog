@@ -73,7 +73,7 @@ function MatchWordsOrPhrases(){
 	
 	
 	// Clear page and populate it with new stuff to give the feeling of a new window
-	document.getElementById("question").innerHTML = "";
+	document.getElementById("question").innerHTML = "<br>";
     document.getElementById("instruction").innerHTML = "<h4>Select a Cathegory</h4>";
     document.getElementById("question").style.display = "block";
     document.getElementById("answer").innerHTML = "";

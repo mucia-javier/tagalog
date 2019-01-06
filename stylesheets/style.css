@@ -28,9 +28,8 @@ rownote{
 	font-size: 0.8em;
 	}
 t0{
+	padding-left: 3em;
 	color: #253947;
-	//padding-left:2em;
-	text-align:center;
 	font-weight: bold;
 	font-size: 1.1em;
 	}
@@ -45,11 +44,12 @@ t2{
 	font-size: 1.1em;
 	}
 ilo{
+	padding-left:1em;
 	font-size: 1em;
 	color: #19262f;
 	}
 trans{
-	font-size: 0.8em;
+	font-size: 0.9em;
 	color: #888888;
 	}
 
@@ -58,9 +58,7 @@ trans{
 	}
 
 .entry{
-	/*background: white;*/
 	background-color: #ffffff;
-	padding: 4px;
 	margin-bottom: 10px;
     line-height: 1.4;
 	}

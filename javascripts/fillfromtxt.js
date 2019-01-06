@@ -23,12 +23,12 @@ function loadVocabulary() {
                     allEntries += "</div><div class='entry'><t0>"+row+"</t0><br>";
                     }
                 else{
-                    row = row.split("|")
+                    row = row.split("|");
                     allEntries +="<row><ilo>"+row[0]+"</ilo>&nbsp; <trans>"+row[1]+"</trans></row><br>";
                     }
                 }
             else
-                allEntries +="<br>"
+                allEntries +="<br>";
         }
         allEntries += "</div>";
         $('#content').html(allEntries);

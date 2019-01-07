@@ -12,15 +12,15 @@ Sila | They
 Ulo | Head | Masakit ang ulo ko | My head hurts
 Mukha | Face | <strike> Marumi ang mukha ko | My face is dirty</strike>
 Buhok | Hair | Maiksi ang buhok mo | Your hair is short
-Taynga | Ear | Ang taynga ko ay marumi | My ears are dirty
-Kilay | Eyebrow | Ang kilay niya ay manipis | Her/his eyebrows are thin
-Mata | Eye | Gusto ko ang mata mo | I like your eyes
+Taynga | Ear | Mga taynga ko ay marumi | My ears are dirty
+Kilay | Eyebrow | Mga kilay niya ay manipis | Her/his eyebrows are thin
+Mata | Eye | Gusto ko mga mata mo | I like your eyes
 Ilong | Nose | Ang ilong mo ay maliit | Your nose is small
 Baba | Chin | Palagi kong kinukurot ang baba ko | I am always pinching my chin
-Labi | Lip | Ang labi niya ay makapa | His/Her lips are thick
+Labi | Lip | Mga labi niya ay makapa | His/Her lips are thick
 Leeg | Neck | Makati ang leeg ko | My neck is itchy
 Dibdib | Chest | Masakit ang dibdib ko | My chest hurts
-Tiyan | Belly | Masakit ba ang tinay mo? | Does your stomach hurt?
+Tiyan | Belly | Masakit ba ang tiyan mo? | Does your stomach hurt?
 Likod | Back | Ang likod ni Fredi ay malaki | Fredi's back is big/long
 Braso | Arm | Makati ang braso ko | My arm is itchy
 Siko | Elbow | Ang siko ko ay marumi | My elbow is dirty

@@ -4,6 +4,7 @@ const mq = window.matchMedia( "(min-width: 481px)" );
 function init(){    // Get the initial Height of the document
     // Loads the previous URL in the history list
     // window.history.back();
+    
     }
 
 	
@@ -184,7 +185,7 @@ function PlayMatch(sectionContent, i){
        
     var completedElements = [];
         document.getElementById("question").style.display = "block";
-        document.getElementById("question").innerHTML = "<br><div class='question'>"+sectionContent.tagalog[i]+"<div><br>";
+        document.getElementById("question").innerHTML = "<br><div class='question'><tagq>"+sectionContent.tagalog[i]+"</tagq><div><br>";
         document.getElementById("answer").style.display = "block";
         document.getElementById("answer").innerHTML = "";
         
@@ -202,7 +203,13 @@ function PlayMatch(sectionContent, i){
                 button_i.value = sectionContent.english[i];
                 button_i.classList.add("choice_btn");
                 button_i.onclick = function(){
-                    alert("May Tama Ka\n"+sectionContent.tagalog[this.id]+"="+sectionContent.english[this.id]+"\n"+sectionContent.tag_example[this.id]);
+                    //alert("May Tama Ka\n"+sectionContent.tagalog[this.id]+"="+sectionContent.english[this.id]+"\n"+sectionContent.tag_example[this.id]);
+                    var modal = document.getElementById('myModal');
+                    modal.style.display = "block";
+                    document.getElementById('modal-body').innerHTML = "<may>May Tama Ka!</may><br><br><tag>"+ sectionContent.tagalog[this.id]+"</tag> is <eng>"+sectionContent.english[this.id]+"</eng><br><br><ilo>"+sectionContent.tag_example[this.id]+"</ilo><br><trans>"+sectionContent.eng_example[this.id]+"</trans><br><br>";
+                    document.getElementsByClassName("modal-footer")[0].onclick = function() {
+                        modal.style.display = "none";
+                        }
                     PlayMatch(sectionContent, i+1);
                     }
                 document.getElementById("answer").appendChild(button_i);

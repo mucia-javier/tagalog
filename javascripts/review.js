@@ -204,10 +204,14 @@ function PlayMatch(sectionContent, i){
                 button_i.classList.add("choice_btn");
                 button_i.onclick = function(){
                     //alert("May Tama Ka\n"+sectionContent.tagalog[this.id]+"="+sectionContent.english[this.id]+"\n"+sectionContent.tag_example[this.id]);
+                    var modalFooter = document.getElementById('modal-footer');
+                    modalFooter.classList.remove("red-wrong");
+                    modalFooter.classList.add("green-right");
+                    modalFooter.innerHTML = "<h5>Continue</h5>";
                     var modal = document.getElementById('myModal');
                     modal.style.display = "block";
                     document.getElementById('modal-body').innerHTML = "<may>May Tama Ka!</may><br><br><tag>"+ sectionContent.tagalog[this.id]+"</tag> is <eng>"+sectionContent.english[this.id]+"</eng><br><br><ilo>"+sectionContent.tag_example[this.id]+"</ilo><br><trans>"+sectionContent.eng_example[this.id]+"</trans><br><br>";
-                    document.getElementsByClassName("modal-footer")[0].onclick = function() {
+                    modalFooter.onclick = function() {
                         modal.style.display = "none";
                         }
                     setTimeout(function () {
@@ -234,7 +238,17 @@ function PlayMatch(sectionContent, i){
                 button_i.value = sectionContent.english[randomElementIndex];
                 button_i.classList.add("choice_btn");
                 button_i.onclick = function(){
-                    alert("Try Again "+sectionContent.english[this.id]+"="+sectionContent.tagalog[this.id]);
+                	var modalFooter = document.getElementById('modal-footer');
+                	modalFooter.classList.remove("green-right");
+                    modalFooter.classList.add("red-wrong");
+                    modalFooter.innerHTML = "<h5>Try Again</h5>";
+                	var modal = document.getElementById('myModal');
+                    modal.style.display = "block";
+                    document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><tag>"+sectionContent.tagalog[this.id]+"</tag> is <eng>"+sectionContent.english[this.id]+"</eng><br><br>";
+                    modalFooter.onclick = function() {
+                        modal.style.display = "none";
+                        }
+                    //alert("Try Again "+sectionContent.english[this.id]+"="+sectionContent.tagalog[this.id]);
                     }
                 document.getElementById("answer").appendChild(button_i);
                 //document.getElementById("answer").innerHTML += "<p>"+sectionContent.english[randomElementIndex]+"</p";

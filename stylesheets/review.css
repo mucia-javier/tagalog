@@ -207,9 +207,17 @@ button {
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  font-size: 1.4em;
   color: white;
 }
+
+.green-right{
+    background-color: #5cb85c;
+    }
+    
+.red-wrong{
+	background-color: #e03030;
+	}
 
 /* Add Animation */
 @-webkit-keyframes slideIn {

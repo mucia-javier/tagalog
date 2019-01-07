@@ -185,7 +185,7 @@ function PlayMatch(sectionContent, i){
        
     var completedElements = [];
         document.getElementById("question").style.display = "block";
-        document.getElementById("question").innerHTML = "<br><div class='question'><tagq>"+sectionContent.tagalog[i]+"</tagq><div><br>";
+        document.getElementById("question").innerHTML = "<div class='question'><tagq>"+sectionContent.tagalog[i]+"</tagq><div>";
         document.getElementById("answer").style.display = "block";
         document.getElementById("answer").innerHTML = "";
         

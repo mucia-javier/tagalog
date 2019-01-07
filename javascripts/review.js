@@ -210,7 +210,10 @@ function PlayMatch(sectionContent, i){
                     document.getElementsByClassName("modal-footer")[0].onclick = function() {
                         modal.style.display = "none";
                         }
-                    PlayMatch(sectionContent, i+1);
+                    setTimeout(function () {
+                        PlayMatch(sectionContent, i+1);
+                        }, 500);
+                    
                     }
                 document.getElementById("answer").appendChild(button_i);
                 //document.getElementById("question").appendChild(document.createElement("br"));

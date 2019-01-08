@@ -73,14 +73,14 @@ eng{
 	}
 tagq{
 	color: #e03030;
-	}
+	}x
 #content{
 	/*background: white;*/
 	}
 
 .entry{
 	background-color: #ffffff;
-	padding-bottom: .5em;
+	margin-bottom: .7em;
     line-height: 1.4;
 	}
 	

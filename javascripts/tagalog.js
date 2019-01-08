@@ -35,7 +35,15 @@ function openTab(evt, tabName) {
     }
     document.getElementById(tabName).style.display = "block";   // Will show only the tab clicked
     evt.currentTarget.className += " active";                   // Will set the selected tablink as active
-    document.body.style.height = document.body.style.height;
+    
+
+    // Resize the whole page according to size of the current frame displayed
+    var frame_name = tabName+"_frame";
+	var newPageHeight = document.getElementById(frame_name).contentWindow.document.body.offsetHeight+20;
+    document.getElementById(frame_name).style.height = newPageHeight+'px';
+    newPageHeight +=50;
+    
+    document.body.style.height = newPageHeight+'px';
     }
 
 

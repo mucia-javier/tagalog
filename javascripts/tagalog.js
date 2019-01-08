@@ -38,12 +38,12 @@ function openTab(evt, tabName) {
     
 
     // Resize the whole page according to size of the current frame displayed
+    document.body.style.height ="100vh";// newPageHeight+'px';
     var frame_name = tabName+"_frame";
 	var newPageHeight = document.getElementById(frame_name).contentWindow.document.body.offsetHeight+20;
     document.getElementById(frame_name).style.height = newPageHeight+'px';
-    newPageHeight +=50;
     
-    document.body.style.height = newPageHeight+'px';
+    
     }
 
 

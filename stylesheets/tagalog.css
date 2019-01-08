@@ -5,7 +5,7 @@
         }
 
 		#MainContent {
-				min-height: 600px;
+				
 				background-color: rgb(200,200,200);
 				
 				padding-top: 15px;
@@ -70,7 +70,7 @@
 				overflow: hidden;
 				width: 93%;
 				margin: 0px auto;
-				height: 100%;
+				
 				text-align: center;
 				display: none;
 				color: #F2F2F2;
@@ -91,7 +91,6 @@
 			z-index: 10;
 			padding: 10px 50px 10px 10px;
 			color: #fff;
-			background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
 			font-weight: 700;
 			box-shadow: 0 0 10px rgba(0,0,0,.5);
 			border-bottom-left-radius: 2px;
@@ -228,9 +227,22 @@ Small Device Styles
 @media screen and (max-width: 480px) {
 	html {
 		font-family: 'Open Sans';
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		overflow: hidden;
         }
 	
-	
+	body {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		overflow: hidden;
+		width: 100vw;
+		background-color: #ffffff;
+		color:#373737;
+		font-family: 'Open Sans';
+		}
 		#header_wrap {
 		  position:relative;
 		  height: 0px;
@@ -326,9 +338,9 @@ Small Device Styles
 
 		/* Style the tab content */
 		.tabcontent {
-		    overflow: hidden;
-		    width: 97%;
-		    margin: 0px auto;
+			
+		    
+		    width: 100%;
 		    text-align: center;
 		    display: none;
 		    color: #F2F2F2;
@@ -362,14 +374,7 @@ Small Device Styles
 		Theme Styles
 		*******************************************************************************/
 
-		body {
-			margin: 0;
-			
-			width: 100vw;
-			background-color: #ffffff;
-			color:#373737;
-			font-family: 'Open Sans';
-		}
+		
 
 		h1, h2, h3, h4, h5, h6 {
 		  margin: 10px 0;

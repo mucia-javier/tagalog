@@ -7,8 +7,7 @@
 		#MainContent {
 				min-height: 600px;
 				background-color: rgb(200,200,200);
-				background-image: url('../images/pattern.png'); repeat-x; center bottom;
-				height: 100%;
+				
 				padding-top: 15px;
 				width: 100%;
 		}
@@ -111,7 +110,7 @@
 
 		body {
 				margin: 0;
-				height: 100vh;
+				
 			width: 100vw;
 				background-color: #ffffff;
 			color:#373737;
@@ -335,7 +334,7 @@ Small Device Styles
 		    color: #F2F2F2;
 		    border-top: none;
 		    border-bottom: none;
-
+            height: 100vh;
 		}
 
 
@@ -365,7 +364,7 @@ Small Device Styles
 
 		body {
 			margin: 0;
-			height: 100vh;
+			
 			width: 100vw;
 			background-color: #ffffff;
 			color:#373737;

@@ -67,10 +67,8 @@
 
 		/* Style the tab content */
 		.tabcontent {
-				overflow: hidden;
 				width: 93%;
-				margin: 0px auto;
-				
+				margin: 0px;
 				text-align: center;
 				display: none;
 				color: #F2F2F2;
@@ -243,7 +241,11 @@ Small Device Styles
 		color:#373737;
 		font-family: 'Open Sans';
 		}
-		#header_wrap {
+	iframe{
+		
+        }
+        
+	#header_wrap {
 		  position:relative;
 		  height: 0px;
 		  width: 100%;
@@ -252,9 +254,9 @@ Small Device Styles
 
 		#MainContent {
 		    background-color: rgb(200,200,200);
-		    background-image: url('../images/pattern.png'); repeat-x; center bottom;
 		    padding-top: 0;
 		    width: 100%;
+		    
 		}
 
 
@@ -339,6 +341,10 @@ Small Device Styles
 		/* Style the tab content */
 		.tabcontent {
 			
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0px;
 		    
 		    width: 100%;
 		    text-align: center;

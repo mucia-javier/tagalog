@@ -35,6 +35,7 @@ function openTab(evt, tabName) {
     }
     document.getElementById(tabName).style.display = "block";   // Will show only the tab clicked
     evt.currentTarget.className += " active";                   // Will set the selected tablink as active
+    document.body.style.height = document.body.style.height;
     }
 
 

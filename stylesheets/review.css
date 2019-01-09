@@ -166,21 +166,23 @@ button {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(255,255,255,0.99); /* Black w/ opacity */
   -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.3s;
   animation-name: fadeIn;
-  animation-duration: 0.4s
+  animation-duration: 0.3s;
+  
 }
 
 /* Modal Content */
 .modal-content {
+	
   position: fixed;
-  bottom: 0;
+  bottom: 5em;
   background-color: #fefefe;
   width: 100%;
   -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.3s;
   animation-name: slideIn;
-  animation-duration: 0.4s
+  animation-duration: 0.3s
 }
 
 /* The Close Button */
@@ -205,12 +207,19 @@ button {
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 16px;
+    }
 
 .modal-footer {
-  padding: 2px 16px;
+  margin-right: 2em;
+  margin-left: 2em;
+  padding: 0.1em;
   font-size: 1.4em;
   color: white;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
 }
 
 .green-right{
@@ -224,12 +233,12 @@ button {
 /* Add Animation */
 @-webkit-keyframes slideIn {
   from {bottom: -300px; opacity: 0} 
-  to {bottom: 0; opacity: 1}
+  to {bottom: 5em; opacity: 1}
 }
 
 @keyframes slideIn {
   from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
+  to {bottom: 5em; opacity: 1}
 }
 
 @-webkit-keyframes fadeIn {

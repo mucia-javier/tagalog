@@ -1,3 +1,54 @@
+* Numbers 
+Sero | Zero
+Isa | One
+Dalawa | 2
+Tatlo | 3
+Apat | 4
+Lima | 5
+Anim | 6
+Pito | 7
+Walo | 8
+Siyam | 9
+Sampu | 10
+Labing-isa | 11
+Labindalawa | 12
+Labintatlo | 13
+Labing-apat | 14
+Labinlima | 15
+Labing-anim | 16
+Labimpito | 17
+Labing-walo | 18
+Labinsiyam | 19
+Dalawampu | 20
+Dalawampu?t-isa | 21
+Dalawampu?t-dalawa | 22
+Dalawampu?t-tatlo | 23
+Dalawampu?t-apat | 24
+Dalawampu?t-lima | 25
+Dalawampu?t-anim | 26
+Dalawampu?t-pito | 27
+Dalawampu?t-walo | 28
+Dalawampu?t-siyam | 29
+Tatlumpu | 30
+Apatnapu | 40
+Limampu | 50
+Animnapu | 60
+Pitumpu | 70
+Walumpu | 80
+Siyamnapu | 90
+Sandaan | 100
+Isandaan at apatnapu't tatlo | 143
+Dalawang daan | 200
+Tatlong daan | 300
+Apat na raan | 400
+Limang daan | 500
+Anim na raan | 600
+Pitong daan | 700
+Walong daan | 800
+Siyam na raan | 900
+Isang libo | 1000
+Dalawang libo | 2000
+
 *Subjective Pronouns
 Ako | I 
 Ikaw | You Singular 

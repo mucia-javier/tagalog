@@ -1,6 +1,6 @@
 * Numbers 
-Sero | Zero
-Isa | One
+Sero | 0
+Isa | 1
 Dalawa | 2
 Tatlo | 3
 Apat | 4
@@ -20,15 +20,15 @@ Labimpito | 17
 Labing-walo | 18
 Labinsiyam | 19
 Dalawampu | 20
-Dalawampu?t-isa | 21
-Dalawampu?t-dalawa | 22
-Dalawampu?t-tatlo | 23
-Dalawampu?t-apat | 24
-Dalawampu?t-lima | 25
-Dalawampu?t-anim | 26
-Dalawampu?t-pito | 27
-Dalawampu?t-walo | 28
-Dalawampu?t-siyam | 29
+Dalawampu't-isa | 21
+Dalawampu't-dalawa | 22
+Dalawampu't-tatlo | 23
+Dalawampu't-apat | 24
+Dalawampu't-lima | 25
+Dalawampu't-anim | 26
+Dalawampu't-pito | 27
+Dalawampu't-walo | 28
+Dalawampu't-siyam | 29
 Tatlumpu | 30
 Apatnapu | 40
 Limampu | 50

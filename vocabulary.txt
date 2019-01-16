@@ -1,3 +1,31 @@
+*Syllables (V)
+tá-o | person | TA-o
+pa-á | foot|pa-A
+i-yák |cry | i-YAK
+
+*Syllables (CV)
+ba-sa | read | ba-sa
+tá-o | person | TA-o
+i-ná | mother | i-NA
+ú-lo | head | U-lo
+
+*Syllables (VC)
+an-táy | wait |an-TAY
+am-bón | shower/drizzle | am-BON
+ak-yát | climb | ak-YAT
+ma-pa-ít | bitter | mapa-IT
+
+*Syllables (CVC)
+tak-bó | run | tak-BO
+bu-lak-lák| flower | bu-lak-LAK
+ta-lón | jump | ta-LON
+í-law | light | I-law
+
+
+
+*Time Units and Names
+Linggo | Sunday | Linggó 
+
 * Numbers 
 Sero | 0
 Isa | 1
@@ -60,8 +88,8 @@ Kayo | You Plural/Formal
 Sila | They
 
 *Body Parts
-Ulo | Head | Masakit ang ulo ko | My head hurts
-Mukha | Face | <strike> Marumi ang mukha ko | My face is dirty</strike>
+Úlo | Head | U-lo
+Mukha | Face | 
 Buhok | Hair | Maiksi ang buhok mo | Your hair is short
 Taynga | Ear | Mga taynga ko ay marumi | My ears are dirty
 Kilay | Eyebrow | Mga kilay niya ay manipis | Her/his eyebrows are thin
@@ -81,10 +109,10 @@ Baywang | Hip |
 Pwet | Bootie
 Binti | Leg
 Tuhod | Knee
-Paa | Foot
+Paá | Foot | pronounced <strong>pa-á</strong>
 
 *Common Adjetives
-Maganda | Beautiful
+Magandá| Beautiful | ma-gan-DA
 Masaya | Fun
 Masakit | Painful
 Makati | Itchy

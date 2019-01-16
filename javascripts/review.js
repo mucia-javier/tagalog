@@ -129,8 +129,8 @@ function GetSectionContent(){
 		section_type:sec_type,
         tagalog:[],
         english:[],
-        tag_example:[],
-        eng_example:[],
+        tag_note:[],
+        eng_note:[],
         };
 	
     var sectionName = this.id;
@@ -157,16 +157,16 @@ function GetSectionContent(){
                     sectionContent.english.push(row[1]);
                     if(sectionContent.section_type == "words"){
                     	if(!(typeof row[2] === 'undefined')){
-                            sectionContent.tag_example.push(row[2]);
+                            sectionContent.tag_note.push(row[2]);
                             }
                         else{
-                        	sectionContent.tag_example.push("");
+                        	sectionContent.tag_note.push("");
                         	}
                         if(!(typeof row[3] === 'undefined')){
-                            sectionContent.eng_example.push(row[3]);
+                            sectionContent.eng_note.push(row[3]);
                             }
                         else{
-                        	sectionContent.eng_example.push("");
+                        	sectionContent.eng_note.push("");
                             }
                     	}
                 	}
@@ -203,14 +203,20 @@ function PlayMatch(sectionContent, i){
                 button_i.value = sectionContent.english[i];
                 button_i.classList.add("choice_btn");
                 button_i.onclick = function(){
-                    //alert("May Tama Ka\n"+sectionContent.tagalog[this.id]+"="+sectionContent.english[this.id]+"\n"+sectionContent.tag_example[this.id]);
                     var modalFooter = document.getElementById('modal-footer');
                     modalFooter.classList.remove("red-wrong");
                     modalFooter.classList.add("green-right");
                     modalFooter.innerHTML = "<h5>Continue</h5>";
                     var modal = document.getElementById('myModal');
                     modal.style.display = "block";
-                    document.getElementById('modal-body').innerHTML = "<may>May Tama Ka!</may><br><br><tag>"+ sectionContent.tagalog[this.id]+"</tag> is <eng>"+sectionContent.english[this.id]+"</eng><br><br><ilo>"+sectionContent.tag_example[this.id]+"</ilo><br><trans>"+sectionContent.eng_example[this.id]+"</trans><br><br>";
+                    document.getElementById('modal-body').innerHTML = "<may>May Tama Ka!</may><br><br><tag>"+ sectionContent.tagalog[this.id]+"</tag> is <eng>"+sectionContent.english[this.id]+"</eng><br>"; 
+                    if(!(typeof sectionContent.tag_note[this.id] === 'undefined')){
+                        document.getElementById('modal-body').innerHTML += "<br><strong><ilo>"+sectionContent.tag_note[this.id]+"</ilo></strong><br>";
+                        }
+                    if(!(typeof sectionContent.eng_note[this.id] === 'undefined')){
+                        document.getElementById('modal-body').innerHTML += "<trans>"+sectionContent.eng_note[this.id]+"</trans><br>";
+                        }
+                    document.getElementById('modal-body').innerHTML += "<br>";
                     modalFooter.onclick = function() {
                         modal.style.display = "none";
                         }

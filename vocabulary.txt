@@ -21,8 +21,56 @@ bu-lak-lák| flower | bu-lak-LAK
 ta-lón | jump | ta-LON
 í-law | light | I-law
 
+*Stress
+anák | child | a-NAK
+amá | father| a-MA
+iná | mother| i-NA
+bulaklák | flower| bu-lak-LAK
+malakás | strong | ma-la-KAS
+babáe | woman |ba-BA-e
+laláki |man| la-LA-ki
+maínit| ma-I-nit | hot
+malínis| clean| ma-LI-nis
+táo | person | TA-o
+punò | tree| PU-noQ
+kandilà | candle | kan-DI-laQ
+pusà | cat | PU-saQ
+susì | key | SU-siQ
+batà | child | BA-taQ
+punô | full | pu-noQ
+sampû | ten | sam-puQ
+bakyâ | wooden shoes| bak-yaQ
+masamâ | bad|ma-sa-maQ
+gintô | gold |gin-toQ
+kaibígan |friend | ka-i-BI-gan
+kaibigán | desire | ka-i-bi-GAN
+káibigán | have mutual understanding with |KA-i-bi-GAN
+kaíbigan |  sweetheart | ka-I-bi-gan
+makaalís | be able to leave | ma-ka-a-LIS
+makáalis | leave unintentionally | ma-KA-a-lis
+matúlog | sleep | ma-TU-log
+matulóg | sleep unintentionally| ma-tu-LOG
+kabatáan | youth | ka-ba-TA-an
+luhà | tear | LU-haQ
+luhaán | miserable | lu-ha-AN
+punuín | to fill with |pu-nu-IN
+susián | keyhole | su-si-AN
+kumáin | to eat | ku-MA-in
+kumain ká | you may eat | ku-ma-in KA
+hindî | no | hindiQ
+hindi pá | not yet | hin-di PA
+hindi pô | no sir/madam | hin-di poQ
+ganitó | alike | ga-ni-TO
+ganito bá? | like this? | ga-ni-to BA
+malápit| near | ma-LA-pit
+malapit ná | it is near | ma-la-pit NA
+pag-ása | hope | pagQ-A-sa
+mag-alís | to remove | magQ-a-LIS
+mag-isá | alone | magQ-i-SA
+pag-íbig | love | pagQ-I-big
+
 *Time Units and Names
-Linggo | Sunday | Linggó 
+Linggo | Sunday | LinGGO
 
 * Numbers 
 Sero | 0
@@ -87,7 +135,7 @@ Sila | They
 
 *Body Parts
 Úlo | Head | U-lo
-Mukha | Face | 
+Mukha | Face
 Buhok | Hair | Maiksi ang buhok mo | Your hair is short
 Taynga | Ear | Mga taynga ko ay marumi | My ears are dirty
 Kilay | Eyebrow | Mga kilay niya ay manipis | Her/his eyebrows are thin
@@ -103,11 +151,11 @@ Braso | Arm | Makati ang braso ko | My arm is itchy
 Siko | Elbow | Ang siko ko ay marumi | My elbow is dirty
 Kamay | Hand | Masakit ba ang kamay mo? | Does your hand hurt?
 Daliri | Finger | Malinis ba mga daliri mo? | Are your fingers clean?
-Baywang | Hip | 
+Baywang | Hip
 Pwet | Bootie
 Binti | Leg
 Tuhod | Knee
-Paá | Foot | pronounced <strong>pa-á</strong>
+Paá | Foot | pa-A
 
 *Common Adjetives
 Magandá| Beautiful | ma-gan-DA

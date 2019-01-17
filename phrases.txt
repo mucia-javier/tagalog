@@ -1,12 +1,15 @@
 *Greetings
-Manganda umaga | Good Morning
-Magandang hapon | Good Afternoon
-Magandang gabi | Good Evening
-Kumusta ka na | How are you (friendly)
-Kumusta na po kayo | How are you (polite)
-Mabuti. Ikaw? | Fine. You?
-Mabuti rin. | Fine too
-Ingat | Take care
+magandáng áraw| good day
+magandáng umága | good morning
+magandáng tanghálì | good noon |covers lunchtime |from 11am to 1pm
+magandáng hápon | good afternoon
+magandáng gabí | good evening
+kumusta ka na? | how are you?
+kumusta na po kayo | how are you? (polite)
+mabuti ikaw? | fine you?
+mabuti rin | fine too
+paálam | goodbye
+ingat | take care
 
 *Common Expressions
 Salamat | Thank You

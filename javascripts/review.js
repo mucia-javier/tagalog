@@ -155,7 +155,7 @@ function GetSectionContent(){
                 	row = row.split("|");
                     sectionContent.tagalog.push(row[0]);
                     sectionContent.english.push(row[1]);
-                    if(sectionContent.section_type == "words"){
+                   // if(sectionContent.section_type == "words"){
                     	if(!(typeof row[2] === 'undefined')){
                             sectionContent.tag_note.push(row[2]);
                             }
@@ -168,7 +168,7 @@ function GetSectionContent(){
                         else{
                         	sectionContent.eng_note.push("");
                             }
-                    	}
+                    //	}
                 	}
                 }
             }

@@ -42,7 +42,7 @@ function openTab(evt, tabName) {
     var frame_name = tabName+"_frame";
 	
     if( frame_name == "notes_frame" || frame_name == "review_frame"){
-        document.getElementById(frame_name).style.height = "100%";
+        document.getElementById(frame_name).style.height = "100vh";
         }
     else{
     	var newPageHeight = document.getElementById(frame_name).contentWindow.document.body.offsetHeight+20;

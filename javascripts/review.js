@@ -263,22 +263,7 @@ function PlayMatch(sectionContent, i){
         	
             }
             
-    /*
-        (right amswer hasnt been given &(last spot for answers OR random says say it))
-            show right answer
-                    var button_i = document.createElement("button");
-                    var t =  document.createTextNode(sectionContent.english[i]);
-                    button_i.appendChild(t);
-                    button_i.id = i;
-                    button_i.value = sectionContent.english[i];
-                    button_i.classList.add("review_btn");
-                    button_i.onclick = function(){
-                    	alert(this.id+", value"+this.value);
-                        }
-                    document.getElementById("answer").appendChild(button_i);
-                    //document.getElementById("question").appendChild(document.createElement("br"));
-                    //document.getElementById("question").appendChild(document.createElement("br"));
-    */
+    
         
 	}
  

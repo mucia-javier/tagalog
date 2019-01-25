@@ -41,8 +41,11 @@ function openTab(evt, tabName) {
     document.body.style.height ="100vh";// newPageHeight+'px';
     var frame_name = tabName+"_frame";
 	
-    if( frame_name == "notes_frame" || frame_name == "review_frame"){
-        document.getElementById(frame_name).style.height = "100vh";
+    if( frame_name == "notes_frame"){
+        document.getElementById(frame_name).style.height = "100%";
+        }
+    else if(frame_name == "review_frame"){
+        	document.getElementById(frame_name).style.height = "100vh";
         }
     else{
     	var newPageHeight = document.getElementById(frame_name).contentWindow.document.body.offsetHeight+20;

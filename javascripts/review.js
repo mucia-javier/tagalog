@@ -268,7 +268,8 @@ var descriptors = [];
 var markers = [];
 var nouns = [];
 function CompleteSentenceMode(){
-	alert("comp selected");
+	document.getElementById("question").innerHTML = "";
+	document.getElementById("question").style.display = "none";
 	var back_btn = document.createElement("button");
 	back_btn.value = "back_btn";
 	back_btn.id = "back_btn";
@@ -298,36 +299,43 @@ function CompleteSentenceMode(){
                 	sentences.push(row);
                     }
                 else if(arrayName=="descriptors"){
+                	row = row.split("|");
+                    row = row[0].replace(/\s+/g, '');
                 	descriptors.push(row);
                 	}
                 else if(arrayName=="markers"){
+                	row = row.split("|");
+                    row = row[0];
                 	markers.push(row);
                 	}
                 else if(arrayName=="nouns") {
+                	row = row.split("|");
+                    row = row[0].replace(/\s+/g, '');
                 	nouns.push(row);
                 	}   
                 }
             }
         }, 'text');
-    
-    sentences = sentences.sort(function() { return 0.5 - Math.random() });
+	alert(sentences.length);
+	sentences = sentences.sort(function() { return 0.5 - Math.random() });
 	descriptors = descriptors.sort(function() { return 0.5 - Math.random() });
 	markers = markers.sort(function() { return 0.5 - Math.random() });
 	nouns = nouns.sort(function() { return 0.5 - Math.random() });
-	PlayCompleteTheSentence(0);
+    PlayCompleteTheSentence(0);
 	}
 
 function PlayCompleteTheSentence(sentence_index){
 	if(sentence_index >= sentences.length){
-		return;
+		window.location.href = window.location.href;
 		}
 		
 		
 	var a_sentence = sentences[sentence_index].split("|");
 	// Clear page and populate it with new stuff
-	document.getElementById("question").innerHTML = "";
+	document.getElementById("submit_area").innerHTML = "";
+	document.getElementById("inquiry").innerHTML =  "<tagq>";
     document.getElementById("instruction").innerHTML = "<br><br><h4>"+a_sentence[1];+"</h4>"; //Show the english equivalent
-    document.getElementById("question").style.display = "block";
+    document.getElementById("inquiry").style.display = "block";
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "block";
 	
@@ -339,7 +347,7 @@ function PlayCompleteTheSentence(sentence_index){
 	sentArray.push(markers[Math.floor(Math.random() * markers.length)]);
 		
 	sentArray = sentArray.sort(function() { return 0.5 - Math.random() });
-	alert("okay");
+	
 	for(var i=0; i<sentArray.length; i++){
 		var button_i = document.createElement("button");
         var t =  document.createTextNode(sentArray[i]);
@@ -347,11 +355,33 @@ function PlayCompleteTheSentence(sentence_index){
         button_i.value = sentArray[i];
         button_i.classList.add("choice_btn");
         button_i.onclick = function(){
-                    document.getElementById("question").innerHTML += this.value+" ";
+                    document.getElementById("inquiry").innerHTML += this.value+" ";
                     //possibly remove this button when used
                     }
         document.getElementById("answer").appendChild(button_i);
 		}
+	
+	var clear_button = document.createElement("button");
+    var t =  document.createTextNode("Clear");
+    clear_button.appendChild(t);
+    clear_button.id = "clear";;
+    clear_button.classList.add("review_btn");
+    clear_button.onclick =function(){
+    	PlayCompleteTheSentence(sentence_index);
+        }
+    document.getElementById("submit_area").appendChild(clear_button);
+    
+		
+	var submit_button = document.createElement("button");
+    var t =  document.createTextNode("Submit");
+    submit_button.appendChild(t);
+    submit_button.id = "submit";;
+    submit_button.classList.add("review_btn");
+    submit_button.onclick = function(){
+    	alert("*"+document.getElementById("inquiry").textContent+"*");
+    	}
+    document.getElementById("submit_area").appendChild(submit_button);
+    document.getElementById("submit_area").style.display = "block";
 	}
 
  

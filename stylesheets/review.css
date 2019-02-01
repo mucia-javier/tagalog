@@ -13,15 +13,18 @@ body {
 #instruction {
 	color: #a0a0a0;
 	}
-.question{
+.question, inquiry{
 	padding-top: 0.3em;
 	padding-bottom: 0.3em;
 	font-size: 2.2em;
-	font-weight: bold;
 	font-family: 'Open Sans';
 	color: #19262f;
 	}
-
+.inquiry{
+	color: #e03030;
+	font-size: 1.5em;
+	font-weight: bold;
+	}
 button {
 	font-family: 'Open Sans';
 	}

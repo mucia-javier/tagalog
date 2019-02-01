@@ -158,19 +158,35 @@ Tuhod | Knee
 Paá | Foot | pa-A
 
 *Common Adjetives
-Magandá| Beautiful | ma-gan-DA
-Masaya | Fun
-Masakit | Painful
-Makati | Itchy
-Malaki | Big
-Maliit | Small
-Malinis | Clean
-Marumi | Dirty
-Mahabi | Long
-Maiksi | Short
-Nakakainis | Annoying
-Manipis | Thin
-Makapa | Thick
+marúnong | intelligent
+matabâ | fat
+mabaít | kind
+mabúti | good
+maínit | hot
+malamíg | cold
+bágo | new
+lumà | old | inanimate
+matandâ | old | animate
+múra | cheap
+mahál | expensive
+masaráp | delicious
+malusóg | healthy
+mataás | high
+mababà | low
+mahírap | poor | difficult
+magandá| beautiful | ma-gan-DA
+masaya | fun
+masakit | painful
+makati | itchy
+malakí | big
+maliít | small
+malínis | clean
+marumi | dirty
+mahabi | long
+maiksi | short
+nakakainis | annoying
+manipis | thin
+makapa | thick
 
 * Fruits -> Mga prutas
 Mansanas | Apple

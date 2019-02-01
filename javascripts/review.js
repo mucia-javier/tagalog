@@ -258,19 +258,101 @@ function PlayMatch(sectionContent, i){
                     }
                 document.getElementById("answer").appendChild(button_i);
                 //document.getElementById("answer").innerHTML += "<p>"+sectionContent.english[randomElementIndex]+"</p";
-                }
-        	
-        	
+                }        	
             }
-            
-    
-        
 	}
- 
- 
- 
- 
- 
+
+
+var sentences = [];
+var descriptors = [];
+var markers = [];
+var nouns = [];
+function CompleteSentenceMode(){
+	alert("comp selected");
+	var back_btn = document.createElement("button");
+	back_btn.value = "back_btn";
+	back_btn.id = "back_btn";
+	back_btn.appendChild(document.createTextNode("Main Menu"));
+	back_btn.classList.add("back_btn");
+	back_btn.onclick = function(){
+		 window.location.href = window.location.href;
+		}
+	document.getElementById("navigation_section").innerHTML = "";
+	document.getElementById("navigation_section").appendChild(back_btn);
+	document.getElementById("navigation_section").style.textAlign = "left"; 
+	
+	var fileName = "sentences.txt";
+	$.get(fileName, function(data) {
+       //process text file line by line
+        var lines = data.split("\n");
+        
+        var arrayName="";
+        for (var i = 0, len = lines.length; i < len; i++) {
+            var row = lines[i];
+            if(row){ // Ignore empty lines in text file
+                if(row.startsWith("*")){ //This is a title/header
+                    row = row.slice(1, ); // ignore the '*' character
+                    arrayName=row;
+                    }
+                else if(arrayName=="sentences"){
+                	sentences.push(row);
+                    }
+                else if(arrayName=="descriptors"){
+                	descriptors.push(row);
+                	}
+                else if(arrayName=="markers"){
+                	markers.push(row);
+                	}
+                else if(arrayName=="nouns") {
+                	nouns.push(row);
+                	}   
+                }
+            }
+        }, 'text');
+    
+    sentences = sentences.sort(function() { return 0.5 - Math.random() });
+	descriptors = descriptors.sort(function() { return 0.5 - Math.random() });
+	markers = markers.sort(function() { return 0.5 - Math.random() });
+	nouns = nouns.sort(function() { return 0.5 - Math.random() });
+	PlayCompleteTheSentence(0);
+	}
+
+function PlayCompleteTheSentence(sentence_index){
+	if(sentence_index >= sentences.length){
+		return;
+		}
+	
+	var a_sentence = sentences[sentence_index].split("|");
+	// Clear page and populate it with new stuff
+	document.getElementById("question").innerHTML = "";
+    document.getElementById("instruction").innerHTML = "<br><br><h4>"+a_sentence[1];+"</h4>"; //Show the english equivalent
+    document.getElementById("question").style.display = "block";
+    document.getElementById("answer").innerHTML = "";
+    document.getElementById("answer").style.display = "block";
+	
+	var sentArray = a_sentence[0].split(" ");
+	sentArray.push(descriptors[Math.floor(Math.random() * descriptors.length)]);
+	sentArray.push(descriptors[Math.floor(Math.random() * descriptors.length)]);
+	sentArray.push(nouns[Math.floor(Math.random() * nouns.length)]);
+	sentArray.push(nouns[Math.floor(Math.random() * nouns.length)]);
+	sentArray.push(markers[Math.floor(Math.random() * markers.length)]);
+		
+	sentArray = sentArray.sort(function() { return 0.5 - Math.random() });
+	alert("okay");
+	for(var i=0; i<sentArray.length; i++){
+		var button_i = document.createElement("button");
+        var t =  document.createTextNode(sentArray[i]);
+        button_i.appendChild(t);
+        button_i.value = sentArray[i];
+        button_i.classList.add("choice_btn");
+        button_i.onclick = function(){
+                    document.getElementById("question").innerHTML += this.value+" ";
+                    //possibly remove this button when used
+                    }
+        document.getElementById("answer").appendChild(button_i);
+		}
+	}
+
  
  
  

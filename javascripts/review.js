@@ -321,7 +321,8 @@ function PlayCompleteTheSentence(sentence_index){
 	if(sentence_index >= sentences.length){
 		return;
 		}
-	
+		
+		
 	var a_sentence = sentences[sentence_index].split("|");
 	// Clear page and populate it with new stuff
 	document.getElementById("question").innerHTML = "";

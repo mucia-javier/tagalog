@@ -185,7 +185,7 @@ function PlayMatch(sectionContent, i){
        
     var completedElements = [];
         document.getElementById("question").style.display = "block";
-        document.getElementById("question").innerHTML = "<div class='question'><tagq>"+sectionContent.tagalog[i]+"</tagq><div>";
+        document.getElementById("question").innerHTML = "<tagq>"+sectionContent.tagalog[i]+"</tagq>";
         document.getElementById("answer").style.display = "block";
         document.getElementById("answer").innerHTML = "";
         
@@ -333,9 +333,11 @@ function PlayCompleteTheSentence(sentence_index){
 	var a_sentence = sentences[sentence_index].split("|");
 	// Clear page and populate it with new stuff
 	document.getElementById("submit_area").innerHTML = "";
-	document.getElementById("inquiry").innerHTML =  "<tagq>";
+	document.getElementById("inquiry").classList.add("inquiryDisabled");
+	document.getElementById("inquiry").classList.remove("inquiry");
+	document.getElementById("inquiry").style.display = "block";
+	document.getElementById("inquiry").innerHTML =  "-";
     document.getElementById("instruction").innerHTML = "<br><br><h4>"+a_sentence[1];+"</h4>"; //Show the english equivalent
-    document.getElementById("inquiry").style.display = "block";
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "block";
 	
@@ -349,14 +351,24 @@ function PlayCompleteTheSentence(sentence_index){
 	sentArray = sentArray.sort(function() { return 0.5 - Math.random() });
 	
 	for(var i=0; i<sentArray.length; i++){
+		if(sentArray[i]=="")
+		    continue;
 		var button_i = document.createElement("button");
         var t =  document.createTextNode(sentArray[i]);
         button_i.appendChild(t);
         button_i.value = sentArray[i];
         button_i.classList.add("choice_btn");
         button_i.onclick = function(){
-                    document.getElementById("inquiry").innerHTML += this.value+" ";
-                    //possibly remove this button when used
+        	        document.getElementById("inquiry").classList.remove("inquiryDisabled");
+	                document.getElementById("inquiry").classList.add("inquiry");
+        	        if(document.getElementById("inquiry").textContent=="-"){
+                        document.getElementById("inquiry").innerHTML = this.value+" ";
+                        }
+                    else{
+                    	document.getElementById("inquiry").innerHTML += this.value+" ";
+                    	}
+                    //document.getElementById("answer").removeChild(this);
+                    //enable to remove this button from the options when used
                     }
         document.getElementById("answer").appendChild(button_i);
 		}
@@ -365,22 +377,56 @@ function PlayCompleteTheSentence(sentence_index){
     var t =  document.createTextNode("Clear");
     clear_button.appendChild(t);
     clear_button.id = "clear";;
-    clear_button.classList.add("review_btn");
+    clear_button.classList.add("submit_btn");
     clear_button.onclick =function(){
     	PlayCompleteTheSentence(sentence_index);
         }
     document.getElementById("submit_area").appendChild(clear_button);
     
-		
+	//document.getElementById("submit_area").appendChild(document.createElement("p"));
+	
 	var submit_button = document.createElement("button");
     var t =  document.createTextNode("Submit");
     submit_button.appendChild(t);
     submit_button.id = "submit";;
-    submit_button.classList.add("review_btn");
+    submit_button.classList.add("submit_btn");
     submit_button.onclick = function(){
-    	alert("*"+document.getElementById("inquiry").textContent+"*");
+    	if(a_sentence[0]==document.getElementById("inquiry").textContent){
+    	    var modalFooter = document.getElementById('modal-footer');
+            modalFooter.classList.remove("red-wrong");
+            modalFooter.classList.add("green-right");
+            modalFooter.innerHTML = "<h5>Continue</h5>";
+            var modal = document.getElementById('myModal');
+            modal.style.display = "block";
+            document.getElementById('modal-body').innerHTML = "<may>May Tama Ka!</may><br><br><tag>"+ a_sentence[0]+"</tag> <br>is<br><eng>"+a_sentence[1]+"</eng><br>";
+            document.getElementById('modal-body').innerHTML += "<br>";
+            modalFooter.onclick = function() {
+                modal.style.display = "none";
+                PlayCompleteTheSentence(sentence_index+1);
+                }
+                /*
+            setTimeout(function () {
+                PlayMatch(sectionContent, i+1);
+                }, 500);
+                */
+    	    }
+        else{
+        	document.getElementById('modal-body').innerHTML += "<nq>Not Quite!</nq><br><br><br>";
+            var modalFooter = document.getElementById('modal-footer');
+            modalFooter.classList.remove("green-right");
+            modalFooter.classList.add("red-wrong");
+            modalFooter.innerHTML = "<h5>Try Again</h5>";
+            var modal = document.getElementById('myModal');
+            modal.style.display = "block";
+            modalFooter.onclick = function() {
+                modal.style.display = "none";
+                PlayCompleteTheSentence(sentence_index);
+                }
+        	}
     	}
     document.getElementById("submit_area").appendChild(submit_button);
+    
+    
     document.getElementById("submit_area").style.display = "block";
 	}
 

@@ -1,42 +1,42 @@
 *sentences
-magandá si Kristel| Kristel is beautiful
-si Ruth ay babáe| Ruth is a woman
-si Peter ay laláki| Peter is a man
-si Helen ay batáng babáe| Helen is a young girl
-si Tom ay batáng laláki| Tom is a young boy
-si Ruth ay magandá| Ruth is beautiful
-si Peter ay marúnong| Peter is intelligent
+magandá si Kristel | Kristel is beautiful
+si Ruth ay babáe | Ruth is a woman
+si Peter ay laláki | Peter is a man
+si Helen ay batáng babáe | Helen is a young girl
+si Tom ay batáng laláki | Tom is a young boy
+si Ruth ay magandá | Ruth is beautiful
+si Peter ay marúnong | Peter is intelligent
 
 *descriptors
-marúnong| intelligent
-matabâ| fat
-mabaít| kind
-mabúti| good
-maínit| hot
-malamíg| cold
-bágo| new
-lumà| old| inanimate
-matandâ| old| animate
-múra| cheap
-mahál| expensive
-masaráp| delicious
-malusóg| healthy
-mataás| high
-mababà| low
-mahírap| poor| difficult
-magandá| beautiful| ma-gan-DA
-masaya| fun
-masakit| painful
-makati| itchy
-malakí| big
-maliít| small
-malínis| clean
-marumi| dirty
-mahabi| long
-maiksi| short
-nakakainis| annoying
-manipis| thin
-makapa| thick
+marúnong | intelligent
+matabâ | fat
+mabaít | kind
+mabúti | good
+maínit | hot
+malamíg | cold
+bágo | new
+lumà | old | inanimate
+matandâ | old | animate
+múra | cheap
+mahál | expensive
+masaráp | delicious
+malusóg | healthy
+mataás | high
+mababà | low
+mahírap | poor | difficult
+magandá | beautiful | ma-gan-DA
+masaya | fun
+masakit | painful
+makati | itchy
+malakí | big
+maliít | small
+malínis | clean
+marumi | dirty
+mahabi | long
+maiksi | short
+nakakainis | annoying
+manipis | thin
+makapa | thick
 
 *markers
 si
@@ -46,25 +46,25 @@ ang mga
 mga
 
 *nouns
-Úlo| Head| U-lo
-Mukha| Face
-Buhok| Hair| Maiksi ang buhok mo| Your hair is short
-Taynga| Ear| Mga taynga ko ay marumi| My ears are dirty
-Kilay| Eyebrow| Mga kilay niya ay manipis| Her/his eyebrows are thin
-Mata| Eye| Gusto ko mga mata mo| I like your eyes
-Ilong| Nose| Ang ilong mo ay maliit| Your nose is small
-Baba| Chin| Palagi kong kinukurot ang baba ko| I am always pinching my chin
-Labi| Lip| Mga labi niya ay makapa| His/Her lips are thick
-Leeg| Neck| Makati ang leeg ko| My neck is itchy
-Dibdib| Chest| Masakit ang dibdib ko| My chest hurts
-Tiyan| Belly| Masakit ba ang tiyan mo?| Does your stomach hurt?
-Likod| Back| Ang likod ni Fredi ay malaki| Fredi's back is big/long
-Braso| Arm| Makati ang braso ko| My arm is itchy
-Siko| Elbow| Ang siko ko ay marumi| My elbow is dirty
-Kamay| Hand| Masakit ba ang kamay mo?| Does your hand hurt?
-Daliri| Finger| Malinis ba mga daliri mo?| Are your fingers clean?
-Baywang| Hip
-Pwet| Bootie
-Binti| Leg
-Tuhod| Knee
-Paá| Foot| pa-A
+Úlo | Head | U-lo
+Mukha | Face
+Buhok | Hair | Maiksi ang buhok mo | Your hair is short
+Taynga | Ear | Mga taynga ko ay marumi | My ears are dirty
+Kilay | Eyebrow | Mga kilay niya ay manipis | Her/his eyebrows are thin
+Mata | Eye | Gusto ko mga mata mo | I like your eyes
+Ilong | Nose | Ang ilong mo ay maliit | Your nose is small
+Baba | Chin | Palagi kong kinukurot ang baba ko | I am always pinching my chin
+Labi | Lip | Mga labi niya ay makapa | His/Her lips are thick
+Leeg | Neck | Makati ang leeg ko | My neck is itchy
+Dibdib | Chest | Masakit ang dibdib ko | My chest hurts
+Tiyan | Belly | Masakit ba ang tiyan mo? | Does your stomach hurt?
+Likod | Back | Ang likod ni Fredi ay malaki | Fredi's back is big/long
+Braso | Arm | Makati ang braso ko | My arm is itchy
+Siko | Elbow | Ang siko ko ay marumi | My elbow is dirty
+Kamay | Hand | Masakit ba ang kamay mo? | Does your hand hurt?
+Daliri | Finger | Malinis ba mga daliri mo? | Are your fingers clean?
+Baywang | Hip
+Pwet | Bootie
+Binti | Leg
+Tuhod | Knee
+Paá | Foot | pa-A

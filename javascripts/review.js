@@ -316,12 +316,14 @@ function CompleteSentenceMode(){
                 }
             }
         }, 'text');
-	alert(sentences.length);
 	sentences = sentences.sort(function() { return 0.5 - Math.random() });
 	descriptors = descriptors.sort(function() { return 0.5 - Math.random() });
 	markers = markers.sort(function() { return 0.5 - Math.random() });
 	nouns = nouns.sort(function() { return 0.5 - Math.random() });
-    PlayCompleteTheSentence(0);
+	setTimeout(function () {
+                PlayCompleteTheSentence(0);
+                }, 500);
+    
 	}
 
 function PlayCompleteTheSentence(sentence_index){
@@ -404,11 +406,6 @@ function PlayCompleteTheSentence(sentence_index){
                 modal.style.display = "none";
                 PlayCompleteTheSentence(sentence_index+1);
                 }
-                /*
-            setTimeout(function () {
-                PlayMatch(sectionContent, i+1);
-                }, 500);
-                */
     	    }
         else{
         	document.getElementById('modal-body').innerHTML += "<nq>Not Quite!</nq><br><br><br>";

@@ -411,7 +411,7 @@ function PlayCompleteTheSentence(sentence_index){
                 }
     	    }
         else{
-        	document.getElementById('modal-body').innerHTML += "<nq>Not Quite!</nq><br><br><br>";
+        	document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><br>";
             var modalFooter = document.getElementById('modal-footer');
             modalFooter.classList.remove("green-right");
             modalFooter.classList.add("red-wrong");

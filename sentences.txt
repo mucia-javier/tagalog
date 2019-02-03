@@ -23,7 +23,7 @@ ang Maynilá at ang Washington ay mga lungsod | Manila and Washington are cities
 ang Baguio at ang Tagaytáy ay mga malalamíg na lugár | Baguio and Tagaytay are cool places
 ang áso at ang batà ay malilínis | the dog and the kid are clean
 ang mga batá at áso ay mababaít | the kids and the dog are good
-sina Ruth at Peter ay magkapatíd | Ruth amd Peter are siblings
+sina Ruth at Peter ay magkapatíd | Ruth and Peter are siblings
 Ang America at Aprika ay malalakí | America and Africa are big
 si Peter at si Ruth ay mababaít at marurúnong | Peter and Ruth are kind and intelligent
 sina Helen at Tom ay malilínis | Helen and Tom are clean
@@ -34,7 +34,6 @@ malalakí ang báhay | the house is big
 kumákain ang batà | the kid is eating
 mabaít si Peter | Peter is kind
 mga batà sina Peter at Mary | Peter and Mary are kids
-
 
 *descriptors
 marúnong | intelligent

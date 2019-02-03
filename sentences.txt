@@ -13,6 +13,28 @@ ang áso ay mabait | the dog is good
 ang batà at ang áso ay mababaít | the kid and the dog are good
 ang mga batà at ang mga áso ay mababaít | the children and the dogs are good
 ang mga sapátos ay malilínis | the shoes are clean
+ang barò at ang sapátos ay malilínis | the dress and the shoes are clean
+ang mga barò at ang mga sapátos ay maililínis | the dresses and the shoes are clean
+ang Philipínas ay maliít | the Philipines is small
+ang USA ay malalakí | the US is big
+ang Maynilà ay isang lungsod ng Philipínas | Manila is a city of the Philipines
+ang WashingtonDC ay púnong-lungsód ng USA | WashingtonDC is the capital of the USA
+ang Maynilá at ang Washington ay mga lungsod | Manila and Washington are cities
+ang Baguio at ang Tagaytáy ay mga malalamíg na lugár | Baguio and Tagaytay are cool places
+ang áso at ang batà ay malilínis | the dog and the kid are clean
+ang mga batá at áso ay mababaít | the kids and the dog are good
+sina Ruth at Peter ay magkapatíd | Ruth amd Peter are siblings
+Ang America at Aprika ay malalakí | America and Africa are big
+si Peter at si Ruth ay mababaít at marurúnong | Peter and Ruth are kind and intelligent
+sina Helen at Tom ay malilínis | Helen and Tom are clean
+ang batà at si Ruth ay magagandá | the woman and ruth are beautiful
+sina Helen at Tom at ang áso ay mababaít | Helen, Tom and the dog are good
+ang báhay ay malalakí | the house is big
+malalakí ang báhay | the house is big
+kumákain ang batà | the kid is eating
+mabaít si Peter | Peter is kind
+mga batà sina Peter at Mary | Peter and Mary are kids
+
 
 *descriptors
 marúnong | intelligent

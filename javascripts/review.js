@@ -316,13 +316,14 @@ function CompleteSentenceMode(){
                 }
             }
         }, 'text');
-	sentences = sentences.sort(function() { return 0.5 - Math.random() });
-	descriptors = descriptors.sort(function() { return 0.5 - Math.random() });
-	markers = markers.sort(function() { return 0.5 - Math.random() });
-	nouns = nouns.sort(function() { return 0.5 - Math.random() });
-	setTimeout(function () {
+	//sentences = sentences.sort(function() { return 0.5 - Math.random() });
+	//descriptors = descriptors.sort(function() { return 0.5 - Math.random() });
+	//markers = markers.sort(function() { return 0.5 - Math.random() });
+	//nouns = nouns.sort(function() { return 0.5 - Math.random() });
+    setTimeout(function () {
+    	        sentences = sentences.sort(function() { return 0.5 - Math.random() });
                 PlayCompleteTheSentence(0);
-                }, 500);
+                }, 600);
     
 	}
 
@@ -369,6 +370,7 @@ function PlayCompleteTheSentence(sentence_index){
                     else{
                     	document.getElementById("inquiry").innerHTML += this.value+" ";
                     	}
+                    //this.style.display = "none";
                     //document.getElementById("answer").removeChild(this);
                     //enable to remove this button from the options when used
                     }
@@ -381,7 +383,8 @@ function PlayCompleteTheSentence(sentence_index){
     clear_button.id = "clear";;
     clear_button.classList.add("submit_btn");
     clear_button.onclick =function(){
-    	PlayCompleteTheSentence(sentence_index);
+    	if(!(document.getElementById("inquiry").textContent=="-"))
+    	    PlayCompleteTheSentence(sentence_index);
         }
     document.getElementById("submit_area").appendChild(clear_button);
     

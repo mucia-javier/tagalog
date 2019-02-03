@@ -6,6 +6,13 @@ si Helen ay batáng babáe | Helen is a young girl
 si Tom ay batáng laláki | Tom is a young boy
 si Ruth ay magandá | Ruth is beautiful
 si Peter ay marúnong | Peter is intelligent
+sina Helen at Tom ay mababaít | Helen and Tomare kind
+sina Helen at Tom ay mga batà | Helen and Tom are children
+ang batà ay mabait | the kid is kind
+ang áso ay mabait | the dog is good
+ang batà at ang áso ay mababaít | the kid and the dog are good
+ang mga batà at ang mga áso ay mababaít | the children and the dogs are good
+ang mga sapátos ay malilínis | the shoes are clean
 
 *descriptors
 marúnong | intelligent

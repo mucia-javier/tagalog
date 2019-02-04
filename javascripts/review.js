@@ -384,7 +384,9 @@ function PlayCompleteTheSentence(sentence_index){
     clear_button.classList.add("submit_btn");
     clear_button.onclick =function(){
     	if(!(document.getElementById("inquiry").textContent=="-"))
-            document.getElementById("inquiry").innerHTML = "";
+            document.getElementById("inquiry").innerHTML = "-";
+            document.getElementById("inquiry").classList.remove("inquiry");
+	        document.getElementById("inquiry").classList.add("inquiryDisabled");
     	    //PlayCompleteTheSentence(sentence_index);
         }
     document.getElementById("submit_area").appendChild(clear_button);

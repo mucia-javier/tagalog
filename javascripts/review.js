@@ -384,7 +384,8 @@ function PlayCompleteTheSentence(sentence_index){
     clear_button.classList.add("submit_btn");
     clear_button.onclick =function(){
     	if(!(document.getElementById("inquiry").textContent=="-"))
-    	    PlayCompleteTheSentence(sentence_index);
+            document.getElementById("inquiry").innerHTML = "";
+    	    //PlayCompleteTheSentence(sentence_index);
         }
     document.getElementById("submit_area").appendChild(clear_button);
     
@@ -420,7 +421,7 @@ function PlayCompleteTheSentence(sentence_index){
             modal.style.display = "block";
             modalFooter.onclick = function() {
                 modal.style.display = "none";
-                PlayCompleteTheSentence(sentence_index);
+                //PlayCompleteTheSentence(sentence_index);
                 }
         	}
     	}

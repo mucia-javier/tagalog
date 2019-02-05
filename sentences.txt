@@ -2,16 +2,13 @@
 magandá si Kristel | Kristel is beautiful
 si Ruth ay babáe | Ruth is a woman
 si Peter ay laláki | Peter is a man
-si Helen ay batáng babáe | Helen is a young girl
-si Tom ay batáng laláki | Tom is a young boy
 si Ruth ay magandá | Ruth is beautiful
 si Peter ay marúnong | Peter is intelligent
 sina Helen at Tom ay mababaít | Helen and Tomare kind
-sina Helen at Tom ay mga batà | Helen and Tom are children
 ang batà ay mabait | the kid is kind
 ang áso ay mabait | the dog is good
-ang batà at ang áso ay mababaít | the kid and the dog are good
-ang mga batà at ang mga áso ay mababaít | the children and the dogs are good
+ang babáe at ang áso ay mababaít | the woman and the dog are good
+ang mga laláki at ang mga áso ay mababaít | the men and the dogs are good
 ang mga sapátos ay malilínis | the shoes are clean
 ang barò at ang sapátos ay malilínis | the dress and the shoes are clean
 ang mga barò at ang mga sapátos ay maililínis | the dresses and the shoes are clean
@@ -21,19 +18,29 @@ ang Maynilà ay isang lungsod ng Philipínas | Manila is a city of the Philipine
 ang WashingtonDC ay púnong-lungsód ng USA | WashingtonDC is the capital of the USA
 ang Maynilá at ang Washington ay mga lungsod | Manila and Washington are cities
 ang Baguio at ang Tagaytáy ay mga malalamíg na lugár | Baguio and Tagaytay are cool places
-ang áso at ang batà ay malilínis | the dog and the kid are clean
-ang mga batá at áso ay mababaít | the kids and the dog are good
 sina Ruth at Peter ay magkapatíd | Ruth and Peter are siblings
 ang America at Aprika ay malalakí | America and Africa are big
 si Peter at si Ruth ay mababaít at marurúnong | Peter and Ruth are kind and intelligent
 sina Helen at Tom ay malilínis | Helen and Tom are clean
 ang babae at si Ruth ay magagandá | the woman and Ruth are beautiful
 sina Helen at Tom at ang áso ay mababaít | Helen, Tom and the dog are good
-ang báhay ay malalakí | the house is big
+ang báhay ay malakí | the house is big
 malakí ang báhay | the house is big
-kumákain ang batà | the kid is eating
+kumákain ang áso | the dog is eating
 mabaít si Peter | Peter is kind
-mga batà sina Peter at Mary | Peter and Mary are kids
+mga lungsód and Maynila at Cebu | Cebu and Manila are cities
+mga babáe sina Helen | Helen and companions are women
+mga háyop ang aso at pusà | the dog and the cat are animals
+maláki ang simbahan | the church is big
+masaráp and isdâ | the fish is delicious
+masaráp ang kapé | the coffee is delicious
+masaráp ang pagkáin | the food is delicious
+bágo ang sílya | the chair is new
+bágo ang mga mésa | the tables are new
+malamíg ang pagkáin | the food is cold
+maínit ang pagkáin | the food is hot
+maruming maínit ang pagkáin | the food is very hot
+
 
 *descriptors
 marúnong | intelligent

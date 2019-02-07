@@ -32,7 +32,7 @@ mga lungsód and Maynila at Cebu | Cebu and Manila are cities
 mga babáe sina Helen | Helen and companions are women
 mga háyop ang aso at pusà | the dog and the cat are animals
 maláki ang simbahan | the church is big
-masaráp and isdâ | the fish is delicious
+masaráp ang isdâ | the fish is delicious
 masaráp ang kapé | the coffee is delicious
 masaráp ang pagkáin | the food is delicious
 bágo ang sílya | the chair is new
@@ -40,7 +40,53 @@ bágo ang mga mésa | the tables are new
 malamíg ang pagkáin | the food is cold
 maínit ang pagkáin | the food is hot
 maruming maínit ang pagkáin | the food is very hot
-
+akó ay si John | i am John
+akó ay laláki | i am a man
+masípag akó | i am industrious
+malusóg akó | i am healthy
+akó ay nag-áaral | i am studying
+kamí ay sina John at Helen | we are John and Helen
+kamí ay magkapatid | | we are siblings
+mababaít kamí | we are kind
+mahihírap kamí | we are poor
+táyo ay sina John at Mary | we are John and Mary
+táyo ay magkakaibígan | we are friends
+mababaít táyo | we are good
+masisípag táyo | we are industrious
+ikáw ay si Mary | you are Mary
+ikáw ay babáe | you are a woman
+masípag ka | you are industrious
+malusóg ka | you are healthy
+siyá ay si Peter | He is Peter
+siyá ay isang laláki | he is a man
+siyá ay isang babáe | she is a woman
+marúnong siyá | she is intelligent
+mabaít siyá | she is kind
+silá ay sina John at Mary| they are John and Mary
+silá ay magkaibígan | they are friends
+marurúnog silá | they are intelligent
+kayó pô ba ay guro? | are you a teacher sir/ma'am?
+itó ay si John | this is John
+itó ay isang laláki | this is a man
+itó ay pagkáin | this is food
+maliít ito | this is small
+malakí ito | this is big
+iyán ay si Mary | that is Mary
+iyán ay pagkáin | that is food
+iyán ay oagkáin ni mary | that is food of mary (that's Mary's food)
+marámi iyán | that is plenty
+maínit iyán | that is hot
+mahabà iyón | that is long
+ang mga itó ay mababaít | these are good
+ang mga iyán ay malalaí | those are big
+ang mga iyón ay malilínis | those are clean
+ang mésang itó ay malínis | this table is clean
+itóng mésang itó ay malínis | this table is clean
+malakí iyóng báhay na iyón | that house is big
+magandá ang suót mong iyán | your clothes are beautiful
+ang laláki ay kumáin sa mésang itó | the man ate on this table
+pumunta kamí sa báhay na iyán | we went to that house
+súmakay silá sa bus na iyón | they rode on that bus
 
 *descriptors
 marúnong | intelligent
@@ -67,6 +113,7 @@ malakí | big
 maliít | small
 malínis | clean
 marumi | dirty
+mahabà | long
 mahabi | long
 maiksi | short
 nakakainis | annoying

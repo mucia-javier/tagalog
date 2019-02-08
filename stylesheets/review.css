@@ -221,15 +221,15 @@ button {
         
 1d;
         background: -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#e0e0e0));
-        background: -moz-linear-gradient(top,  #f0f0f0,  #f0f0f0);
+        background: -moz-linear-gradient(top,  #f0f0f1,  #f0f0f1);
         filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
     }
 
 .faint_btn:hover{
 	text-decoration: none;
-        background: #e0e0e0;
+        background: #f0f0f0;
         background: -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#e0e0e0));
-        background: -moz-linear-gradient(top,  #e0e0e0,  #e0e0e0);
+        background: -moz-linear-gradient(top,  #f0f0f1,  #f0f0f1);
         filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
 	}
 

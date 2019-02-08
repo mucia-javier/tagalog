@@ -334,7 +334,8 @@ function CompleteSentenceMode(){
 	//markers = markers.sort(function() { return 0.5 - Math.random() });
 	//nouns = nouns.sort(function() { return 0.5 - Math.random() });
     setTimeout(function () {
-    	        sentences = sentences.sort(function() { return 0.5 - Math.random() });
+    	        sentences = sentences.reverse();
+    	        //sentences = sentences.sort(function() { return 0.5 - Math.random() });
                 PlayCompleteTheSentence(0);
                 }, 600);
     
@@ -389,6 +390,18 @@ function PlayCompleteTheSentence(sentence_index){
                     }
         document.getElementById("answer").appendChild(button_i);
 		}
+		
+	var reveal_btn = document.createElement("button");
+    var t =  document.createTextNode("Reveal");
+    reveal_btn.appendChild(t);
+    reveal_btn.id = "reveal";;
+    reveal_btn.classList.add("faint_btn");
+    reveal_btn.onclick =function(){
+    	document.getElementById("inquiry").classList.remove("inquiryDisabled");
+	    document.getElementById("inquiry").classList.add("inquiry");
+        document.getElementById("inquiry").innerHTML = a_sentence[0]; 
+        }
+    document.getElementById("submit_area").appendChild(reveal_btn);
 	
 	var clear_button = document.createElement("button");
     var t =  document.createTextNode("Clear");
@@ -398,13 +411,10 @@ function PlayCompleteTheSentence(sentence_index){
     clear_button.onclick =function(){
     	if(!(document.getElementById("inquiry").textContent=="-"))
             document.getElementById("inquiry").innerHTML = "-";
-            document.getElementById("inquiry").classList.remove("inquiry");
-	        document.getElementById("inquiry").classList.add("inquiryDisabled");
-    	    //PlayCompleteTheSentence(sentence_index);
+        document.getElementById("inquiry").classList.remove("inquiry");
+	    document.getElementById("inquiry").classList.add("inquiryDisabled");
         }
     document.getElementById("submit_area").appendChild(clear_button);
-    
-	//document.getElementById("submit_area").appendChild(document.createElement("p"));
 	
 	var submit_button = document.createElement("button");
     var t =  document.createTextNode("Submit");
@@ -441,7 +451,6 @@ function PlayCompleteTheSentence(sentence_index){
         	}
     	}
     document.getElementById("submit_area").appendChild(submit_button);
-    
     
     document.getElementById("submit_area").style.display = "block";
 	}

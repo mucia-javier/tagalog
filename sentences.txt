@@ -67,7 +67,7 @@ silá ay sina John at Mary| they are John and Mary
 silá ay magkaibígan | they are friends
 marurúnog silá | they are intelligent
 kayó pô ba ay guro? | are you a teacher sir/ma'am?
-/*
+*/
 itó ay si John | this is John
 itó ay isang laláki | this is a man
 itó ay pagkáin | this is food

@@ -287,9 +287,22 @@ function CompleteSentenceMode(){
        //process text file line by line
         var lines = data.split("\n");
         
+        var copyLines = true;
         var arrayName="";
         for (var i = 0, len = lines.length; i < len; i++) {
             var row = lines[i];
+            if(row.startsWith("/*")){
+            	copyLines = false;
+                continue;
+            	}
+            else if(row.startsWith("*/")){
+            	copyLines = true;
+                continue;
+            	}
+            if(copyLines==false){
+            	continue;
+            	}
+            
             if(row){ // Ignore empty lines in text file
                 if(row.startsWith("*")){ //This is a title/header
                     row = row.slice(1, ); // ignore the '*' character

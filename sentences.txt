@@ -28,7 +28,7 @@ ang báhay ay malakí | the house is big
 malakí ang báhay | the house is big
 kumákain ang áso | the dog is eating
 mabaít si Peter | Peter is kind
-mga lungsód and Maynila at Cebu | Cebu and Manila are cities
+mga lungsód and Cebu at Maynila | Cebu and Manila are cities
 mga babáe sina Helen | Helen and companions are women
 mga háyop ang aso at pusà | the dog and the cat are animals
 maláki ang simbahan | the church is big
@@ -46,7 +46,7 @@ masípag akó | i am industrious
 malusóg akó | i am healthy
 akó ay nag-áaral | i am studying
 kamí ay sina John at Helen | we are John and Helen
-kamí ay magkapatid | | we are siblings
+kamí ay magkapatid | we are siblings
 mababaít kamí | we are kind
 mahihírap kamí | we are poor
 táyo ay sina John at Mary | we are John and Mary
@@ -62,7 +62,7 @@ siyá ay isang laláki | he is a man
 siyá ay isang babáe | she is a woman
 marúnong siyá | she is intelligent
 mabaít siyá | she is kind
-silá ay sina John at Mary| they are John and Mary
+silá ay sina John at Mary | they are John and Mary
 silá ay magkaibígan | they are friends
 marurúnog silá | they are intelligent
 kayó pô ba ay guro? | are you a teacher sir/ma'am?
@@ -73,7 +73,7 @@ maliít ito | this is small
 malakí ito | this is big
 iyán ay si Mary | that is Mary
 iyán ay pagkáin | that is food
-iyán ay oagkáin ni mary | that is food of mary (that's Mary's food)
+iyán ay pagkáin ni mary | that is food of mary (that's Mary's food)
 marámi iyán | that is plenty
 maínit iyán | that is hot
 mahabà iyón | that is long

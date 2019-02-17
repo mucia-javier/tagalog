@@ -179,28 +179,28 @@ function GetSectionContent(){
     }
   
 function PlayMatch(sectionContent, i){
-    if(i == sectionContent.tagalog.length){
+    if(i == sectionContent.english.length){
     	return MatchTranslationMode();
     	}
        
     var completedElements = [];
         document.getElementById("question").style.display = "block";
-        document.getElementById("question").innerHTML = "<tagq>"+sectionContent.tagalog[i]+"</tagq>";
+        document.getElementById("question").innerHTML = "<tagq>"+sectionContent.english[i]+"</tagq>";
         document.getElementById("answer").style.display = "block";
         document.getElementById("answer").innerHTML = "";
         
         
         var answerHasBeenGiven = false;
-        var maxNumOfChoices = Math.min(sectionContent.tagalog.length, 5);
+        var maxNumOfChoices = Math.min(sectionContent.english.length, 5);
         var optionsShown = [];
         for(var j=1; j<=maxNumOfChoices; j++){
             var showAnswer = Math.floor(Math.random() * 10); // Get random between 0 to 1. Flip coin to decide cronological position of answer
             if(answerHasBeenGiven == false && ( j == maxNumOfChoices || showAnswer >= 7)){
         	    var button_i = document.createElement("button");
-                var t =  document.createTextNode(sectionContent.english[i]);
+                var t =  document.createTextNode(sectionContent.tagalog[i]);
                 button_i.appendChild(t);
                 button_i.id = i;
-                button_i.value = sectionContent.english[i];
+                button_i.value = sectionContent.tagalog[i];
                 button_i.classList.add("choice_btn");
                 button_i.onclick = function(){
                     var modalFooter = document.getElementById('modal-footer');
@@ -231,17 +231,17 @@ function PlayMatch(sectionContent, i){
                 answerHasBeenGiven = true;
         	    }
             else{
-            	var randomElementIndex = Math.floor(Math.random() * sectionContent.tagalog.length);
+            	var randomElementIndex = Math.floor(Math.random() * sectionContent.english.length);
                 if(randomElementIndex == i || optionsShown.includes(randomElementIndex)){
                 	j--;
                     continue;
                 	}
                 optionsShown.push(randomElementIndex);
                 var button_i = document.createElement("button");
-                var t =  document.createTextNode(sectionContent.english[randomElementIndex]);
+                var t =  document.createTextNode(sectionContent.tagalog[randomElementIndex]);
                 button_i.appendChild(t);
                 button_i.id = randomElementIndex;
-                button_i.value = sectionContent.english[randomElementIndex];
+                button_i.value = sectionContent.tagalog[randomElementIndex];
                 button_i.classList.add("choice_btn");
                 button_i.onclick = function(){
                 	var modalFooter = document.getElementById('modal-footer');
@@ -254,10 +254,8 @@ function PlayMatch(sectionContent, i){
                     modalFooter.onclick = function() {
                         modal.style.display = "none";
                         }
-                    //alert("Try Again "+sectionContent.english[this.id]+"="+sectionContent.tagalog[this.id]);
                     }
                 document.getElementById("answer").appendChild(button_i);
-                //document.getElementById("answer").innerHTML += "<p>"+sectionContent.english[randomElementIndex]+"</p";
                 }        	
             }
 	}

@@ -121,11 +121,11 @@ ang sapatos ni Berto | the shoes of Berto
 ang aklat ni Paolo | the book of Paulo
 ang bahay ng lalaki | The House of the man
 ang baho ng babae | the dress of the woman
-and Lapis ng guro | the pencil of the teacher
+ang Lapis ng guro | the pencil of the teacher
 ang sapatos ng lalaki | the shoes of the man
 ang aklat ng babae | the book of the woman
 ang bahay nina Maria at Pedro | the house of Maria and Pedro
-and Lapis Nina Haley | the pencil of Haley and Company
+ang Lapis nina Haley | the pencil of Haley and Company
 ang bahay ng mga lalaki | The House of the men
 ang mga damit ng mga babae | the clothes of the women
 

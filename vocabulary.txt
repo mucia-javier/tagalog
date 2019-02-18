@@ -124,14 +124,17 @@ Isang libo | 1000
 Dalawang libo | 2000
 
 *Subjective Pronouns
-Ako | I 
-Ikaw | You Singular 
-Ka | You Singular/Informal
-Siya | He/She
-Kami | We Excluding listener
-Tayo | We Including listener
-Kayo | You Plural/Formal
-Sila | They
+ako | i 
+ikaw | you singular 
+ka | you singular
+siya | He/She
+kami | we excluding listener
+rayo | we including listener
+kayo | you plural/formal
+sila | they
+
+*Possesive Pronouns
+
 
 *Body Parts
 Úlo | Head | U-lo
@@ -158,8 +161,23 @@ Tuhod | Knee
 Paá | Foot | pa-A
 
 *Common Adjetives
+magandá| beautiful | ma-gan-DA
+masaya | fun
+masakit | painful
+makati | itchy
+malakí | big
+maliít | small
+malínis | clean
+marumi | dirty
+mahabi | long
+maiksi | short
+nakakainis | annoying
+manipis | thin
+makapa | thick
+marámi | many
 marúnong | intelligent
 matabâ | fat
+masamâ | bad
 mabaít | kind
 mabúti | good
 maínit | hot
@@ -174,19 +192,19 @@ malusóg | healthy
 mataás | high
 mababà | low
 mahírap | poor | difficult
-magandá| beautiful | ma-gan-DA
-masaya | fun
-masakit | painful
-makati | itchy
-malakí | big
-maliít | small
-malínis | clean
-marumi | dirty
-mahabi | long
-maiksi | short
-nakakainis | annoying
-manipis | thin
-makapa | thick
+mayáman | rich
+masípag | industrious
+mabilís | fast
+madilím | dark
+mahúsay | efficient
+payát | thin
+matabâ | fat
+matápang | brave
+maíngay | noisy
+tahímik | quiet
+tamád | lazy
+matamís | sweet
+malakás | strong
 
 * Fruits -> Mga prutas
 Mansanas | Apple

@@ -133,8 +133,23 @@ rayo | we including listener
 kayo | you plural/formal
 sila | they
 
-*Possesive Pronouns
+*Possesive Pronouns (Before noun)
+ákin | my
+iyó | your (singular)
+kaniyá | his/her
+ámin | our (exclusive)
+átin | our (inclusive)
+inyó | your (plural)
+kanilá | their
 
+*Possesive Pronouns (After noun)
+ko | my
+mo | your (singular)
+niyá | his/her
+námin | our (exclusive)
+nátin | our (inclusive)
+ninyó | your (plural)
+nilá | their
 
 *Body Parts
 Úlo | Head | U-lo

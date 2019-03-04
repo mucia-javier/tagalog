@@ -129,7 +129,7 @@ ikaw | you singular
 ka | you singular
 siya | He/She
 kami | we excluding listener
-rayo | we including listener
+tayo | we including listener
 kayo | you plural/formal
 sila | they
 

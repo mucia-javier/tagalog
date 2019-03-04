@@ -128,6 +128,61 @@ ang bahay nina Maria at Pedro | the house of Maria and Pedro
 ang Lapis nina Haley | the pencil of Haley and Company
 ang bahay ng mga lalaki | The House of the men
 ang mga damit ng mga babae | the clothes of the women
+ang aking bahay ay malaki | my house is big
+ang bahay ko ay malaki | my house is big
+ang iyong baro ay bago | your dress is new
+ang baro mo ay bágo | your dress is new
+malinis ang kaniyang sapatos | his shoes are clean
+malinis ang sapatos niya | her shoes are clean
+luma ang aming kotse | our car is old
+luma ang kotse namin | our car is old
+malaki ang ating bahay | our house is big
+malaki ang bahay natin | our house is big
+ang iyong ama ay masipag | your father is industrious (plural)
+ang ama ninyo ay masipag | your father is industrious (plural)
+mahaba ang kanilang lapis | their pencil is long
+mahaba ang lapis nila | their pencil is long
+ang ina niya ay pumunta sa kanyang bahay | her mother went to her house
+ang kanyang ina ay pumunta sa bahay niya | her mother went to her house
+ang aking mga aso ay mababait | my dogs are good
+kakulay ng iyong Baro ang pitaka mo | your dress is the same color as your wallet
+pumunta sa aming bahay ang guro namin | our teacher went our house
+naghanap ang aking anak na babae ng regalo para sa kaniyang kapatid na babae | my daughter looked for my gift for her sister
+mahaba ang pasensiya nila sa kanilang ama | they have long patience for their father
+ang pang-unawa ninyo ay mas mahalaga sa inyong abuloy | your understanding is more important than your contribution
+ang mga sapatos ng lalaki ay bago | the shoes of the man are new
+ang kanilang bahay ay malaki | their house is big
+ang damit ng babae ay marumi | the clothing of the woman is dirty
+ang aklat ni Peter ay malinis | the book of Peter is clean
+ang iyong pagkain ay malamig | your food is cold
+ang bahay nito ay malaki | the house of this person is big
+malaki ang bahay nito | the house of this person is big
+ang bahay niyang ay maliit | the house of that person is small
+Maliit ang bahay niyan | The House of the person is small
+ang bahay niyon ay maliit | The House of that person is small
+Maliit ang bahay niyon | The House of the person is small
+ang bahay ng mga ito | the house of these people
+ang bahay ng mga iyan | The House of those people
+ang bahay ng mga iyong | the house of those people
+ang aso nito ay matalino | the dog of this person is intelligent
+ang aso niyan ay matalino | the dog of the person is intelligent
+ang aso niyon ay matalino | the dog of that person is intelligent
+ang gamot nito ay mabisa | the medicine of this person is effective
+ang gamot niyon ay mabisa | the medicine of that person is effective
+ang damit nito ay maganda | the clothing of this person is beautiful
+ang damit niyon ay maganda | the clothing of the person is beautiful
+ang aklat nito ay malinis | the book of this person is clean
+ang aklat niyan ay malinis | the book of that person is clean
+ang paaralan nito ay malaki | The School of this person is big
+ang paaralan niyon ay malaki | The school of that person is big
+ang mga sapatos nito ay bago | the shoes of this person are new
+ang mga sapatos niyon ay bago | the shoes of that person are new
+matalino ang aso nito | the dog of this person is intelligent
+mabisa ang gamot nito | the medicine of this person is effective
+maganda ang damit niyan | the clothing of the person is beautiful
+bago ang mga sapatos niyang | the shoes of the person are new
+malinis ang aklat niyon | the book of that person is clean
+malaki ang paaralan niyon | The school of that person is big
 
 *descriptors
 marúnong | intelligent

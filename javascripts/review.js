@@ -60,7 +60,7 @@ function MatchTranslationMode() {
   }
 
 // User has chosen to match words or phrases
-// List all available cathegories to the user
+// Show all available cathegories as buttons
 function MatchWordsOrPhrases(){
 	var back_btn = document.createElement("button");
 	back_btn.value = "back_btn";

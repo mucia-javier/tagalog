@@ -158,19 +158,19 @@ ang iyong pagkain ay malamig | your food is cold
 ang bahay nito ay malaki | the house of this person is big
 malaki ang bahay nito | the house of this person is big
 ang bahay niyang ay maliit | the house of that person is small
-Maliit ang bahay niyan | The House of the person is small
+Maliit ang bahay niyan | The House of that person is small
 ang bahay niyon ay maliit | The House of that person is small
-Maliit ang bahay niyon | The House of the person is small
+Maliit ang bahay niyon | The House of that person is small
 ang bahay ng mga ito | the house of these people
 ang bahay ng mga iyan | The House of those people
 ang bahay ng mga iyong | the house of those people
 ang aso nito ay matalino | the dog of this person is intelligent
-ang aso niyan ay matalino | the dog of the person is intelligent
+ang aso niyan ay matalino | the dog of that person is intelligent
 ang aso niyon ay matalino | the dog of that person is intelligent
 ang gamot nito ay mabisa | the medicine of this person is effective
 ang gamot niyon ay mabisa | the medicine of that person is effective
 ang damit nito ay maganda | the clothing of this person is beautiful
-ang damit niyon ay maganda | the clothing of the person is beautiful
+ang damit niyon ay maganda | the clothing of that person is beautiful
 ang aklat nito ay malinis | the book of this person is clean
 ang aklat niyan ay malinis | the book of that person is clean
 ang paaralan nito ay malaki | The School of this person is big
@@ -179,8 +179,8 @@ ang mga sapatos nito ay bago | the shoes of this person are new
 ang mga sapatos niyon ay bago | the shoes of that person are new
 matalino ang aso nito | the dog of this person is intelligent
 mabisa ang gamot nito | the medicine of this person is effective
-maganda ang damit niyan | the clothing of the person is beautiful
-bago ang mga sapatos niyang | the shoes of the person are new
+maganda ang damit niyan | the clothing of that person is beautiful
+bago ang mga sapatos niyan | the shoes of that person are new
 malinis ang aklat niyon | the book of that person is clean
 malaki ang paaralan niyon | The school of that person is big
 

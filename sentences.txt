@@ -99,7 +99,7 @@ ang ibong lumilipad ay binaril | the flying bird was shot
 pagod na dumating si tatay sa bahay | my father arrived home tired
 kumaing mabilis Si Pablo | Pablo ate quickly
 mabilis na kumain si Pablo | Pablo ate quickly
-mahal na totoo ang gulo mo | your watch is truly expensive
+mahal na totoo ang relo mo | your watch is truly expensive
 totoong mahal ang relo mo | your watch is truly expensive
 kung wala pa ako mauna na kayo | if I am not around yet you may go ahead
 mamatay mabuhay ang relo ko | my watch stops periodically

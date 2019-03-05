@@ -395,44 +395,7 @@ function PlayCompleteTheSentence(sentence_index){
         document.getElementById("answer").appendChild(button_i);
 		}
 		
-	var reveal_btn = document.createElement("button");
-    var t =  document.createTextNode("Reveal");
-    reveal_btn.appendChild(t);
-    reveal_btn.id = "reveal";;
-    reveal_btn.classList.add("faint_btn");
-    reveal_btn.onclick =function(){
-    	document.getElementById("inquiry").classList.remove("inquiryDisabled");
-	    document.getElementById("inquiry").classList.add("inquiry");
-        document.getElementById("inquiry").innerHTML = a_sentence[0]; 
-        }
-    document.getElementById("submit_area").appendChild(reveal_btn);
-	
-	var clear_button = document.createElement("button");
-    var t =  document.createTextNode("< Delete");
-    clear_button.appendChild(t);
-    clear_button.id = "clear";;
-    clear_button.classList.add("submit_btn");
-    clear_button.onclick =function(){
-    	if(!(document.getElementById("inquiry").textContent=="-")){
-            //document.getElementById("inquiry").innerHTML = "-";
-            var str = document.getElementById("inquiry").textContent;
-            str = str.substring(0, str.length-1); //remove trailing blank space
-            var lastSpaceIndex = str.lastIndexOf(" ");
-            str = str.substring(0, lastSpaceIndex+1);  //does not include space
-            if(str)
-                document.getElementById("inquiry").innerHTML = str;
-            else {
-                document.getElementById("inquiry").innerHTML = "-";
-                document.getElementById("inquiry").classList.remove("inquiry");
-	            document.getElementById("inquiry").classList.add("inquiryDisabled");
-                }
-            }
-        //document.getElementById("inquiry").classList.remove("inquiry");
-	    //document.getElementById("inquiry").classList.add("inquiryDisabled");
-        }
-    document.getElementById("submit_area").appendChild(clear_button);
-	
-	var submit_button = document.createElement("button");
+    var submit_button = document.createElement("button");
     var t =  document.createTextNode("Submit");
     submit_button.appendChild(t);
     submit_button.id = "submit";;
@@ -467,6 +430,61 @@ function PlayCompleteTheSentence(sentence_index){
         	}
     	}
     document.getElementById("submit_area").appendChild(submit_button);
+	
+	document.getElementById("submit_area").appendChild(document.createElement("br"));
+		
+	var reveal_btn = document.createElement("button");
+    var t =  document.createTextNode("Reveal");
+    reveal_btn.appendChild(t);
+    reveal_btn.id = "reveal";;
+    reveal_btn.classList.add("faint_btn");
+    reveal_btn.onclick =function(){
+    	document.getElementById("inquiry").classList.remove("inquiryDisabled");
+	    document.getElementById("inquiry").classList.add("inquiry");
+        document.getElementById("inquiry").innerHTML = a_sentence[0]; 
+        }
+    document.getElementById("submit_area").appendChild(reveal_btn);
+	
+	var delete_button = document.createElement("button");
+    var t =  document.createTextNode("< Delete");
+    delete_button.appendChild(t);
+    delete_button.id = "delete";;
+    delete_button.classList.add("faint_btn");
+    delete_button.onclick =function(){
+    	if(!(document.getElementById("inquiry").textContent=="-")){
+            //document.getElementById("inquiry").innerHTML = "-";
+            var str = document.getElementById("inquiry").textContent;
+            str = str.substring(0, str.length-1); //remove trailing blank space
+            var lastSpaceIndex = str.lastIndexOf(" ");
+            str = str.substring(0, lastSpaceIndex+1);  //does not include space
+            if(str)
+                document.getElementById("inquiry").innerHTML = str;
+            else {
+                document.getElementById("inquiry").innerHTML = "-";
+                document.getElementById("inquiry").classList.remove("inquiry");
+	            document.getElementById("inquiry").classList.add("inquiryDisabled");
+                }
+            }
+        //document.getElementById("inquiry").classList.remove("inquiry");
+	    //document.getElementById("inquiry").classList.add("inquiryDisabled");
+        }
+    document.getElementById("submit_area").appendChild(delete_button);
+	
+	
+	//  --
+	var clear_button = document.createElement("button");
+    var t =  document.createTextNode("× Clear");
+    clear_button.appendChild(t);
+    clear_button.id = "clear";;
+    clear_button.classList.add("faint_btn");
+    clear_button.onclick =function(){
+    	if(!(document.getElementById("inquiry").textContent=="-"))
+            document.getElementById("inquiry").innerHTML = "-";
+        document.getElementById("inquiry").classList.remove("inquiry");
+	    document.getElementById("inquiry").classList.add("inquiryDisabled");
+        }
+    document.getElementById("submit_area").appendChild(clear_button);
+	//--
     
     document.getElementById("submit_area").style.display = "block";
 	}

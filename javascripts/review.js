@@ -358,7 +358,7 @@ function PlayCompleteTheSentence(sentence_index){
 	document.getElementById("inquiry").classList.remove("inquiry");
 	document.getElementById("inquiry").style.display = "block";
 	document.getElementById("inquiry").innerHTML =  "-";
-    document.getElementById("instruction").innerHTML = "<br><br><h4>"+a_sentence[1];+"</h4>"; //Show the english equivalent
+    document.getElementById("instruction").innerHTML = "<br><h4>"+a_sentence[1];+"</h4>"; //Show the english equivalent
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "block";
 	

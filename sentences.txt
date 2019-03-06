@@ -157,13 +157,13 @@ ang aklat ni Peter ay malinis | the book of Peter is clean
 ang iyong pagkain ay malamig | your food is cold
 ang bahay nito ay malaki | the house of this person is big
 malaki ang bahay nito | the house of this person is big
-ang bahay niyang ay maliit | the house of that person is small
+ang bahay niyan ay maliit | the house of that person is small
 Maliit ang bahay niyan | The House of that person is small
 ang bahay niyon ay maliit | The House of that person is small
 Maliit ang bahay niyon | The House of that person is small
 ang bahay ng mga ito | the house of these people
 ang bahay ng mga iyan | The House of those people
-ang bahay ng mga iyong | the house of those people
+ang bahay ng mga iyon | the house of those people
 ang aso nito ay matalino | the dog of this person is intelligent
 ang aso niyan ay matalino | the dog of that person is intelligent
 ang aso niyon ay matalino | the dog of that person is intelligent

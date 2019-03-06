@@ -268,7 +268,7 @@ button {
 .modal-content {
 	
   position: fixed;
-  bottom: 12em;
+  top: 8em;
   background-color: #fefefe;
   width: 100%;
   -webkit-animation-name: slideIn;
@@ -324,13 +324,13 @@ button {
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0} 
-  to {bottom: 12em; opacity: 1}
+  from {top: -300px; opacity: 0} 
+  to {top: 8em; opacity: 1}
 }
 
 @keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 12em; opacity: 1}
+  from {top: -300px; opacity: 0}
+  to {top: 8em; opacity: 1}
 }
 
 @-webkit-keyframes fadeIn {
@@ -342,3 +342,6 @@ button {
   from {opacity: 0} 
   to {opacity: 1}
 }
+
+
+

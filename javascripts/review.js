@@ -504,7 +504,7 @@ function PlayCompleteTheSentence(sentence_index){
     nextN_button.appendChild(t);
     nextN_button.id = "next";;
     nextN_button.classList.add("faint_btn");
-    var n_index = Math.min(sentence_index+10, sentences.length);
+    var n_index = Math.min(sentence_index+10, sentences.length-1);
     nextN_button.onclick =function(){
     	PlayCompleteTheSentence(n_index);
         }

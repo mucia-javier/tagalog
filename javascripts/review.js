@@ -358,7 +358,7 @@ function PlayCompleteTheSentence(sentence_index){
 	document.getElementById("inquiry").classList.remove("inquiry");
 	document.getElementById("inquiry").style.display = "block";
 	document.getElementById("inquiry").innerHTML =  "-";
-    document.getElementById("instruction").innerHTML = "<br><h4>"+a_sentence[1];+"</h4>"; //Show the english equivalent
+    document.getElementById("instruction").innerHTML = "<h4><number_index>("+sentence_index+"/"+sentences.length+")</number_index><br>"+a_sentence[1];+"</h4>"; //Show the english equivalent
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "block";
 	
@@ -485,6 +485,30 @@ function PlayCompleteTheSentence(sentence_index){
         }
     document.getElementById("submit_area").appendChild(clear_button);
 	//--
+    
+    document.getElementById("submit_area").appendChild(document.createElement("br"));
+    
+    var previous_button = document.createElement("button");
+    var t =  document.createTextNode("<< Previous");
+    previous_button.appendChild(t);
+    previous_button.id = "previous";;
+    previous_button.classList.add("faint_btn");
+    previous_button.onclick =function(){
+    	if(sentence_index > 0)
+    	    PlayCompleteTheSentence(sentence_index-1);
+        }
+    document.getElementById("submit_area").appendChild(previous_button);
+    
+    var nextN_button = document.createElement("button");
+    var t =  document.createTextNode("10×Next >>");
+    nextN_button.appendChild(t);
+    nextN_button.id = "next";;
+    nextN_button.classList.add("faint_btn");
+    var n_index = Math.min(sentence_index+10, sentences.length);
+    nextN_button.onclick =function(){
+    	PlayCompleteTheSentence(n_index);
+        }
+    document.getElementById("submit_area").appendChild(nextN_button);
     
     document.getElementById("submit_area").style.display = "block";
 	}

@@ -58,7 +58,7 @@ ilo{
 	color: #19262f;
 	}
 trans{
-	font-size: 0.9em;
+	font-size: 0.8em;
 	color: #888888;
 	}
 tag{
@@ -76,8 +76,8 @@ tagq{
 	font-size: 1.4em;
 	font-weight: bold;
 	}
-#content{
-	/*background: white;*/
+number_index{
+	font-size: 0.6em;
 	}
 
 .entry{

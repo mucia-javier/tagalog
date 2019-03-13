@@ -38,15 +38,16 @@ button {
 	font-family: 'Open Sans';
 	}
 .review_btn{
-	margin: .5em;
-	font-size: .9em;
+	margin: 0.4em;
+	font-size: 1em;
+	font-weight: bold;
     display: inline-block;
     outline: none;
     cursor: pointer;
         text-align: center;
         text-decoration: none;
         padding: .5em 1em .55em;
-        //text-shadow: 0 1px 1px rgba(0,0,0,.3);
+       // text-shadow: 0 1px 1px rgba(0,0,0,.3);
         -webkit-border-radius: .5em;
         -moz-border-radius: .5em;
         border-radius: .5em;
@@ -70,13 +71,14 @@ button {
 }
 
 .review_btn:active {
+	font-weight: bold; 
     position: relative;
     top: 1;
     }
 
 .back_btn {
-	margin-top: 1em;
-	margin-left: 2em;
+	margin-top: .05em;
+	margin-left: 3em;
 	font-size: .8em;
     display: inline-block;
         outline: none;
@@ -106,7 +108,7 @@ button {
     border-bottom: 1.2em solid transparent; 
     border-right: 1.1em solid #c0c0c0;
     position: absolute; 
-    left: 4.1em; 
+    left: 5.1em; 
     margin-top: -.47em;
 	}
 	
@@ -116,7 +118,7 @@ button {
     border-bottom: 1.2em solid transparent; 
     border-right: 1.1em solid #a0a0a0;
     position: absolute; 
-    left: 4.1em; 
+    left: 5.1em; 
     margin-top: -.47em;
    }
 

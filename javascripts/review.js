@@ -103,11 +103,10 @@ function MatchWordsOrPhrases(){
                     button_i.onclick = GetSectionContent;
                     document.getElementById("question").appendChild(button_i);
                     document.getElementById("question").appendChild(document.createElement("br"));
-                    document.getElementById("question").appendChild(document.createElement("br"));                    
-                    
                     }
                 }
             }
+        document.getElementById("question").appendChild(document.createElement("br"));                    
         }, 'text');
 	}
 

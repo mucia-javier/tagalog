@@ -133,6 +133,11 @@ tayo | we including listener
 kayo | you plural/formal
 sila | they
 
+*Other Demonstrative Pronouns
+ito | this | something/someone close to the speaker
+iyan | that | something/someone far from the speaker but close to the listener
+iyon | that | something/someone far from speaker and listener
+
 *Possesive Pronouns (Before noun)
 ákin | my
 iyó | your (singular)
@@ -150,6 +155,12 @@ námin | our (exclusive)
 nátin | our (inclusive)
 ninyó | your (plural)
 nilá | their
+
+*Other Possesive Pronouns
+nito | this person's
+niyan | that person's | close to the listener
+niyon | that person's (over there) | far from listener and speaker
+
 
 *Body Parts
 Úlo | Head | U-lo

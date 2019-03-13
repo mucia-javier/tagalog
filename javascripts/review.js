@@ -358,7 +358,7 @@ function PlayCompleteTheSentence(sentence_index){
 	document.getElementById("inquiry").classList.remove("inquiry");
 	document.getElementById("inquiry").style.display = "block";
 	document.getElementById("inquiry").innerHTML =  "-";
-    document.getElementById("instruction").innerHTML = "<h4><number_index>("+sentence_index+"/"+(sentences.length-1)+")</number_index><br>"+a_sentence[1];+"</h4>"; //Show the english equivalent
+    document.getElementById("instruction").innerHTML = "<h4><number_index>("+(sentence_index+1)+"/"+(sentences.length)+")</number_index><br>"+a_sentence[1];+"</h4>"; //Show the english equivalent
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "block";
 	
@@ -368,7 +368,7 @@ function PlayCompleteTheSentence(sentence_index){
 	sentArray.push(nouns[Math.floor(Math.random() * nouns.length)]);
 	sentArray.push(nouns[Math.floor(Math.random() * nouns.length)]);
 	sentArray.push(markers[Math.floor(Math.random() * markers.length)]);
-		
+	sentArray.push(markers[Math.floor(Math.random() * markers.length)]);
 	sentArray = sentArray.sort(function() { return 0.5 - Math.random() });
 	
 	for(var i=0; i<sentArray.length; i++){

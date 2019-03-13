@@ -498,12 +498,13 @@ function PlayCompleteTheSentence(sentence_index){
         }
     document.getElementById("submit_area").appendChild(previous_button);
     
+    var n_number = 8;
     var nextN_button = document.createElement("button");
-    var t =  document.createTextNode("10×Next >>");
+    var t =  document.createTextNode(n_number+"×Next >>");
     nextN_button.appendChild(t);
     nextN_button.id = "next";;
     nextN_button.classList.add("faint_btn");
-    var n_index = Math.min(sentence_index+10, sentences.length-1);
+    var n_index = Math.min(sentence_index+n_number, sentences.length-1);
     nextN_button.onclick =function(){
     	PlayCompleteTheSentence(n_index);
         }

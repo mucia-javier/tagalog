@@ -171,7 +171,7 @@ bakit | why
 kailán | when
 nasaán | where (location of person or thing)
 saán | where (location of an action)
-lián | how many
+ilán | how many
 magkáno | how much (cost)
 kaníno | whose | kanino ang bahay na iyan? | whose house is that?
 

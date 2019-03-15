@@ -77,8 +77,8 @@ button {
     }
 
 .back_btn {
-	margin-top: .05em;
-	margin-left: 2.95em;
+	margin-top: -.2em;
+	margin-left: -1em;
 	font-size: .8em;
     display: inline-block;
         outline: none;
@@ -111,7 +111,7 @@ button {
     border-bottom: 1.17em solid transparent; 
     border-right: 1.1em solid #c0c0c0;
     position: absolute; 
-    left: 5.08em; 
+    left: 1.14em; 
     margin-top: -.43em; 
 	}
 	
@@ -121,7 +121,7 @@ button {
     border-bottom: 1.17em solid transparent; 
     border-right: 1.1em solid #a0a0a0;
     position: absolute; 
-    left: 5.08em; 
+    left: 1.14em; 
     margin-top: -.43em;
    }
 

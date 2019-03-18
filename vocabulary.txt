@@ -1,3 +1,125 @@
+*Subjective Pronouns
+ako | i 
+ikaw | you singular 
+ka | you singular
+siya | He/She
+kami | we excluding listener
+tayo | we including listener
+kayo | you plural/formal
+sila | they
+
+*Other Demonstrative Pronouns
+ito | this | something/someone close to the speaker
+iyan | that | something/someone far from the speaker but close to the listener
+iyon | that | something/someone far from speaker and listener
+
+*Possesive Pronouns (Before noun)
+ákin | my
+iyó | your (singular)
+kaniyá | his/her
+ámin | our (exclusive)
+átin | our (inclusive)
+inyó | your (plural)
+kanilá | their
+
+*Possesive Pronouns (After noun)
+ko | my
+mo | your (singular)
+niyá | his/her
+námin | our (exclusive)
+nátin | our (inclusive)
+ninyó | your (plural)
+nilá | their
+
+*Other Possesive Pronouns
+nito | this person's
+niyan | that person's | close to the listener
+niyon | that person's (over there) | far from listener and speaker
+
+*Question Words
+síno | who
+anó | what
+alín | which
+gaáno | how (degree/quantity)
+paáno | how (detailed process)
+bakit | why
+kailán | when
+nasaán | where (location of person or thing)
+saán | where (location of an action)
+ilán | how many
+magkáno | how much (cost)
+kaníno | whose | kanino ang bahay na iyan? | whose house is that?
+
+*Common Adjetives
+magandá| beautiful | ma-gan-DA
+masaya | fun
+masakit | painful
+makati | itchy
+malakí | big
+maliít | small
+malínis | clean
+marumi | dirty
+mahabi | long
+maiksi | short
+nakakainis | annoying
+manipis | thin
+makapa | thick
+marámi | many
+marúnong | intelligent
+matabâ | fat
+masamâ | bad
+mabaít | kind
+mabúti | good
+maínit | hot
+malamíg | cold
+bágo | new
+lumà | old | inanimate
+matandâ | old | animate
+múra | cheap
+mahál | expensive
+masaráp | delicious
+malusóg | healthy
+mataás | high
+mababà | low
+mahírap | poor | difficult
+mayáman | rich
+masípag | industrious
+mabilís | fast
+madilím | dark
+mahúsay | efficient
+payát | thin
+matabâ | fat
+matápang | brave
+maíngay | noisy
+tahímik | quiet
+tamád | lazy
+matamís | sweet
+malakás | strong
+
+*Body Parts
+Úlo | Head | U-lo
+Mukha | Face
+Buhok | Hair | Maiksi ang buhok mo | Your hair is short
+Taynga | Ear | Mga taynga ko ay marumi | My ears are dirty
+Kilay | Eyebrow | Mga kilay niya ay manipis | Her/his eyebrows are thin
+Mata | Eye | Gusto ko mga mata mo | I like your eyes
+Ilong | Nose | Ang ilong mo ay maliit | Your nose is small
+Baba | Chin | Palagi kong kinukurot ang baba ko | I am always pinching my chin
+Labi | Lip | Mga labi niya ay makapa | His/Her lips are thick
+Leeg | Neck | Makati ang leeg ko | My neck is itchy
+Dibdib | Chest | Masakit ang dibdib ko | My chest hurts
+Tiyan | Belly | Masakit ba ang tiyan mo? | Does your stomach hurt?
+Likod | Back | Ang likod ni Fredi ay malaki | Fredi's back is big/long
+Braso | Arm | Makati ang braso ko | My arm is itchy
+Siko | Elbow | Ang siko ko ay marumi | My elbow is dirty
+Kamay | Hand | Masakit ba ang kamay mo? | Does your hand hurt?
+Daliri | Finger | Malinis ba mga daliri mo? | Are your fingers clean?
+Baywang | Hip
+Pwet | Bootie
+Binti | Leg
+Tuhod | Knee
+Paá | Foot | pa-A
+
 *Syllables (V)
 tá-o | person | TA-o
 pa-á | foot|pa-A
@@ -122,128 +244,6 @@ Walong daan | 800
 Siyam na raan | 900
 Isang libo | 1000
 Dalawang libo | 2000
-
-*Subjective Pronouns
-ako | i 
-ikaw | you singular 
-ka | you singular
-siya | He/She
-kami | we excluding listener
-tayo | we including listener
-kayo | you plural/formal
-sila | they
-
-*Other Demonstrative Pronouns
-ito | this | something/someone close to the speaker
-iyan | that | something/someone far from the speaker but close to the listener
-iyon | that | something/someone far from speaker and listener
-
-*Possesive Pronouns (Before noun)
-ákin | my
-iyó | your (singular)
-kaniyá | his/her
-ámin | our (exclusive)
-átin | our (inclusive)
-inyó | your (plural)
-kanilá | their
-
-*Possesive Pronouns (After noun)
-ko | my
-mo | your (singular)
-niyá | his/her
-námin | our (exclusive)
-nátin | our (inclusive)
-ninyó | your (plural)
-nilá | their
-
-*Other Possesive Pronouns
-nito | this person's
-niyan | that person's | close to the listener
-niyon | that person's (over there) | far from listener and speaker
-
-*Question Words
-síno | who
-anó | what
-alín | which
-gaáno | how (degree/quantity)
-paáno | how (detailed process)
-bakit | why
-kailán | when
-nasaán | where (location of person or thing)
-saán | where (location of an action)
-ilán | how many
-magkáno | how much (cost)
-kaníno | whose | kanino ang bahay na iyan? | whose house is that?
-
-*Body Parts
-Úlo | Head | U-lo
-Mukha | Face
-Buhok | Hair | Maiksi ang buhok mo | Your hair is short
-Taynga | Ear | Mga taynga ko ay marumi | My ears are dirty
-Kilay | Eyebrow | Mga kilay niya ay manipis | Her/his eyebrows are thin
-Mata | Eye | Gusto ko mga mata mo | I like your eyes
-Ilong | Nose | Ang ilong mo ay maliit | Your nose is small
-Baba | Chin | Palagi kong kinukurot ang baba ko | I am always pinching my chin
-Labi | Lip | Mga labi niya ay makapa | His/Her lips are thick
-Leeg | Neck | Makati ang leeg ko | My neck is itchy
-Dibdib | Chest | Masakit ang dibdib ko | My chest hurts
-Tiyan | Belly | Masakit ba ang tiyan mo? | Does your stomach hurt?
-Likod | Back | Ang likod ni Fredi ay malaki | Fredi's back is big/long
-Braso | Arm | Makati ang braso ko | My arm is itchy
-Siko | Elbow | Ang siko ko ay marumi | My elbow is dirty
-Kamay | Hand | Masakit ba ang kamay mo? | Does your hand hurt?
-Daliri | Finger | Malinis ba mga daliri mo? | Are your fingers clean?
-Baywang | Hip
-Pwet | Bootie
-Binti | Leg
-Tuhod | Knee
-Paá | Foot | pa-A
-
-*Common Adjetives
-magandá| beautiful | ma-gan-DA
-masaya | fun
-masakit | painful
-makati | itchy
-malakí | big
-maliít | small
-malínis | clean
-marumi | dirty
-mahabi | long
-maiksi | short
-nakakainis | annoying
-manipis | thin
-makapa | thick
-marámi | many
-marúnong | intelligent
-matabâ | fat
-masamâ | bad
-mabaít | kind
-mabúti | good
-maínit | hot
-malamíg | cold
-bágo | new
-lumà | old | inanimate
-matandâ | old | animate
-múra | cheap
-mahál | expensive
-masaráp | delicious
-malusóg | healthy
-mataás | high
-mababà | low
-mahírap | poor | difficult
-mayáman | rich
-masípag | industrious
-mabilís | fast
-madilím | dark
-mahúsay | efficient
-payát | thin
-matabâ | fat
-matápang | brave
-maíngay | noisy
-tahímik | quiet
-tamád | lazy
-matamís | sweet
-malakás | strong
 
 * Fruits -> Mga prutas
 Mansanas | Apple

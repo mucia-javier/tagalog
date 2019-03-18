@@ -13,7 +13,7 @@ ang mga sapátos ay malilínis | the shoes are clean
 ang barò at ang sapátos ay malilínis | the dress and the shoes are clean
 ang mga barò at ang mga sapátos ay maililínis | the dresses and the shoes are clean
 ang Philipínas ay maliít | the Philipines is small
-ang USA ay malalakí | the US is big
+ang USA ay malakí | the US is big
 ang Maynilà ay isang lungsod ng Philipínas | Manila is a city of the Philipines
 ang WashingtonDC ay púnong-lungsód ng USA | WashingtonDC is the capital of the USA
 ang Maynilá at ang Washington ay mga lungsod | Manila and Washington are cities
@@ -28,7 +28,7 @@ ang báhay ay malakí | the house is big
 malakí ang báhay | the house is big
 kumákain ang áso | the dog is eating
 mabaít si Peter | Peter is kind
-mga lungsód and Cebu at Maynila | Cebu and Manila are cities
+mga lungsód ang Cebu at Maynila | Cebu and Manila are cities
 mga babáe sina Helen | Helen and companions are women
 mga háyop ang aso at pusà | the dog and the cat are animals
 maláki ang simbahan | the church is big
@@ -120,7 +120,7 @@ ang lapis ni Helen | the pencil of Helen
 ang sapatos ni Berto | the shoes of Berto
 ang aklat ni Paolo | the book of Paulo
 ang bahay ng lalaki | The House of the man
-ang baho ng babae | the dress of the woman
+ang baro ng babae | the dress of the woman
 ang Lapis ng guro | the pencil of the teacher
 ang sapatos ng lalaki | the shoes of the man
 ang aklat ng babae | the book of the woman

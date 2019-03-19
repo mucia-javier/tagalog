@@ -49,6 +49,9 @@ saán | where (location of an action)
 ilán | how many
 magkáno | how much (cost)
 kaníno | whose | kanino ang bahay na iyan? | whose house is that?
+para sa kanino | for whom
+sa kanino | with/to whom
+
 
 *Common Adjetives
 magandá| beautiful | ma-gan-DA

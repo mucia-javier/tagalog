@@ -183,6 +183,30 @@ maganda ang damit niyan | the clothing of that person is beautiful
 bago ang mga sapatos niyan | the shoes of that person are new
 malinis ang aklat niyon | the book of that person is clean
 malaki ang paaralan niyon | The school of that person is big
+sino ba kayo? | who are you
+ano ba ang pangalan ninyo? | what is your name?
+alin ba ang iyong gusto? | which one do you like?
+gaano kalaki ang Philippines? | how large is the Philippines?
+paano mo malalaman? | how will you know?
+bakit siya galit? | why is she/he angry?
+kailan kayo dumating sa Philippines?| when did you arrive in the Philippines?
+nasaan siya? | where is she/he?
+saan kayo nakatira? | where do you live?
+ilan ang aso ninyo? | how many dogs do you have?
+magkano ang aklat? | how much is the book?
+kanino ang bahay na iyan? | whose house is that?
+para sa kanino iyan? | for whom is that?
+sa kanino iyan? | to whom does that belong?
+sinu-sino ang inyong mga aso? | which of the dogs are yours?
+anu-ano ang mga pangalan ninyo? | what are your names?
+kani-kanino ang mga bahay na iyan? | whose houses are those?
+saan-saan kayo nakatira? | where do you (plural) live?
+magka-magkano ang mga aklat? | how much are each of the books?
+ilan-ilan ang mga aso nila? | how many children do they have?
+sino ang taong iyan? | who is that person?
+sinong tao iyan? | who is that person?
+sino 'yan? (pointing at a person) |  who is that person?
+
 
 *descriptors
 magandá| beautiful | ma-gan-DA

@@ -205,7 +205,7 @@ magka-magkano ang mga aklat? | how much are each of the books?
 ilan-ilan ang mga aso nila? | how many children do they have?
 sino ang taong iyan? | who is that person?
 sinong tao iyan? | who is that person?
-sino 'yan? (pointing at a person) |  who is that person?
+sino 'yan? | who is that person?
 
 
 *descriptors

@@ -206,7 +206,21 @@ ilan-ilan ang mga aso nila? | how many children do they have?
 sino ang taong iyan? | who is that person?
 sinong tao iyan? | who is that person?
 sino 'yan? | who is that person?
-
+kanino ang aklat ito? | whose book is this?
+ano ang simbahan iyan? | what church is that?
+kilala mo ba siya? | do you know her?
+oo kilala ko siya | yes i know her
+sasama ka ba? | are you coming along?
+gusto mo ba ito? | do you like this?
+uuwi ka na ba? | are you going home already?
+gusto mo bang manood ng sine? | would you like to watch a movie?
+tama ba ito? | is this correct?
+tama ba ako? | am i correct?
+ano ba 'yan? | what's that?
+ano ang gusto mo? | what do you like?
+saan ka pupunta? | where are you going?
+sino ba siya? | who is she/he?
+nasaan siya? | where is she/he?
 
 *descriptors
 magandá| beautiful | ma-gan-DA

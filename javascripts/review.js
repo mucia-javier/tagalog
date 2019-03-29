@@ -272,6 +272,7 @@ var descriptors = [];
 var markers = [];
 var nouns = [];
 function CompleteSentenceMode(){
+	document.body.style.backgroundColor = "#ffffff"; 
 	document.getElementById("question").innerHTML = "";
 	document.getElementById("question").style.display = "none";
 	var back_btn = document.createElement("button");

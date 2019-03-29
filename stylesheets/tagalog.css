@@ -242,7 +242,7 @@ Small Device Styles
 		#sidenav_div{
 		    position: fixed;
 		    right: 0;
-		    top: .5%;
+		    top: .4em;
 			border-radius: 5px 5px 5px 5px;
 			display: none;
 			box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.29);
@@ -252,7 +252,7 @@ Small Device Styles
 		#sidenav_open{
 		    position: fixed;
 		    right: 0;
-		    top: .5%;
+		    top: .4em;
 		    /*margin-top: -2.5em;*/
 		
 			text-align: center;

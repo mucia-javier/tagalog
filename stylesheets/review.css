@@ -21,9 +21,10 @@ body {
 	color: #19262f;
 	}
 #submit_area{
-	background-color: #f0f0f0;
+	background-color: #ffffff;
 	display: flex;
 	justify-content: space-between;
+	padding-bottom: 1em;
 	}
 .inquiryDisabled{
 	color: #FFFFFF;
@@ -81,7 +82,7 @@ button {
     }
 
 .back_btn {
-	margin-top: -.2em;
+	margin-top:0.4em;
 	margin-left: -1em;
 	font-size: .8em;
     display: inline-block;

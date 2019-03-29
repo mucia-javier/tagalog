@@ -430,8 +430,9 @@ function PlayCompleteTheSentence(sentence_index){
                 }
         	}
     	}
+    document.getElementById("submit_area").appendChild(document.createElement("br"));
     document.getElementById("submit_area").appendChild(submit_button);
-	
+	document.getElementById("submit_area").appendChild(document.createElement("br"));
 	document.getElementById("submit_area").appendChild(document.createElement("br"));
 		
 	var reveal_btn = document.createElement("button");

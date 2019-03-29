@@ -241,7 +241,7 @@ Small Device Styles
         */
 		#sidenav_div{
 		    position: fixed;
-		    right: 0;
+		    right: 6px;
 		    top: .4em;
 			border-radius: 5px 5px 5px 5px;
 			display: none;
@@ -251,7 +251,7 @@ Small Device Styles
 		}
 		#sidenav_open{
 		    position: fixed;
-		    right: 0;
+		    right: 6px;
 		    top: .4em;
 		    /*margin-top: -2.5em;*/
 		

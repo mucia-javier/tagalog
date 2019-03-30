@@ -27,15 +27,19 @@ body {
 	padding-bottom: 1em;
 	}
 .inquiryDisabled{
-	text-indent: .5em;
+	text-indent: .2em;
+	margin-left:0.5em;
+	margin-right:0.5em;
 	text-align:left;
 	border-bottom: 2px dotted grey;
 	color: #FFFFFF;
 	font-size: 1.4em;
 	}
 .inquiry{
-	text-indent: .5em;
+	text-indent: .2em;
+	margin-left:0.5em;
 	text-align:left;
+	margin-right:0.5em;
 	border-bottom: 2px dotted grey;
 	color: #e03030;
 	font-size: 1.4em;

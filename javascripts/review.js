@@ -14,6 +14,7 @@ function init(){    // Get the initial Height of the document
 // First mode of review is to choose to match words or phrases
 // with their translations
 function MatchTranslationMode() {
+	document.body.style.backgroundColor = "#ffffff"; // change background color to focus attention 
 	var back_btn = document.createElement("button");
 	back_btn.value = "back_btn";
 	back_btn.id = "back_btn";
@@ -191,13 +192,13 @@ function PlayMatch(sectionContent, i){
        
     var completedElements = [];
         document.getElementById("question").style.display = "block";
-        document.getElementById("question").innerHTML = "<tagq>"+sectionContent.english[i]+"</tagq>";
+        document.getElementById("question").innerHTML = "<tagq>"+sectionContent.english[i]+"</tagq><br> <br>";
         document.getElementById("answer").style.display = "block";
         document.getElementById("answer").innerHTML = "";
         
-        
+        // give 8 choices including tje right answer in a random order
         var answerHasBeenGiven = false;
-        var maxNumOfChoices = Math.min(sectionContent.english.length, 5);
+        var maxNumOfChoices = Math.min(sectionContent.english.length, 8);
         var optionsShown = [];
         for(var j=1; j<=maxNumOfChoices; j++){
             var showAnswer = Math.floor(Math.random() * 10); // Get random between 0 to 1. Flip coin to decide cronological position of answer
@@ -264,6 +265,7 @@ function PlayMatch(sectionContent, i){
                 document.getElementById("answer").appendChild(button_i);
                 }        	
             }
+       document.getElementById("answer").appendChild(document.createElement("li"));
 	}
 
 
@@ -359,7 +361,7 @@ function PlayCompleteTheSentence(sentence_index){
 	document.getElementById("inquiry").classList.remove("inquiry");
 	document.getElementById("inquiry").style.display = "block";
 	document.getElementById("inquiry").innerHTML =  "-";
-    document.getElementById("instruction").innerHTML = "<number_index>("+(sentence_index+1)+"/"+(sentences.length)+")</number_index><br><eng_q>"+a_sentence[1];+"</eng_q>"; //Show the english equivalent
+    document.getElementById("instruction").innerHTML = "<br><br><number_index>("+(sentence_index+1)+"/"+(sentences.length)+")</number_index><br><eng_q>"+a_sentence[1];+"</eng_q>"; //Show the english equivalent
     document.getElementById("answer").innerHTML = "<br>";
     document.getElementById("answer").style.display = "block";
 	

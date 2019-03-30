@@ -87,7 +87,8 @@ number_index{
     line-height: 1.4;
 	}
 	
-eng_q{
+#eng_q{
+	margin: 0 auto;
 	text-align:left;
 	color: #888888;
 	font-weight: bold;

@@ -27,10 +27,14 @@ body {
 	padding-bottom: 1em;
 	}
 .inquiryDisabled{
+	//text-align:left;
+	border-bottom: 2px dotted grey;
 	color: #FFFFFF;
 	font-size: 1.4em;
 	}
 .inquiry{
+	//text-align:left;
+	border-bottom: 2px dotted grey;
 	color: #e03030;
 	font-size: 1.4em;
 	font-weight: bold;

@@ -77,6 +77,7 @@ tagq{
 	font-weight: bold;
 	}
 number_index{
+	text-align:center;
 	font-size: 0.7em;
 	}
 
@@ -87,6 +88,7 @@ number_index{
 	}
 	
 eng_q{
+	text-align:left;
 	color: #888888;
 	font-weight: bold;
 	font-size: 1.2em;

@@ -27,12 +27,14 @@ body {
 	padding-bottom: 1em;
 	}
 .inquiryDisabled{
+	text-indent: .5em;
 	text-align:left;
 	border-bottom: 2px dotted grey;
 	color: #FFFFFF;
 	font-size: 1.4em;
 	}
 .inquiry{
+	text-indent: .5em;
 	text-align:left;
 	border-bottom: 2px dotted grey;
 	color: #e03030;

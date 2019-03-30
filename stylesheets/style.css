@@ -88,7 +88,7 @@ number_index{
 	}
 	
 #eng_q{
-	margin: 0 auto;
+	text-indent: .5em;
 	text-align:left;
 	color: #888888;
 	font-weight: bold;

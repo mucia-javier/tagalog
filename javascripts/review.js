@@ -265,7 +265,7 @@ function PlayMatch(sectionContent, i){
                 document.getElementById("answer").appendChild(button_i);
                 }        	
             }
-       document.getElementById("answer").appendChild(document.createElement("li"));
+       document.getElementById("answer").appendChild(document.createElement("ol"));
 	}
 
 

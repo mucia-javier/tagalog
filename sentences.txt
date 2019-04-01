@@ -226,12 +226,13 @@ siya ay si Kristel | she is kristel
 sino ba siya? | who is she/he?
 na sa bahay siya | she at the house
 nasaan siya? | where is she/he?
-sila ay aalis na | they will leave now
 sila ba ay aalis na? | are they leaving now?
+sila ay aalis na | they will leave now
+ang babae ba ay mabait? | is the woman good?
 ang babae ay mabait | the woman is kind
-ang babae ba ay mabait? | is the woman good
-si pedro ay marunong | Pedro is intelligent
 si pedro ba ay marunong? | is Pedro intelligent?
+si pedro ay marunong | Pedro is intelligent
+
 
 
 *descriptors

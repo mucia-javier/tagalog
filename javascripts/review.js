@@ -9,8 +9,8 @@ function init(){    // Get the initial Height of the document
 
 function changeNavigationSection(){
 	document.getElementById("navigation_section").style.backgroundColor = "#f0f0f0";
-	document.getElementById("navigation_section").style.paddingBottom = "0.55em";
-	document.getElementById("content").style.marginTop = "-0.6em";
+	document.getElementById("navigation_section").style.paddingBottom = "0.7em";
+	//document.getElementById("content").style.marginTop = "-0.6em";
 	}
 
 	

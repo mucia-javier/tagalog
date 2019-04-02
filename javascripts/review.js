@@ -10,7 +10,7 @@ function init(){    // Get the initial Height of the document
 function changeNavigationSection(){
 	document.getElementById("navigation_section").style.backgroundColor = "#f0f0f0";
 	document.getElementById("navigation_section").style.paddingBottom = "0.55em";
-	document.getElementById("content").style.marginTop = "-0.3em";
+	document.getElementById("content").style.marginTop = "-0.6em";
 	}
 
 	
@@ -369,7 +369,7 @@ function PlayCompleteTheSentence(sentence_index){
 	document.getElementById("inquiry").classList.remove("inquiry");
 	document.getElementById("inquiry").style.display = "block";
 	document.getElementById("inquiry").innerHTML =  "-";
-    document.getElementById("instruction").innerHTML = "<number_index>"+(sentence_index+1)+"/"+(sentences.length)+"</number_index><br><br><div id='eng_q'>"+a_sentence[1];+"</div>"; //Show the english equivalent
+    document.getElementById("instruction").innerHTML = "<div id='number_index'>"+(sentence_index+1)+" / "+(sentences.length)+"</div><div id='eng_q'>"+a_sentence[1];+"</div>"; //Show the english equivalent
     document.getElementById("answer").innerHTML = "<br>";
     document.getElementById("answer").style.display = "block";
 	

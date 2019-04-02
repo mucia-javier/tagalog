@@ -76,8 +76,10 @@ tagq{
 	font-size: 1.4em;
 	font-weight: bold;
 	}
-number_index{
-	text-align:center;
+#number_index{
+	padding-top: 0.4em;
+	padding-right: 1em;
+	text-align: right;
 	font-size: 0.7em;
 	}
 

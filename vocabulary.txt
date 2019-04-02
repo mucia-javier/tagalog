@@ -52,6 +52,14 @@ kaníno | whose | kanino ang bahay na iyan? | whose house is that?
 para sa kanino | for whom
 sa kanino | with/to whom
 
+*Monosyllabic Particles
+na | already/now
+pa | still/yet/more
+din | too/also (after consonant)
+rin | too/also (after vowels)
+daw | they say/reportedly (after consonant)
+raw | they say/reportedly (after vowel)
+nga | indeed (puts emphasis on preciding word)
 
 *Common Adjetives
 magandá| beautiful | ma-gan-DA

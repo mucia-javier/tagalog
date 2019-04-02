@@ -20,6 +20,7 @@ function changeNavigationSection(){
 // First mode of review is to choose to match words or phrases
 // with their translations
 function MatchTranslationMode() {
+	changeNavigationSection();
 	document.body.style.backgroundColor = "#ffffff"; // change background color to focus attention 
 	var back_btn = document.createElement("button");
 	back_btn.value = "back_btn";

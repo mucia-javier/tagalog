@@ -237,7 +237,7 @@ aalis ba sila? | will they leave?
 mabait ang babae | the woman is kind
 mabait ba ang babae? | is the woman kind?
 kakain ako | i shall eat
-kakain ba ako | shall i eat?
+kakain ba ako? | shall i eat?
 sino ba ang kasama mo? | who is your companion?
 ano ba ang gusto mo? | what do you like?
 saan ba kayo pupunta? | where are you going?

@@ -7,6 +7,12 @@ function init(){    // Get the initial Height of the document
     
     }
 
+function changeNavigationSection(){
+	document.getElementById("navigation_section").style.backgroundColor = "#f0f0f0";
+	document.getElementById("navigation_section").style.paddingBottom = "0.55em";
+	document.getElementById("content").style.marginTop = "-0.3em";
+	}
+
 	
 
 
@@ -274,6 +280,7 @@ var descriptors = [];
 var markers = [];
 var nouns = [];
 function CompleteSentenceMode(){
+	changeNavigationSection();
 	document.body.style.backgroundColor = "#ffffff"; 
 	document.getElementById("question").innerHTML = "";
 	document.getElementById("question").style.display = "none";

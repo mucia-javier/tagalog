@@ -502,7 +502,7 @@ function PlayCompleteTheSentence(sentence_index){
     document.getElementById("submit_area").appendChild(document.createElement("br"));
     
     var previous_button = document.createElement("button");
-    var t =  document.createTextNode("<< Previous");
+    var t =  document.createTextNode("<<");
     previous_button.appendChild(t);
     previous_button.id = "previous";;
     previous_button.classList.add("faint_btn");
@@ -512,9 +512,9 @@ function PlayCompleteTheSentence(sentence_index){
         }
     document.getElementById("submit_area").appendChild(previous_button);
     
-    var n_number = 8;
+    var n_number = 10;
     var nextN_button = document.createElement("button");
-    var t =  document.createTextNode(n_number+"×Next >>");
+    var t =  document.createTextNode(">>>"); //(n_number+"×>>>");
     nextN_button.appendChild(t);
     nextN_button.id = "next";;
     nextN_button.classList.add("faint_btn");

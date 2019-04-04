@@ -455,7 +455,21 @@ function PlayCompleteTheSentence(sentence_index){
     reveal_btn.id = "reveal";;
     reveal_btn.classList.add("faint_btn");
     reveal_btn.onclick =function(){
-    	document.getElementById("inquiry").classList.remove("inquiryDisabled");
+        //put back all words as choices
+        var str = document.getElementById("inquiry").textContent;
+        str = str.substring(0, str.length-1); //remove trailing blank space
+        
+        //alert("'"+str+"'");
+        if(str){
+        	str = str.split(" ");
+            for(var k = (str.length-1); k>=0; k--){
+            	document.getElementById(str[k]).style.visibility = "visible";
+                }
+            }
+        
+        
+        // Show the answer
+        document.getElementById("inquiry").classList.remove("inquiryDisabled");
 	    document.getElementById("inquiry").classList.add("inquiry");
         document.getElementById("inquiry").innerHTML = a_sentence[0];
         var originalSentence = a_sentence[0].split(" ");

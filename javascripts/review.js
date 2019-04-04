@@ -382,6 +382,7 @@ function PlayCompleteTheSentence(sentence_index){
 	sentArray.push(markers[Math.floor(Math.random() * markers.length)]);
 	sentArray.push(markers[Math.floor(Math.random() * markers.length)]);
 	sentArray = sentArray.sort(function() { return 0.5 - Math.random() });
+	sentArray = sentArray.reverse();
 	
 	for(var i=0; i<sentArray.length; i++){
 		if(sentArray[i]=="")
@@ -395,7 +396,9 @@ function PlayCompleteTheSentence(sentence_index){
         //alert("'"+this.id+"'"); //delete this later
         	        document.getElementById("inquiry").classList.remove("inquiryDisabled");
 	                document.getElementById("inquiry").classList.add("inquiry");
-	                this.style.visibility = "hidden";
+	                this.classList.remove("expuesto");
+	                this.classList.add("escondido");
+                    // this.style.visibility = "hidden";
         	        if(document.getElementById("inquiry").textContent=="-"){
                         document.getElementById("inquiry").innerHTML = this.id+" ";
                         }
@@ -463,7 +466,9 @@ function PlayCompleteTheSentence(sentence_index){
         if(str){
         	str = str.split(" ");
             for(var k = (str.length-1); k>=0; k--){
-            	document.getElementById(str[k]).style.visibility = "visible";
+            	// document.getElementById(str[k]).style.visibility = "visible";
+                document.getElementById(str[k]).classList.remove("escondido");
+	            document.getElementById(str[k]).classList.add("expuesto");
                 }
             }
         
@@ -474,7 +479,9 @@ function PlayCompleteTheSentence(sentence_index){
         document.getElementById("inquiry").innerHTML = a_sentence[0];
         var originalSentence = a_sentence[0].split(" ");
         for(var k = (originalSentence.length-2); k>=0; k--){
-        	document.getElementById(originalSentence[k]).style.visibility = "hidden";
+        	// document.getElementById(originalSentence[k]).style.visibility = "hidden";
+            document.getElementById(originalSentence[k]).classList.remove("expuesto");
+	        document.getElementById(originalSentence[k]).classList.add("escondido");
             }
         }
     document.getElementById("submit_area").appendChild(reveal_btn);
@@ -493,7 +500,10 @@ function PlayCompleteTheSentence(sentence_index){
             var lastSpaceIndex = str.lastIndexOf(" ");
             wordDeleted = wordDeleted.substring(lastSpaceIndex+1, wordDeleted.length-1);
             //alert("'"+wordDeleted+"'");//delete this later
-            document.getElementById(wordDeleted).style.visibility = "visible";
+            // document.getElementById(wordDeleted).style.visibility = "visible";
+            document.getElementById(wordDeleted).classList.remove("escondido");
+	        document.getElementById(wordDeleted).classList.add("expuesto");
+            
             str = str.substring(0, lastSpaceIndex+1);  //does not include space
             if(str)
                 document.getElementById("inquiry").innerHTML = str;

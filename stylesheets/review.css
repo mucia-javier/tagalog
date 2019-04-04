@@ -178,6 +178,20 @@ button {
     position: relative;
     top: 1;
     }
+
+.expuesto { 
+    visibility: visible; 
+    opacity: 1; 
+    transition: opacity 0.5s linear; 
+    } 
+.escondido { 
+    visibility: hidden; 
+    opacity: 0; 
+    transition: visibility 0s 0.3s, opacity 0.3s linear;
+    }
+
+
+
     
 .submit_btn{
 	font-weight: bold;

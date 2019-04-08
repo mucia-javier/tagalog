@@ -249,6 +249,18 @@ maganda rin ba ang babae? | is the woman pretty too?
 malinis daw ba ang aso? | is the dog clean as they say?
 marumi raw ba ang aso? | is the dog dirty as they say?
 marumi pa ba siya? | is he/she still dirty?
+gusto bang kumain ng aso? | does the dog like to eat?
+ibig bang umalis ng lalaki? | does the man like to leave?
+ayaw bang umalis ng babae? | doesn't the woman want to leave?
+dapat ba siyang magsalita? | should he/she speak?
+puwede ba akong umalis? | can i go?
+maaari ba kaming magtiwala sa iyo? | should we trust you?
+aalis ka ba? | are you leaving?
+sino ka ba? | who are you?
+ang kaibigan ko ay si Hebert | my friend is Hebert
+sila ay pupunta sa kapilya | they went to the chapel
+ako ay guro | i am (a) professor
+
 
 *descriptors
 magandá| beautiful | ma-gan-DA

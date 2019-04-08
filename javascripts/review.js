@@ -427,6 +427,7 @@ function PlayCompleteTheSentence(sentence_index){
             modal.style.display = "block";
             document.getElementById('modal-body').innerHTML = "<may>May Tama Ka!</may><br><br><tag>"+ a_sentence[0]+"</tag> <br>is<br><eng>"+a_sentence[1]+"</eng><br>";
             document.getElementById('modal-body').innerHTML += "<br>";
+            document.getElementById('audioRight').play();
             modalFooter.onclick = function() {
                 modal.style.display = "none";
                 PlayCompleteTheSentence(sentence_index+1);
@@ -440,6 +441,7 @@ function PlayCompleteTheSentence(sentence_index){
             modalFooter.innerHTML = "<h5>Try Again</h5>";
             var modal = document.getElementById('myModal');
             modal.style.display = "block";
+            document.getElementById('audioWrong').play();
             modalFooter.onclick = function() {
                 modal.style.display = "none";
                 //PlayCompleteTheSentence(sentence_index);

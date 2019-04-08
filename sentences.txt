@@ -224,7 +224,7 @@ pupunta ako sa gym | I'm going to the gym
 saan ka pupunta? | where are you going?
 siya ay si Kristel | she is kristel
 sino ba siya? | who is she/he?
-na sa bahay siya | she at the house
+na sa bahay siya | she is at the house
 nasaan siya? | where is she/he?
 sila ba ay aalis na? | are they leaving now?
 sila ay aalis na | they will leave now

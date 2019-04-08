@@ -419,6 +419,7 @@ function PlayCompleteTheSentence(sentence_index){
     submit_button.classList.add("submit_btn");
     submit_button.onclick = function(){
     	if(a_sentence[0]==document.getElementById("inquiry").textContent){
+    	    document.getElementById('audioRight').play();
     	    var modalFooter = document.getElementById('modal-footer');
             modalFooter.classList.remove("red-wrong");
             modalFooter.classList.add("green-right");
@@ -427,13 +428,13 @@ function PlayCompleteTheSentence(sentence_index){
             modal.style.display = "block";
             document.getElementById('modal-body').innerHTML = "<may>May Tama Ka!</may><br><br><tag>"+ a_sentence[0]+"</tag> <br>is<br><eng>"+a_sentence[1]+"</eng><br>";
             document.getElementById('modal-body').innerHTML += "<br>";
-            document.getElementById('audioRight').play();
             modalFooter.onclick = function() {
                 modal.style.display = "none";
                 PlayCompleteTheSentence(sentence_index+1);
                 }
     	    }
         else{
+        	document.getElementById('audioWrong').play();
         	document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><br>";
             var modalFooter = document.getElementById('modal-footer');
             modalFooter.classList.remove("green-right");
@@ -441,7 +442,6 @@ function PlayCompleteTheSentence(sentence_index){
             modalFooter.innerHTML = "<h5>Try Again</h5>";
             var modal = document.getElementById('myModal');
             modal.style.display = "block";
-            document.getElementById('audioWrong').play();
             modalFooter.onclick = function() {
                 modal.style.display = "none";
                 //PlayCompleteTheSentence(sentence_index);

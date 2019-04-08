@@ -333,12 +333,12 @@ button {
 .modal-footer {
   margin-right: 3em;
   margin-left: 3em;
-  padding: 0.1em;
+  padding: 0.01em;
   font-size: 1.4em;
   color: white;
   -webkit-border-radius: .5em;
   -moz-border-radius: .5em;
-  border-radius: .5em;
+  border-radius: .7em;
 }
 
 .green-right{

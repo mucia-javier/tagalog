@@ -419,7 +419,7 @@ function PlayCompleteTheSentence(sentence_index){
     submit_button.classList.add("submit_btn");
     submit_button.onclick = function(){
     	if(a_sentence[0]==document.getElementById("inquiry").textContent){
-    	    document.getElementById('audioRight').play();
+    	    //document.getElementById('audioRight').play();
     	    var modalFooter = document.getElementById('modal-footer');
             modalFooter.classList.remove("red-wrong");
             modalFooter.classList.add("green-right");
@@ -434,7 +434,7 @@ function PlayCompleteTheSentence(sentence_index){
                 }
     	    }
         else{
-        	document.getElementById('audioWrong').play();
+        	//document.getElementById('audioWrong').play();
         	document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><br>";
             var modalFooter = document.getElementById('modal-footer');
             modalFooter.classList.remove("green-right");

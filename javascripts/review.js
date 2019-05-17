@@ -460,6 +460,7 @@ function PlayCompleteTheSentence(sentence_index){
     reveal_btn.id = "reveal";;
     reveal_btn.classList.add("faint_btn");
     reveal_btn.onclick =function(){
+    	showToast("Showing the answer");
         //put back all words as choices
         var str = document.getElementById("inquiry").textContent;
         str = str.substring(0, str.length-1); //remove trailing blank space
@@ -547,8 +548,10 @@ function PlayCompleteTheSentence(sentence_index){
     previous_button.id = "previous";;
     previous_button.classList.add("faint_btn");
     previous_button.onclick =function(){
-    	if(sentence_index > 0)
+    	if(sentence_index > 0){
     	    PlayCompleteTheSentence(sentence_index-1);
+            showToast("Jumping to the previous sentence");
+            }
         }
     document.getElementById("submit_area").appendChild(previous_button);
     
@@ -560,6 +563,7 @@ function PlayCompleteTheSentence(sentence_index){
     nextN_button.classList.add("faint_btn");
     var n_index = Math.min(sentence_index+n_number, sentences.length-1);
     nextN_button.onclick =function(){
+    	showToast("Jumping "+n_number+" sentences ahead");
     	PlayCompleteTheSentence(n_index);
         }
     document.getElementById("submit_area").appendChild(nextN_button);
@@ -567,7 +571,12 @@ function PlayCompleteTheSentence(sentence_index){
     document.getElementById("submit_area").style.display = "block";
 	}
 
- 
+function showToast(theMessage) {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    document.getElementById("snackbar").innerHTML = theMessage;
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
  
  
  

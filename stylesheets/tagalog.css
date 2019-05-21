@@ -634,7 +634,7 @@ Small Device Styles
 		padding: 16px;
 		position: fixed;
 		z-index: 3;
-		top: 0em;
+		bottom: 0em;
 		font-size: 17px;
 		}
 
@@ -646,23 +646,23 @@ Small Device Styles
 		}
 
 	@-webkit-keyframes fadein {
-		from {top: -2em; opacity: 0;} 
-		to {top: 0em; opacity: 1;}
+		from {bottom: -2em; opacity: 0;} 
+		to {bottom: 0em; opacity: 1;}
 		}
 
 	@keyframes fadein {
-		from {top: -2em; opacity: 0;}
-		to {top: 0em; opacity: 1;}
+		from {bottom: -2em; opacity: 0;}
+		to {bottom: 0em; opacity: 1;}
 		}
 
 	@-webkit-keyframes fadeout {
-		from {top: 0em; opacity: 1;} 
-		to {top: -2em; opacity: 0;}
+		from {bottom: 0em; opacity: 1;} 
+		to {bottom: -2em; opacity: 0;}
 		}
 
 	@keyframes fadeout {
-		from {top: 0em; opacity: 1;}
-		to {top: -2em; opacity: 0;}
+		from {bottom: 0em; opacity: 1;}
+		to {bottom: -2em; opacity: 0;}
 		}
 
 

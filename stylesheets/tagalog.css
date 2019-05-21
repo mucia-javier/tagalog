@@ -247,10 +247,16 @@ Small Device Styles
 		font-size: 0.7em;
 		}
 
+	.entryStatic{
+		background-color: #ffffff;
+		margin: .2em;
+	    line-height: 1.4;
+	    text-align: justify;
+		}
 	.entry{
 		background-color: #ffffff;
 		margin-bottom: .2em;
-	    line-height: 1.4;
+		line-height: 1.4;
 		}
 		
 	#eng_q{
@@ -263,7 +269,9 @@ Small Device Styles
 
 
 
-
+    #reviewContent{
+    	margin-top: 1em;
+    	}
 
 	#navigation_section{
 		
@@ -630,7 +638,6 @@ Small Device Styles
 		background-color: rgba(50, 50, 50, .8);
 		color: #fff;
 		text-align: center;
-		border-radius: 2px;
 		padding: 16px;
 		position: fixed;
 		z-index: 3;

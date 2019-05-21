@@ -380,10 +380,10 @@ button {
   text-align: center;
   border-radius: 2px;
   padding: 16px;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   left: 50%;
-  bottom: 30px;
+  bottom: 3em;
   font-size: 17px;
 }
 
@@ -395,16 +395,16 @@ button {
 
 @-webkit-keyframes fadein {
   from {bottom: 0; opacity: 0;} 
-  to {bottom: 30px; opacity: 1;}
+  to {bottom: 3em; opacity: 1;}
 }
 
 @keyframes fadein {
   from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+  to {bottom: 3em; opacity: 1;}
 }
 
 @-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;} 
+  from {bottom: 3em; opacity: 1;} 
   to {bottom: 0; opacity: 0;}
 }
 
@@ -412,4 +412,9 @@ button {
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
+
+
+
+
+
 

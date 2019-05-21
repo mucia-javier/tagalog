@@ -128,7 +128,6 @@ Small Device Styles
 	    display: none;
 	    border-top: none;
 	    border-bottom: none;
-
 	}
 
 	#MainContent {
@@ -140,7 +139,7 @@ Small Device Styles
 	Theme Styles
 	*******************************************************************************/
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h6 {
 	  margin: 10px 0;
 	  font-weight: 700;
 	  color:#222222;
@@ -167,6 +166,7 @@ Small Device Styles
 
 	h5 {
 	  font-size: 18px;
+	  color: #ffffff;
 	}
 
 	h6 {
@@ -181,8 +181,6 @@ Small Device Styles
 		line-height: 1;
 		font-style: nomal;
 	}
-
-
 	may{
 		font-size: 1.4em;
 		color: #5cb85c;
@@ -266,15 +264,12 @@ Small Device Styles
 		font-weight: bold;
 		font-size: 1.2em;
 		}
-
-
-
     #reviewContent{
-    	margin-top: 1em;
     	}
 
 	#navigation_section{
-		
+		margin-top:.5em;
+		margin-bottom:1em;
 		}
 	#instruction {
 		color: #a0a0a0;
@@ -359,7 +354,7 @@ Small Device Styles
 
 	.back_btn {
 		margin-top:0.4em;
-		margin-left: 1.55em;
+		margin-left: 2.13em;
 		font-size: .8em;
 		display: inline-block;
 		outline: none;

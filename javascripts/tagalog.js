@@ -175,7 +175,7 @@ function GetSectionContent(){
     document.getElementById("question").style.display = "none";
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "none";
-    document.getElementById("instruction").innerHTML = "<h4>Match The Pairs</h4>";
+    document.getElementById("instruction").innerHTML = "<h6>Match The Pairs</h6>";
     
     var sec_type = "phrases";
     if(this.fileName == "vocabulary.txt"){

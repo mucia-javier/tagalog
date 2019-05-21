@@ -141,9 +141,7 @@ Small Device Styles
 
 	h1, h2, h3, h4, h6 {
 	  margin: 10px 0;
-	  font-weight: 700;
 	  color:#222222;
-	  letter-spacing: -1px;
 	}
 
 	h1 {
@@ -171,6 +169,7 @@ Small Device Styles
 
 	h6 {
 	  font-size: 16px;
+	  color:#aaaaaa;
 	}
 
 	p {
@@ -587,8 +586,8 @@ Small Device Styles
 	    }
 
 	.modal-footer {
-		margin-right: 3em;
-		margin-left: 3em;
+		margin-right: 4em;
+		margin-left: 4em;
 		padding: 0.01em;
 		font-size: 1.4em;
 		color: white;

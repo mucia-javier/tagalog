@@ -138,7 +138,7 @@ Small Device Styles
 	Theme Styles
 	*******************************************************************************/
 
-	h1, h2, h3, h4, h6 {
+	h1, h2, h3, h6 {
 	  margin: 10px 0;
 	  color:#222222;
 	}
@@ -236,6 +236,11 @@ Small Device Styles
 		font-size: 1.4em;
 		font-weight: bold;
 		}
+	reviewTitle{
+		font-weight: bold;
+		color: #444;
+		font-size: 1.1em;
+		}
 	#number_index{
 		padding-top: 0.4em;
 		padding-right: 1em;
@@ -289,7 +294,7 @@ Small Device Styles
 		min-height: 3em;
 		padding-left: .5em;
 		text-align:left;
-		//border-bottom: 1.5px solid grey;
+		
 		color: #FFFFFF;
 		font-size: 1.5em;
 		}
@@ -297,7 +302,7 @@ Small Device Styles
 		min-height: 3em;
 		padding-left: .5em;
 		text-align:left;
-		//border-bottom: 2px solid grey;
+	
 		color: #e03030;
 		font-size: 1.5em;
 		font-weight: bold;
@@ -350,7 +355,7 @@ Small Device Styles
 
 	.back_btn {
 		margin-top:0.4em;
-		margin-left: 2.13em;
+		margin-left: 1.5em;
 		font-size: .8em;
 		display: inline-block;
 		outline: none;

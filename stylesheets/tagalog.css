@@ -629,6 +629,7 @@ Small Device Styles
 
 	/* Toast/Snack Bar part */
 	#snackbar {
+		left: 0px;
 		visibility: hidden;
 		width: 100%;
 		background-color: rgba(50, 50, 50, .8);

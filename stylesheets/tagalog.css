@@ -252,7 +252,6 @@ Small Device Styles
 		}
 	.entry{
 		background-color: #ffffff;
-		margin-bottom: .2em;
 		line-height: 1.4;
 		}
 		
@@ -272,6 +271,7 @@ Small Device Styles
 		}
 	#instruction {
 		color: #a0a0a0;
+		background-color: #ffffff;
 		}
 	.question, inquiry{
 		padding-top: 0.3em;
@@ -287,22 +287,20 @@ Small Device Styles
 		padding-bottom: 1em;
 		}
 	.inquiryDisabled{
-		text-indent: .2em;
-		margin-left:0.5em;
-		margin-right:0.5em;
+		min-height: 3em;
+		padding-left: .5em;
 		text-align:left;
 		//border-bottom: 1.5px solid grey;
 		color: #FFFFFF;
-		font-size: 1.4em;
+		font-size: 1.5em;
 		}
 	.inquiry{
-		text-indent: .2em;
-		margin-left:0.5em;
+		min-height: 3em;
+		padding-left: .5em;
 		text-align:left;
-		margin-right:0.5em;
 		//border-bottom: 2px solid grey;
 		color: #e03030;
-		font-size: 1.4em;
+		font-size: 1.5em;
 		font-weight: bold;
 		}
 	button {

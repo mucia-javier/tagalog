@@ -4,6 +4,9 @@ function init(){
 	document.getElementById("review_link").click();
     loadContent('vocabulary.txt');
     loadContent('phrases.txt');
+    if (!(localStorage.sentenceIndex)) {
+        localStorage.sentenceIndex = 0;
+        } 
     }
 
 function openTab(evt, tabName) {
@@ -330,6 +333,7 @@ var descriptors = [];
 var markers = [];
 var nouns = [];
 function CompleteSentenceMode(){
+	showToast("Last sentence accessed: "+localStorage.sentenceIndex);
     //document.body.style.backgroundColor = "#ffffff"; 
     document.getElementById("question").innerHTML = "";
     document.getElementById("question").style.display = "none";
@@ -399,16 +403,31 @@ function CompleteSentenceMode(){
     setTimeout(function () {
                 sentences = sentences.reverse();
                 //sentences = sentences.sort(function() { return 0.5 - Math.random() });
-                PlayCompleteTheSentence(0);
+                if(Number(localStorage.sentenceIndex)>0){
+                    document.getElementById('sentenceIndexModal').style.display = "block";
+                    }
+                else{
+                    PlayCompleteTheSentence(0);
+                    }
                 }, 600);
     
     }
+function startOverNewSession(){
+    document.getElementById('sentenceIndexModal').style.display = "none";
+    PlayCompleteTheSentence(0);
+    }
 
+function continueLastSession(){
+	document.getElementById('sentenceIndexModal').style.display = "none";
+	PlayCompleteTheSentence(Number(localStorage.sentenceIndex));
+	}
+    
 function PlayCompleteTheSentence(sentence_index){
     if(sentence_index >= sentences.length){
+    	localStorage.sentenceIndex = 0;
         window.location.href = window.location.href;
         }
-        
+    localStorage.sentenceIndex = sentence_index;
         
     var a_sentence = sentences[sentence_index].split("|");
     // Clear page and populate it with new stuff

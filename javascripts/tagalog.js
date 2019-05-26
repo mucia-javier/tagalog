@@ -333,7 +333,7 @@ var descriptors = [];
 var markers = [];
 var nouns = [];
 function CompleteSentenceMode(){
-	showToast("Last sentence accessed: "+localStorage.sentenceIndex);
+	//showToast("Last sentence accessed: "+localStorage.sentenceIndex);
     //document.body.style.backgroundColor = "#ffffff"; 
     document.getElementById("question").innerHTML = "";
     document.getElementById("question").style.display = "none";
@@ -419,6 +419,7 @@ function startOverNewSession(){
 
 function continueLastSession(){
 	document.getElementById('sentenceIndexModal').style.display = "none";
+	showToast("Continuing at sentence "+localStorage.sentenceIndex);
 	PlayCompleteTheSentence(Number(localStorage.sentenceIndex));
 	}
     

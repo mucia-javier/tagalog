@@ -189,7 +189,7 @@ alin ba ang iyong gusto? | which one do you like?
 gaano kalaki ang Philippines? | how large is the Philippines?
 paano mo malalaman? | how will you know?
 bakit siya galit? | why is she/he angry?
-kailan kayo dumating sa Philippines?| when did you arrive in the Philippines?
+kailan kayo dumating sa Philippines? | when did you arrive in the Philippines?
 nasaan siya? | where is she/he?
 saan kayo nakatira? | where do you live?
 ilan ang aso ninyo? | how many dogs do you have?
@@ -202,7 +202,7 @@ anu-ano ang mga pangalan ninyo? | what are your names?
 kani-kanino ang mga bahay na iyan? | whose houses are those?
 saan-saan kayo nakatira? | where do you (plural) live?
 magka-magkano ang mga aklat? | how much are each of the books?
-ilan-ilan ang mga aso nila? | how many children do they have?
+ilan-ilan ang mga aso nila? | how many dogs do they have?
 sino ang taong iyan? | who is that person?
 sinong tao iyan? | who is that person?
 sino 'yan? | who is that person?

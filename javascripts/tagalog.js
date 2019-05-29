@@ -425,6 +425,7 @@ function continueLastSession(){
     
 function PlayCompleteTheSentence(sentence_index){
     if(sentence_index >= sentences.length){
+    	sentence_index =0;
     	localStorage.sentenceIndex = 0;
         window.location.href = window.location.href;
         }

@@ -4,6 +4,7 @@ function init(){
 	document.getElementById("review_link").click();
     loadContent('vocabulary.txt');
     loadContent('phrases.txt');
+    loadSentencesContent();
     if (!(localStorage.sentenceIndex)) {
         localStorage.sentenceIndex = 0;
         } 
@@ -327,29 +328,12 @@ function PlayMatch(sectionContent, i){
        document.getElementById("answer").appendChild(document.createElement("ol"));
     }
 
-
 var sentences = [];
 var descriptors = [];
 var markers = [];
 var nouns = [];
-function CompleteSentenceMode(){
-	//showToast("Last sentence accessed: "+localStorage.sentenceIndex);
-    //document.body.style.backgroundColor = "#ffffff"; 
-    document.getElementById("question").innerHTML = "";
-    document.getElementById("question").style.display = "none";
-    var back_btn = document.createElement("button");
-    back_btn.value = "back_btn";
-    back_btn.id = "back_btn";
-    back_btn.appendChild(document.createTextNode("Main Menu"));
-    back_btn.classList.add("back_btn");
-    back_btn.onclick = function(){
-         window.location.href = window.location.href;
-        }
-    document.getElementById("navigation_section").innerHTML = "";
-    document.getElementById("navigation_section").appendChild(back_btn);
-    document.getElementById("navigation_section").style.textAlign = "left"; 
-    
-    var fileName = "sentences.txt";
+function loadSentencesContent(){
+	var fileName = "sentences.txt";
     $.get(fileName, function(data) {
        //process text file line by line
         var lines = data.split("\n");
@@ -396,6 +380,27 @@ function CompleteSentenceMode(){
                 }
             }
         }, 'text');
+	}
+
+function AddGoToMainBytton(){
+	document.getElementById("question").innerHTML = "";
+    document.getElementById("question").style.display = "none";
+    var back_btn = document.createElement("button");
+    back_btn.value = "back_btn";
+    back_btn.id = "back_btn";
+    back_btn.appendChild(document.createTextNode("Main Menu"));
+    back_btn.classList.add("back_btn");
+    back_btn.onclick = function(){
+         window.location.href = window.location.href;
+        }
+    document.getElementById("navigation_section").innerHTML = "";
+    document.getElementById("navigation_section").appendChild(back_btn);
+    document.getElementById("navigation_section").style.textAlign = "left"; 
+	}
+
+function CompleteSentenceMode(){
+	AddGoToMainBytton();
+    
     //sentences = sentences.sort(function() { return 0.5 - Math.random() });
     //descriptors = descriptors.sort(function() { return 0.5 - Math.random() });
     //markers = markers.sort(function() { return 0.5 - Math.random() });
@@ -502,7 +507,9 @@ function PlayCompleteTheSentence(sentence_index){
                 }
             }
         else{
+        	showToastWithColor('Try again! ', 240, 40, 40, .8);
             //document.getElementById('audioWrong').play();
+            /*
             document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><br>";
             var modalFooter = document.getElementById('modal-footer');
             modalFooter.classList.remove("green-right");
@@ -514,6 +521,7 @@ function PlayCompleteTheSentence(sentence_index){
                 modal.style.display = "none";
                 //PlayCompleteTheSentence(sentence_index);
                 }
+            */
             }
         }
     //document.getElementById("submit_area").appendChild(document.createElement("br"));
@@ -639,9 +647,76 @@ function PlayCompleteTheSentence(sentence_index){
     document.getElementById("submit_area").style.display = "block";
     }
 
-function showToast(theMessage) {
-    var x = document.getElementById("snackbar");
-    x.className = "show";
-    document.getElementById("snackbar").innerHTML = theMessage;
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+function TranslateSentenceMode(sIndex){
+	showToastWithColor('Translate the sentences', 100, 100, 255, 0.4);
+	AddGoToMainBytton();
+	var a_sentence = sentences[sIndex].split("|");
+	document.getElementById("instruction").innerHTML = "<div id='number_index'>"+1+" / "+(sentences.length)+"</div><div id='eng_q'>"+a_sentence[1];+"</div>"; //Show the english equivalent
+    document.getElementById("inquiry").innerHTML  = "<textarea id='textInput' rows='2'></textarea>";
+    /*document.getElementById("inquiry").classList.remove("inquiryDisabled");
+    document.getElementById("inquiry").classList.add("inquiry");*/
+    document.getElementById("inquiry").style.display = "block";
+    //document.getElementById("answer").innerHTML   = "answer";
+    document.getElementById("answer").style.display = "block";
+    document.getElementById("submit_area").style.display = "block";
+    
+    
+    var submit_button = document.createElement("button");
+    var t =  document.createTextNode("Submit");
+    submit_button.appendChild(t);
+    submit_button.id = "submit";;
+    submit_button.classList.add("submit_btn");
+    submit_button.onclick = function(){
+        if(a_sentence[0]==document.getElementById("textInput").textContent){
+            //document.getElementById('audioRight').play();
+            var modalFooter = document.getElementById('modal-footer');
+            modalFooter.classList.remove("red-wrong");
+            modalFooter.classList.add("green-right");
+            modalFooter.innerHTML = "<h5>Continue</h5>";
+            var modal = document.getElementById('myModal');
+            modal.style.display = "block";
+            document.getElementById('modal-body').innerHTML = "<may>May Tama Ka!</may><br><br><tag>"+ a_sentence[0]+"</tag> <br>is<br><eng>"+a_sentence[1]+"</eng><br>";
+            document.getElementById('modal-body').innerHTML += "<br>";
+            modalFooter.onclick = function() {
+                modal.style.display = "none";
+                PlayCompleteTheSentence(sentence_index+1);
+                }
+            }
+        else{
+        	showToastWithColor('Try again! ', 240, 40, 40, .8);
+            //document.getElementById('audioWrong').play();
+            /*
+            document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><br>";
+            var modalFooter = document.getElementById('modal-footer');
+            modalFooter.classList.remove("green-right");
+            modalFooter.classList.add("red-wrong");
+            modalFooter.innerHTML = "<h5>Try Again</h5>";
+            var modal = document.getElementById('myModal');
+            modal.style.display = "block";
+            modalFooter.onclick = function() {
+                modal.style.display = "none";
+                //PlayCompleteTheSentence(sentence_index);
+                }
+            */
+            }
+        }
+        document.getElementById("submit_area").appendChild(submit_button);
     }
+
+function showToast(theMessage) {
+    var theToast = document.getElementById("toast");
+    theToast.className = "show";
+    theToast.innerHTML = theMessage;
+    setTimeout(function(){ theToast.className = theToast.className.replace("show", ""); }, 3000);
+    }
+function showToastWithColor(theMessage, r, g, b, t){
+	var theToast = document.getElementById("toast");
+    theToast.className = "show";
+    theToast.innerHTML = theMessage;
+    theToast.style.backgroundColor = "rgba("+r+", "+g+", "+b+", "+t+")";
+    setTimeout(function(){ theToast.className = theToast.className.replace("show", ""); theToast.style.backgroundColor = "rgba(50, 50, 50, .8)";}, 3000);
+	}
+	
+	
+	
+	

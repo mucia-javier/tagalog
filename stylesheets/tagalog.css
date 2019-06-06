@@ -628,7 +628,7 @@ Small Device Styles
 		}
 
 	/* Toast/Snack Bar part */
-	#snackbar {
+	#toast {
 		left: 0px;
 		visibility: hidden;
 		width: 100%;
@@ -642,7 +642,7 @@ Small Device Styles
 		font-size: 17px;
 		}
 
-	#snackbar.show {
+	#toast.show {
 		  z-index: 4;
 		visibility: visible;
 		-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -668,6 +668,14 @@ Small Device Styles
 		from {bottom: 0em; opacity: 1;}
 		to {bottom: -2em; opacity: 0;}
 		}
-
+    
+    #textInput{
+    	margin-top: .8em;
+    	font-size: .8em;
+        width: 95%;
+        border: none;
+        border-bottom: 1px solid gray;
+		color: #e03030;
+    	}
 
 }

@@ -7,7 +7,10 @@ function init(){
     loadSentencesContent();
     if (!(localStorage.sentenceIndex)) {
         localStorage.sentenceIndex = 0;
-        } 
+        }
+    if (!(localStorage.sentenceIndex2)) {
+        localStorage.sentenceIndex2 = 0;
+        }
     }
 
 function openTab(evt, tabName) {
@@ -626,7 +629,7 @@ function PlayCompleteTheSentence(sentence_index){
     previous_button.onclick =function(){
         if(sentence_index > 0){
             PlayCompleteTheSentence(sentence_index-1);
-            showToast("Jumping to the previous sentence");
+            showToast("Jumping back to sentence "+(sentence_index-1));
             }
         }
     document.getElementById("submit_area").appendChild(previous_button);
@@ -639,7 +642,7 @@ function PlayCompleteTheSentence(sentence_index){
     nextN_button.classList.add("faint_btn");
     var n_index = Math.min(sentence_index+n_number, sentences.length-1);
     nextN_button.onclick =function(){
-        showToast("Jumping "+n_number+" sentences ahead");
+        showToast("Jumping ahead  to sentence "+n_index);
         PlayCompleteTheSentence(n_index);
         }
     document.getElementById("submit_area").appendChild(nextN_button);
@@ -647,9 +650,35 @@ function PlayCompleteTheSentence(sentence_index){
     document.getElementById("submit_area").style.display = "block";
     }
 
-function TranslateSentenceMode(sIndex){
+function TranslateSentenceMode(){
+	setTimeout(function () {
+                //sentences = sentences.reverse();
+                //sentences = sentences.sort(function() { return 0.5 - Math.random() });
+                if(Number(localStorage.sentenceIndex2)>0){
+                    document.getElementById('sentenceIndexModal2').style.display = "block";
+                    }
+                else{
+                	localStorage.sentenceIndex2 = 0;
+                    PlayTranslateSentenceMode();
+                    }
+                }, 600);
+    
+	}
+
+function startOverNewTranslateSession(){
+	document.getElementById('sentenceIndexModal2').style.display = "none";
+	localStorage.sentenceIndex2 = 0;
+	PlayTranslateSentenceMode();
+	}
+
+function continueLastTranslateSession(){
+	document.getElementById('sentenceIndexModal2').style.display = "none";
+	PlayTranslateSentenceMode();
+	}
+
+function PlayTranslateSentenceMode(){
 	AddGoToMainBytton();
-	var a_sentence = sentences[sIndex].split("|");
+	var a_sentence = sentences[Number(localStorage.sentenceIndex2)].split("|");
 	document.getElementById("instruction").innerHTML = "<div id='number_index'>"+1+" / "+(sentences.length)+"</div><div id='eng_q'>"+a_sentence[1];+"</div>"; //Show the english equivalent
     document.getElementById("inquiry").innerHTML  = "<textarea id='textInput' rows='2'></textarea>";
     /*document.getElementById("inquiry").classList.remove("inquiryDisabled");
@@ -658,6 +687,7 @@ function TranslateSentenceMode(sIndex){
     //document.getElementById("answer").innerHTML   = "answer";
     document.getElementById("answer").style.display = "block";
     document.getElementById("submit_area").style.display = "block";
+    document.getElementById("submit_area").innerHTML = "";
     
     
     var submit_button = document.createElement("button");
@@ -666,8 +696,8 @@ function TranslateSentenceMode(sIndex){
     submit_button.id = "submit";;
     submit_button.classList.add("submit_btn");
     submit_button.onclick = function(){
-    	showToastWithColor(document.getElementById("textInput").value, 100, 100, 255, 0.4);
-        if(a_sentence[0]==document.getElementById("textInput").value+" "){
+    	//showToastWithColor(document.getElementById("textInput").value, 100, 100, 255, 0.4);
+        if(a_sentence[0].toLowerCase()==document.getElementById("textInput").value.toLowerCase()+" "){
             //document.getElementById('audioRight').play();
             var modalFooter = document.getElementById('modal-footer');
             modalFooter.classList.remove("red-wrong");
@@ -679,28 +709,29 @@ function TranslateSentenceMode(sIndex){
             document.getElementById('modal-body').innerHTML += "<br>";
             modalFooter.onclick = function() {
                 modal.style.display = "none";
-                TranslateSentenceMode(sIndex+1);
+                localStorage.sentenceIndex2 = Number(localStorage.sentenceIndex2)+1;
+                PlayTranslateSentenceMode();
                 }
             }
         else{
         	showToastWithColor('Try again! ', 240, 40, 40, .8);
-            //document.getElementById('audioWrong').play();
-            /*
-            document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><br>";
-            var modalFooter = document.getElementById('modal-footer');
-            modalFooter.classList.remove("green-right");
-            modalFooter.classList.add("red-wrong");
-            modalFooter.innerHTML = "<h5>Try Again</h5>";
-            var modal = document.getElementById('myModal');
-            modal.style.display = "block";
-            modalFooter.onclick = function() {
-                modal.style.display = "none";
-                //PlayCompleteTheSentence(sentence_index);
-                }
-            */
             }
         }
-        document.getElementById("submit_area").appendChild(submit_button);
+    document.getElementById("submit_area").appendChild(submit_button);
+        
+    document.getElementById("submit_area").appendChild(document.createElement("br"));
+    //document.getElementById("submit_area").appendChild(document.createElement("br"));
+        
+    var reveal_btn = document.createElement("button");
+    var t =  document.createTextNode("Show the answer");
+    reveal_btn.appendChild(t);
+    reveal_btn.id = "reveal";;
+    reveal_btn.classList.add("faint_btn");
+    reveal_btn.onclick =function(){
+        showToast(a_sentence[0]);
+        }
+    document.getElementById("submit_area").appendChild(reveal_btn);
+
     }
 
 function showToast(theMessage) {

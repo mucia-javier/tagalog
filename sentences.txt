@@ -1,92 +1,92 @@
 *sentences
 maganda si Kristel | Kristel is beautiful
-si Ruth ay babáe | Ruth is a woman
-si Peter ay laláki | Peter is a man
-si Ruth ay magandá | Ruth is beautiful
-si Peter ay marúnong | Peter is intelligent
-sina Helen at Tom ay mababaít | Helen and Tomare kind
-ang batà ay mabait | the kid is kind
-ang áso ay mabait | the dog is good
-ang babáe at ang áso ay mababaít | the woman and the dog are good
-ang mga laláki at ang mga áso ay mababaít | the men and the dogs are good
-ang mga sapátos ay malilínis | the shoes are clean
-ang barò at ang sapátos ay malilínis | the dress and the shoes are clean
-ang mga barò at ang mga sapátos ay maililínis | the dresses and the shoes are clean
-ang Philipínas ay maliít | the Philipines is small
-ang USA ay malakí | the US is big
-ang Maynilà ay isang lungsod ng Philipínas | Manila is a city of the Philipines
-ang WashingtonDC ay púnong-lungsód ng USA | WashingtonDC is the capital of the USA
-ang Maynilá at ang Washington ay mga lungsod | Manila and Washington are cities
-ang Baguio at ang Tagaytáy ay mga malalamíg na lugár | Baguio and Tagaytay are cool places
-sina Ruth at Peter ay magkapatíd | Ruth and Peter are siblings
-ang America at Aprika ay malalakí | America and Africa are big
-si Peter at si Ruth ay mababaít at marurúnong | Peter and Ruth are kind and intelligent
-sina Helen at Tom ay malilínis | Helen and Tom are clean
-ang babae at si Ruth ay magagandá | the woman and Ruth are beautiful
-sina Helen at Tom at ang áso ay mababaít | Helen, Tom and the dog are good
-ang báhay ay malakí | the house is big
-malakí ang báhay | the house is big
-kumákain ang áso | the dog is eating
-mabaít si Peter | Peter is kind
-mga lungsód ang Cebu at Maynila | Cebu and Manila are cities
-mga babáe sina Helen | Helen and companions are women
-mga háyop ang aso at pusà | the dog and the cat are animals
-maláki ang simbahan | the church is big
-masaráp ang isdâ | the fish is delicious
-masaráp ang kapé | the coffee is delicious
-masaráp ang pagkáin | the food is delicious
-bágo ang sílya | the chair is new
-bágo ang mga mésa | the tables are new
-malamíg ang pagkáin | the food is cold
-maínit ang pagkáin | the food is hot
-maruming maínit ang pagkáin | the food is very hot
-akó ay si John | i am John
-akó ay laláki | i am a man
-masípag akó | i am industrious
-malusóg akó | i am healthy
-akó ay nag-áaral | i am studying
-kamí ay sina John at Helen | we are John and Helen
-kamí ay magkapatid | we are siblings
-mababaít kamí | we are kind
-mahihírap kamí | we are poor
-táyo ay sina John at Mary | we are John and Mary
-táyo ay magkakaibígan | we are friends
-mababaít táyo | we are good
-masisípag táyo | we are industrious
-ikáw ay si Mary | you are Mary
-ikáw ay babáe | you are a woman
-masípag ka | you are industrious
-malusóg ka | you are healthy
-siyá ay si Peter | He is Peter
-siyá ay isang laláki | he is a man
-siyá ay isang babáe | she is a woman
-marúnong siyá | she is intelligent
-mabaít siyá | she is kind
-silá ay sina John at Mary | they are John and Mary
-silá ay magkaibígan | they are friends
-marurúnog silá | they are intelligent
-kayó pô ba ay guro? | are you a teacher sir/ma'am?
-itó ay si John | this is John
-itó ay isang laláki | this is a man
-itó ay pagkáin | this is food
-maliít ito | this is small
-malakí ito | this is big
-iyán ay si Mary | that is Mary
-iyán ay pagkáin | that is food
-iyán ay pagkáin ni mary | that is food of mary (that's Mary's food)
-marámi iyán | that is plenty
-maínit iyán | that is hot
-mahabà iyón | that is long
-ang mga itó ay mababaít | these are good
-ang mga iyán ay malalakí | those are big
-ang mga iyón ay malilínis | those are clean
-ang mésang itó ay malínis | this table is clean
-itóng mésang itó ay malínis | this table is clean
-malakí iyóng báhay na iyón | that house is big
-magandá ang suót mong iyán | your clothes are beautiful
-ang laláki ay kumáin sa mésang itó | the man ate on this table
-pumunta kamí sa báhay na iyán | we went to that house
-súmakay silá sa bus na iyón | they rode on that bus
+si Ruth ay babae | Ruth is a woman
+si Peter ay lalaki | Peter is a man
+si Ruth ay maganda | Ruth is beautiful
+si Peter ay marunong | Peter is intelligent
+sina Helen at Tom ay mababait | Helen and Tomare kind
+ang bata ay mabait | the kid is kind
+ang aso ay mabait | the dog is good
+ang babae at ang aso ay mababait | the woman and the dog are good
+ang mga lalaki at ang mga aso ay mababait | the men and the dogs are good
+ang mga sapatos ay malilinis | the shoes are clean
+ang baro at ang sapatos ay malilinis | the dress and the shoes are clean
+ang mga baro at ang mga sapatos ay maililinis | the dresses and the shoes are clean
+ang Philipinas ay maliit | the Philipines is small
+ang USA ay malaki | the US is big
+ang Maynila ay isang lungsod ng Philipinas | Manila is a city of the Philipines
+ang WashingtonDC ay punong-lungsod ng USA | WashingtonDC is the capital of the USA
+ang Maynila at ang Washington ay mga lungsod | Manila and Washington are cities
+ang Baguio at ang Tagaytay ay mga malalamig na lugar | Baguio and Tagaytay are cool places
+sina Ruth at Peter ay magkapatid | Ruth and Peter are siblings
+ang America at Aprika ay malalaki | America and Africa are big
+si Peter at si Ruth ay mababait at marurunong | Peter and Ruth are kind and intelligent
+sina Helen at Tom ay malilinis | Helen and Tom are clean
+ang babae at si Ruth ay magaganda | the woman and Ruth are beautiful
+sina Helen at Tom at ang aso ay mababait | Helen, Tom and the dog are good
+ang bahay ay malaki | the house is big
+malaki ang bahay | the house is big
+kumakain ang aso | the dog is eating
+mabait si Peter | Peter is kind
+mga lungsod ang Cebu at Maynila | Cebu and Manila are cities
+mga babae sina Helen | Helen and companions are women
+mga hayop ang aso at pusa | the dog and the cat are animals
+malaki ang simbahan | the church is big
+masarap ang isda | the fish is delicious
+masarap ang kape | the coffee is delicious
+masarap ang pagkain | the food is delicious
+bago ang silya | the chair is new
+bago ang mga mesa | the tables are new
+malamig ang pagkain | the food is cold
+mainit ang pagkain | the food is hot
+maruming mainit ang pagkain | the food is very hot
+ako ay si John | i am John
+ako ay lalaki | i am a man
+masipag ako | i am industrious
+malusog ako | i am healthy
+ako ay nag-aaral | i am studying
+kami ay sina John at Helen | we are John and Helen
+kami ay magkapatid | we are siblings
+mababait kami | we are kind
+mahihirap kami | we are poor
+tayo ay sina John at Mary | we are John and Mary
+tayo ay magkakaibigan | we are friends
+mababait tayo | we are good
+masisipag tayo | we are industrious
+ikaw ay si Mary | you are Mary
+ikaw ay babae | you are a woman
+masipag ka | you are industrious
+malusog ka | you are healthy
+siya ay si Peter | He is Peter
+siya ay isang lalaki | he is a man
+siya ay isang babae | she is a woman
+marunong siya | she is intelligent
+mabait siya | she is kind
+sila ay sina John at Mary | they are John and Mary
+sila ay magkaibigan | they are friends
+marurunog sila | they are intelligent
+kayo po ba ay guro? | are you a teacher sir/ma'am?
+ito ay si John | this is John
+ito ay isang lalaki | this is a man
+ito ay pagkain | this is food
+maliit ito | this is small
+malaki ito | this is big
+iyan ay si Mary | that is Mary
+iyan ay pagkain | that is food
+iyan ay pagkain ni mary | that is food of mary (that's Mary's food)
+marami iyan | that is plenty
+mainit iyan | that is hot
+mahaba iyon | that is long
+ang mga ito ay mababait | these are good
+ang mga iyan ay malalaki | those are big
+ang mga iyon ay malilinis | those are clean
+ang mesang ito ay malinis | this table is clean
+itong mesang ito ay malinis | this table is clean
+malaki iyong bahay na iyon | that house is big
+maganda ang suot mong iyan | your clothes are beautiful
+ang lalaki ay kumain sa mesang ito | the man ate on this table
+pumunta kami sa bahay na iyan | we went to that house
+sumakay sila sa bus na iyon | they rode on that bus
 ang malaking bahay ay isang paaralan | the big house is a school
 marunong ang batang mabait | the good child is intelligent
 ang mayamang lalaki ay mapagbigay | the rich man is generous
@@ -103,7 +103,7 @@ mahal na totoo ang relo mo | your watch is truly expensive
 totoong mahal ang relo mo | your watch is truly expensive
 kung wala pa ako mauna na kayo | if I am not around yet you may go ahead
 mamatay mabuhay ang relo ko | my watch stops periodically
-áyaw kumáin ng máysakit | the sick person does not want to eat
+ayaw kumain ng maysakit | the sick person does not want to eat
 gabing-gabi na siya umuwi | she came home very late
 mabait na mabait ang guro ko | my teacher is very kind
 ang bahay na iyan ay akin | that house over there is mine
@@ -115,7 +115,7 @@ kung ako ay ikaw aalis ako | if I were you I would leave
 lalaking mataba | fat man
 ibong lumilipad | flying bird
 ang bahay ni Maria | the house of Maria
-ang barò ni Juan | the shirt of Juan
+ang baro ni Juan | the shirt of Juan
 ang lapis ni Helen | the pencil of Helen
 ang sapatos ni Berto | the shoes of Berto
 ang aklat ni Paolo | the book of Paulo
@@ -131,7 +131,7 @@ ang mga damit ng mga babae | the clothes of the women
 ang aking bahay ay malaki | my house is big
 ang bahay ko ay malaki | my house is big
 ang iyong baro ay bago | your dress is new
-ang baro mo ay bágo | your dress is new
+ang baro mo ay bago | your dress is new
 malinis ang kaniyang sapatos | his shoes are clean
 malinis ang sapatos niya | her shoes are clean
 luma ang aming kotse | our car is old
@@ -263,50 +263,50 @@ ako ay guro | i am (a) professor
 
 
 *descriptors
-magandá| beautiful | ma-gan-DA
+maganda| beautiful | ma-gan-DA
 masaya | fun
 masakit | painful
 makati | itchy
-malakí | big
-maliít | small
-malínis | clean
+malaki | big
+maliit | small
+malinis | clean
 marumi | dirty
 mahabi | long
 maiksi | short
 nakakainis | annoying
 manipis | thin
 makapa | thick
-marámi | many
-marúnong | intelligent
-matabâ | fat
-masamâ | bad
-mabaít | kind
-mabúti | good
-maínit | hot
-malamíg | cold
-bágo | new
-lumà | old | inanimate
-matandâ | old | animate
-múra | cheap
-mahál | expensive
-masaráp | delicious
-malusóg | healthy
-mataás | high
-mababà | low
-mahírap | poor | difficult
-mayáman | rich
-masípag | industrious
-mabilís | fast
-madilím | dark
-mahúsay | efficient
-payát | thin
-matabâ | fat
-matápang | brave
-maíngay | noisy
-tahímik | quiet
-tamád | lazy
-matamís | sweet
-malakás | strong
+marami | many
+marunong | intelligent
+mataba | fat
+masama | bad
+mabait | kind
+mabuti | good
+mainit | hot
+malamig | cold
+bago | new
+luma | old | inanimate
+matanda | old | animate
+mura | cheap
+mahal | expensive
+masarap | delicious
+malusog | healthy
+mataas | high
+mababa | low
+mahirap | poor | difficult
+mayaman | rich
+masipag | industrious
+mabilis | fast
+madilim | dark
+mahusay | efficient
+payat | thin
+mataba | fat
+matapang | brave
+maingay | noisy
+tahimik | quiet
+tamad | lazy
+matamis | sweet
+malakas | strong
 
 *markers
 si
@@ -330,17 +330,17 @@ kami | we excluding listener
 tayo | we including listener
 kayo | you plural/formal
 sila | they
-ákin | my
-iyó | your (singular)
-kaniyá | his/her
-ámin | our (exclusive)
-átin | our (inclusive)
-inyó | your (plural)
-kanilá | their
+akin | my
+iyo | your (singular)
+kaniya | his/her
+amin | our (exclusive)
+atin | our (inclusive)
+inyo | your (plural)
+kanila | their
 ko | my
 mo | your (singular)
-niyá | his/her
-námin | our (exclusive)
-nátin | our (inclusive)
-ninyó | your (plural)
-nilá | their
+niya | his/her
+namin | our (exclusive)
+natin | our (inclusive)
+ninyo | your (plural)
+nila | their

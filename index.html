@@ -55,7 +55,7 @@
 						<br>
 						<button class="review_btn" onclick="MatchTranslationMode()">Match Translation</button><br><br>
 						<button class="review_btn" onclick="CompleteSentenceMode()">Complete The Sentence</button><br><br>
-						<button class="review_btn" onclick="TranslateSentenceMode(0)">Translate Sentences</button><br><br>
+						<button class="review_btn" onclick="TranslateSentenceMode()">Translate Sentences</button><br><br>
 						<br>
 					</div>
 
@@ -91,6 +91,13 @@
 						<div class="modal-content">
 							<button class="review_btn" onclick="startOverNewSession()">Start Over</button>
 						    <button class="review_btn" onclick="continueLastSession()">Continue</button><br>
+						</div>
+					</div>
+                    <div id="sentenceIndexModal2" class="modal">
+						<!-- Modal content -->
+						<div class="modal-content">
+							<button class="faint_btn" onclick="startOverNewTranslateSession()">Start Over</button>
+						    <button class="faint_btn" onclick="continueLastTranslateSession()">Continue</button><br>
 						</div>
 					</div>
 					<div id="toast">

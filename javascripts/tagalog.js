@@ -679,7 +679,7 @@ function continueLastTranslateSession(){
 function PlayTranslateSentenceMode(){
 	AddGoToMainBytton();
 	var a_sentence = sentences[Number(localStorage.sentenceIndex2)].split("|");
-	document.getElementById("instruction").innerHTML = "<div id='number_index'>"+localStorage.sentenceIndex2+" / "+(sentences.length)+"</div><div id='eng_q'>"+a_sentence[1];+"</div>"; //Show the english equivalent
+	document.getElementById("instruction").innerHTML = "<div id='number_index'>"+localStorage.sentenceIndex2+" / "+(sentences.length-1)+"</div><div id='eng_q'>"+a_sentence[1];+"</div>"; //Show the english equivalent
     document.getElementById("inquiry").innerHTML  = "<textarea id='textInput' rows='2'></textarea>";
     /*document.getElementById("inquiry").classList.remove("inquiryDisabled");
     document.getElementById("inquiry").classList.add("inquiry");*/

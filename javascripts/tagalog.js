@@ -679,11 +679,11 @@ function TranslateSentenceMode(sIndex){
             document.getElementById('modal-body').innerHTML += "<br>";
             modalFooter.onclick = function() {
                 modal.style.display = "none";
-                PlayCompleteTheSentence(sentence_index+1);
+                TranslateSentenceMode(sIndex+1);
                 }
             }
         else{
-        //	showToastWithColor('Try again! ', 240, 40, 40, .8);
+        	showToastWithColor('Try again! ', 240, 40, 40, .8);
             //document.getElementById('audioWrong').play();
             /*
             document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><br>";

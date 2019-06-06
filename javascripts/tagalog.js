@@ -648,7 +648,6 @@ function PlayCompleteTheSentence(sentence_index){
     }
 
 function TranslateSentenceMode(sIndex){
-	showToastWithColor('Translate the sentences', 100, 100, 255, 0.4);
 	AddGoToMainBytton();
 	var a_sentence = sentences[sIndex].split("|");
 	document.getElementById("instruction").innerHTML = "<div id='number_index'>"+1+" / "+(sentences.length)+"</div><div id='eng_q'>"+a_sentence[1];+"</div>"; //Show the english equivalent
@@ -667,7 +666,8 @@ function TranslateSentenceMode(sIndex){
     submit_button.id = "submit";;
     submit_button.classList.add("submit_btn");
     submit_button.onclick = function(){
-        if(a_sentence[0]==document.getElementById("textInput").textContent){
+    	showToastWithColor(document.getElementById("textInput").value, 100, 100, 255, 0.4);
+        if(a_sentence[0]==document.getElementById("textInput").value+" "){
             //document.getElementById('audioRight').play();
             var modalFooter = document.getElementById('modal-footer');
             modalFooter.classList.remove("red-wrong");
@@ -683,7 +683,7 @@ function TranslateSentenceMode(sIndex){
                 }
             }
         else{
-        	showToastWithColor('Try again! ', 240, 40, 40, .8);
+        //	showToastWithColor('Try again! ', 240, 40, 40, .8);
             //document.getElementById('audioWrong').play();
             /*
             document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><br>";

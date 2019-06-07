@@ -651,6 +651,7 @@ function PlayCompleteTheSentence(sentence_index){
     }
 
 function TranslateSentenceMode(){
+	showToast("document.getElementById('submit_area').style.display = 'block';");
 	setTimeout(function () {
                 //sentences = sentences.reverse();
                 //sentences = sentences.sort(function() { return 0.5 - Math.random() });

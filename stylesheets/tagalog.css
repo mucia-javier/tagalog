@@ -629,18 +629,18 @@ Small Device Styles
 
 	/* Toast/Snack Bar part */
 	#toast {
-		
+		word-wrap: break-word;
 		visibility: hidden;
-		width: 80%;
+		width: 92%;
 		background-color: rgba(50, 50, 50, .8);
 		color: #fff;
 		text-align: center;
 		padding: 16px;
-		padding-right: 1em;
 		position: fixed;
 		z-index: 3;
 		bottom: 0em;
-		font-size: 17px;
+		left: 0em;
+		font-size: 1em;
 		}
 
 	#toast.show {

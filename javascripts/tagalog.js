@@ -651,7 +651,6 @@ function PlayCompleteTheSentence(sentence_index){
     }
 
 function TranslateSentenceMode(){
-	showToast("document.getElementById('submit_area').style.display = 'block';");
 	setTimeout(function () {
                 //sentences = sentences.reverse();
                 //sentences = sentences.sort(function() { return 0.5 - Math.random() });
@@ -729,7 +728,8 @@ function PlayTranslateSentenceMode(){
     reveal_btn.id = "reveal";;
     reveal_btn.classList.add("faint_btn");
     reveal_btn.onclick =function(){
-        showToast(a_sentence[0]);
+    	showToast("document.getElementById('submit_area').style.display = 'block';");
+        //showToast(a_sentence[0]);
         }
     document.getElementById("submit_area").appendChild(reveal_btn);
 

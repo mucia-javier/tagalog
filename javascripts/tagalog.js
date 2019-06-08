@@ -728,8 +728,8 @@ function PlayTranslateSentenceMode(){
     reveal_btn.id = "reveal";;
     reveal_btn.classList.add("faint_btn");
     reveal_btn.onclick =function(){
-    	showToast("document.getElementById('submit_area').style.display = 'block';");
-        //showToast(a_sentence[0]);
+    	//showToast("document.getElementById('submit_area').style.display = 'block';");
+        showToast(a_sentence[0]);
         }
     document.getElementById("submit_area").appendChild(reveal_btn);
 

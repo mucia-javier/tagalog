@@ -682,6 +682,7 @@ Small Device Styles
 		padding-bottom: .6em;
 		padding-left: .6em;
         color: #fff;
+        caret-color: #fff;
 		font-weight: bold;
 		border-radius: .3em;
 		background-color: rgba(100, 100, 100, .9);

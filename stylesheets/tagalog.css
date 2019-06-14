@@ -681,11 +681,11 @@ Small Device Styles
 		padding-right: .2em;
 		padding-bottom: .6em;
 		padding-left: .6em;
-        color: #333;
+        color: #555;
         caret-color: #111;
 		font-weight: bolder;
 		border-radius: .3em;
-		background-color: rgba(100, 100, 100, .1);
+		background-color: rgba(10, 10, 10, .02);
 		box-shadow: 1px 1px 6px #bbb inset;
     	}
 

@@ -682,12 +682,13 @@ Small Device Styles
 		padding-bottom: .6em;
 		padding-left: .6em;
         color: #555;
-        caret-color: #111;
+        caret-color: #555;
 		font-weight: bolder;
 		border-radius: .3em;
 		background-color: rgba(10, 10, 10, .02);
-		box-shadow: 1px 1px 6px #bbb inset;
-		-webkit-box-shadow: 1px 1px 6px #bbb inset;
+		box-shadow: inset 1px 1px 6px #bbb;
+		-webkit-box-shadow: inset 1px 1px 6px #bbb;
+		-moz-box-shadow: inset 1px 1px 6px #bbb;
     	}
 
 }

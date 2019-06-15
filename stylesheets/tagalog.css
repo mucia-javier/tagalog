@@ -687,6 +687,7 @@ Small Device Styles
 		border-radius: .3em;
 		background-color: rgba(10, 10, 10, .02);
 		box-shadow: 1px 1px 6px #bbb inset;
+		-webkit-box-shadow: 1px 1px 6px #bbb inset;
     	}
 
 }

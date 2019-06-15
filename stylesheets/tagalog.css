@@ -686,6 +686,7 @@ Small Device Styles
 		font-weight: bolder;
 		border-radius: .3em;
 		background-color: rgba(10, 10, 10, .02);
+		-webkit-appearance: none;
 		box-shadow: inset 1px 1px 6px #bbb;
 		-webkit-box-shadow: inset 1px 1px 6px #bbb;
 		-moz-box-shadow: inset 1px 1px 6px #bbb;

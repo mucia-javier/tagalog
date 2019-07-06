@@ -48,7 +48,7 @@ táyo na | let us go | short: Tena
 túlog na | go to sleep
 maráhil | maybe
 oô sigúro | yes for sure
-hindî ako sigúro | i am not sure
+hindî akoo sigúro | i am not sure
 sigúro | maybe
 kataká-taká | it seems incredible
 magalíng | outstanding | how skilled
@@ -76,6 +76,26 @@ anó ang pangálan mo? | what is your name? | short: anong pangálan mo?
 saán ka púpuntá | where are you going?
 saán kayó púpuntá? | where are you going sir/madam?
 saán ka nanggáling? | where have you been?
+kilala mo ba siya? | do you know her?
+oo kilala ko siya | yes i know her
+sasama ka ba? | are you coming along?
+gusto mo ba ito? | do you like this?
+uuwi ka na ba? | are you going home already?
+gusto mo bang manood ng sine? | would you like to watch a movie?
+tama ba ito? | is this correct?
+tama ba ako? | am i correct?
+ito ay isang aso | this is a dog
+ano ba 'yan? | what's that?
+gusto ko ang tubig | i like water
+ano ang gusto mo? | what do you like?
+pupunta ako sa gym | I'm going to the gym
+saan ka pupunta? | where are you going?
+siya ay si Kristel | she is kristel
+sino ba siya? | who is she/he?
+na sa bahay siya | she is at the house
+nasaan siya? | where is she/he?
+sila ba ay aalis na? | are they leaving now?
+sila ay aalis na | they will leave now
 
 *Question feelings
 Kumusta ang ulo mo? | How is your head?

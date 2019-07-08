@@ -77,6 +77,7 @@ function loadContent(fileName){
 // First mode of review is to choose to match words or phrases
 // with their translations
 function MatchTranslationMode() {
+	/*
     document.body.style.backgroundColor = "#ffffff"; // change background color to focus attention 
     var back_btn = document.createElement("button");
     back_btn.value = "back_btn";
@@ -89,10 +90,12 @@ function MatchTranslationMode() {
     document.getElementById("navigation_section").innerHTML = "";
     document.getElementById("navigation_section").appendChild(back_btn);
     document.getElementById("navigation_section").style.textAlign = "left"; 
+    */
+    AddGoToMainBytton();
     
     // Clear page and populate it with new stuff
     document.getElementById("question").appendChild(document.createElement("br"));
-    document.getElementById("instruction").innerHTML = "<br><br><h4>Match Words or Phrases?</h4>";
+    document.getElementById("instruction").innerHTML = "<br><h4>Match Words or Phrases?</h4>";
     document.getElementById("question").style.display = "block";
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "none";
@@ -182,7 +185,7 @@ function GetSectionContent(){
     document.getElementById("question").style.display = "none";
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "none";
-    document.getElementById("instruction").innerHTML = "<h6>Match The Pairs</h6>";
+    document.getElementById("instruction").innerHTML = "<br><br>";
     
     var sec_type = "phrases";
     if(this.fileName == "vocabulary.txt"){
@@ -255,7 +258,7 @@ function PlayMatch(sectionContent, i){
        
     var completedElements = [];
         document.getElementById("question").style.display = "block";
-        document.getElementById("question").innerHTML = "<tagq>"+sectionContent.english[i]+"</tagq><br> <br>";
+        document.getElementById("question").innerHTML = "<tagq>"+sectionContent.english[i]+"</tagq><br><br><br>";
         document.getElementById("answer").style.display = "block";
         document.getElementById("answer").innerHTML = "";
         
@@ -329,6 +332,7 @@ function PlayMatch(sectionContent, i){
                 }           
             }
        document.getElementById("answer").appendChild(document.createElement("ol"));
+       document.getElementById("answer").appendChild(document.createElement("br"));
     }
 
 var sentences = [];

@@ -31,6 +31,7 @@ Small Device Styles
 		}
 	}
 
+
 html {
 	font-family: 'Open Sans';
     background-color: #F8F7FE;
@@ -273,6 +274,7 @@ reviewTitle{
 .entryStatic{
 	background-color: #ffffff;
 	margin: .2em;
+	margin-bottom: 2em;
     line-height: 1.4;
     text-align: left;
 	}

@@ -80,20 +80,6 @@ function loadContent(fileName){
 // First mode of review is to choose to match words or phrases
 // with their translations
 function MatchTranslationMode() {
-	/*
-    document.body.style.backgroundColor = "#ffffff"; // change background color to focus attention 
-    var back_btn = document.createElement("button");
-    back_btn.value = "back_btn";
-    back_btn.id = "back_btn";
-    back_btn.appendChild(document.createTextNode("Main Menu"));
-    back_btn.classList.add("back_btn");
-    back_btn.onclick = function(){
-         window.location.href = window.location.href;
-        }
-    document.getElementById("navigation_section").innerHTML = "";
-    document.getElementById("navigation_section").appendChild(back_btn);
-    document.getElementById("navigation_section").style.textAlign = "left"; 
-    */
     AddGoToMainBytton();
     
     // Clear page and populate it with new stuff
@@ -217,7 +203,7 @@ function GetSectionContent(){
                     copyEntry = true;
                     continue;                    
                     }
-                else if(row.startsWith("*") && sectionName != row_trimmed && copyEntry == true ){
+                else if(row.startsWith("*") && sectionName != row_trimmed && copyEntry == true ){ // Detects end of a section/STOP COPYING
                     copyEntry = false;                 
                     break;    
                     }
@@ -243,7 +229,7 @@ function GetSectionContent(){
                 }
             }
             if(sectionContent.tagalog.length != 0){
-                setTimeout(function () {
+                setTimeout(function () {           // Always start QUIZ with the newest entry
                         sectionContent.tagalog  = sectionContent.tagalog.reverse();
                         sectionContent.english  = sectionContent.english.reverse();
                         sectionContent.tag_note = sectionContent.tag_note.reverse();
@@ -260,23 +246,25 @@ function PlayMatch(sectionContent, i){
         }
        
     var completedElements = [];
+        var currentQuestion = sectionContent.tagalog[i];
         document.getElementById("question").style.display = "block";
-        document.getElementById("question").innerHTML = "<tagq>"+sectionContent.english[i]+"</tagq><br><br><br>";
+        document.getElementById("question").innerHTML = "<tagq>"+currentQuestion+"</tagq><br><br><br>";
         document.getElementById("answer").style.display = "block";
         document.getElementById("answer").innerHTML = "";
         
-        // give 8 choices including tje right answer in a random order
+        // give 8 choices including the right answer in a random order
         var answerHasBeenGiven = false;
-        var maxNumOfChoices = Math.min(sectionContent.english.length, 8);
+        var maxNumOfChoices = Math.min(sectionContent.tagalog.length, 8); // Give up to 8 choices
         var optionsShown = [];
         for(var j=1; j<=maxNumOfChoices; j++){
-            var showAnswer = Math.floor(Math.random() * 10); // Get random between 0 to 1. Flip coin to decide cronological position of answer
+            var showAnswer = Math.floor(Math.random() * 13); // Get random between 0 to 1. Flip coin to decide cronological position of answer
             if(answerHasBeenGiven == false && ( j == maxNumOfChoices || showAnswer >= 7)){
+                var currentButtonText = sectionContent.english[i];
                 var button_i = document.createElement("button");
-                var t =  document.createTextNode(sectionContent.tagalog[i]);
+                var t =  document.createTextNode(currentButtonText);
                 button_i.appendChild(t);
                 button_i.id = i;
-                button_i.value = sectionContent.tagalog[i];
+                button_i.value = currentButtonText;
                 button_i.classList.add("choice_btn");
                 button_i.onclick = function(){
                     var modalFooter = document.getElementById('modal-footer');
@@ -285,7 +273,7 @@ function PlayMatch(sectionContent, i){
                     modalFooter.innerHTML = "<h5>Continue</h5>";
                     var modal = document.getElementById('myModal');
                     modal.style.display = "block";
-                    document.getElementById('modal-body').innerHTML = "<may>May Tama Ka!</may><br><br><tag>"+ sectionContent.tagalog[this.id]+"</tag> is <eng>"+sectionContent.english[this.id]+"</eng><br>"; 
+                    document.getElementById('modal-body').innerHTML = "<may>May Tama Ka!</may><br><br><tag>"+ currentQuestion+"</tag> is <eng>"+currentButtonText+"</eng><br>"; 
                     if(!(typeof sectionContent.tag_note[this.id] === 'undefined')){
                         document.getElementById('modal-body').innerHTML += "<br><strong><ilo>"+sectionContent.tag_note[this.id]+"</ilo></strong><br>";
                         }
@@ -308,16 +296,17 @@ function PlayMatch(sectionContent, i){
                 }
             else{
                 var randomElementIndex = Math.floor(Math.random() * sectionContent.english.length);
+                var randomElementText = sectionContent.english[randomElementIndex];
                 if(randomElementIndex == i || optionsShown.includes(randomElementIndex)){
                     j--;
                     continue;
                     }
                 optionsShown.push(randomElementIndex);
                 var button_i = document.createElement("button");
-                var t =  document.createTextNode(sectionContent.tagalog[randomElementIndex]);
+                var t =  document.createTextNode(randomElementText);
                 button_i.appendChild(t);
                 button_i.id = randomElementIndex;
-                button_i.value = sectionContent.tagalog[randomElementIndex];
+                button_i.value = randomElementText;
                 button_i.classList.add("choice_btn");
                 button_i.onclick = function(){
                     var modalFooter = document.getElementById('modal-footer');
@@ -326,7 +315,7 @@ function PlayMatch(sectionContent, i){
                     modalFooter.innerHTML = "<h5>Try Again</h5>";
                     var modal = document.getElementById('myModal');
                     modal.style.display = "block";
-                    document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><tag>"+sectionContent.tagalog[this.id]+"</tag> is <eng>"+sectionContent.english[this.id]+"</eng><br><br>";
+                    document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><tag>"+currentQuestion+"</tag> is <eng>"+randomElementText+"</eng><br><br>";
                     modalFooter.onclick = function() {
                         modal.style.display = "none";
                         }

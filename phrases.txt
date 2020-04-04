@@ -100,3 +100,4 @@ sila ay aalis na | they will leave now
 *Question feelings
 Kumusta ang ulo mo? | How is your head?
 Masakit ba ang ulo mo? | Does your head hurt?
+

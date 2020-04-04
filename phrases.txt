@@ -95,9 +95,5 @@ sino ba siya? | who is she/he?
 na sa bahay siya | she is at the house
 nasaan siya? | where is she/he?
 sila ba ay aalis na? | are they leaving now?
-sila ay aalis na? | they will leave now?
-
-*Question feelings
-Kumusta ang ulo mo? | How is your head?
-Masakit ba ang ulo mo? | Does your head hurt?
+sila ay aalis na? | they will leave now
 

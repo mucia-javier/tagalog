@@ -11,7 +11,7 @@ Small Device Styles
 @media screen and (max-width: 480px) {
 	html {
 		font-family: 'Open Sans';
-	    background-color: #f0f0f0;
+	    background-color: #F8F7FE;
         }
 	body {
 		color:#373737;

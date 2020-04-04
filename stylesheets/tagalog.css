@@ -9,16 +9,26 @@ This is for full fledged website (currently not taken care of)
 	    }
 	#sidenav_div, #sidenav_open, #sidenav_close{
 		margin-right: 15%;
-	}
+		}
 
-}
+	#sidenav_div{
+		top: 3.5em;
+		}
+	#sidenav_open{
+		top: 2.3em;	
+		}
+
+
+	}
 
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
 
 @media screen and (max-width: 480px) {
-	
+	#sidenav_div, #sidenav_open{
+    	top: .3em;
+		}
 	}
 
 html {
@@ -47,7 +57,6 @@ Make sure to match with "sidenav_open"
     position: fixed;
     z-index: 0;
     right: 6px;
-    top: .4em;
 	border-radius: 5px 5px 5px 5px;
 	display: none;
 	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.29);
@@ -58,9 +67,6 @@ Make sure to match with "sidenav_open"
     position: fixed;
     z-index: 0;
     right: 6px;
-    top: .3em;
-    /*margin-top: -2.5em;*/
-
 	text-align: center;
 	width: 1.7em;
 	border-radius: 4px;

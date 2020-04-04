@@ -7,9 +7,10 @@ This is for full fledged website (currently not taken care of)
 		margin-left: 15%;
 		margin-right: 15%;
 	    }
-	#sidenav_div{
-		
+	#sidenav_div, #sidenav_open, #sidenav_close{
+		margin-right: 15%;
 	}
+
 }
 
 /*******************************************************************************
@@ -61,7 +62,7 @@ Make sure to match with "sidenav_open"
     /*margin-top: -2.5em;*/
 
 	text-align: center;
-	width: 1.4em;
+	width: 1.7em;
 	border-radius: 4px;
 	font-size: 1.6em;
 	cursor: pointer;

@@ -1,9 +1,10 @@
 window.onload = init;
 
 function init(){
-	document.getElementById("review_link").click();
+	document.getElementById("essentials_link").click(); // Set this tab as the front page
     loadContent('vocabulary.txt');
     loadContent('phrases.txt');
+    loadContent('essential.txt');
     loadSentencesContent();
     if (!(localStorage.sentenceIndex)) {
         localStorage.sentenceIndex = 0;
@@ -43,6 +44,8 @@ function loadContent(fileName){
     var divName = '#vocabularyContent';
     if(fileName=='phrases.txt')
         divName = '#phrasesContent';
+    else if(fileName=='essential.txt')
+        divName = '#essentialsContent';
 
     $.get(fileName, function(data) {
        //alert(data);

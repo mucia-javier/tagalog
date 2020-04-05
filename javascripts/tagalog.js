@@ -1,7 +1,7 @@
 window.onload = init;
 
 function init(){
-	document.getElementById("review_link").click(); // Set this tab as the front page  essentials_link review_link
+	document.getElementById("essentials_link").click(); // Set this tab as the front page  essentials_link review_link
     loadContent('vocabulary.txt');
     loadContent('phrases.txt');
     loadContent('essential.txt');
@@ -143,12 +143,11 @@ function MatchWordsOrPhrases(){
             if(row){ // Ignore empty lines in text file
                 if(row.startsWith("*")){ //This is a title/header
                     row = row.slice(1, ); // ignore the '*' character
-                    var button_i = document.createElement("button");
-                    var bt_id = row;//.replace(/\s+/g, '_');;
+                    var button_i = document.createElement("review_btn");
                     var t =  document.createTextNode(row);
                     button_i.appendChild(t);
                     button_i.fileName = fileName;
-                    button_i.id = bt_id;
+                    button_i.id = row;
                     button_i.classList.add("review_btn");
                     button_i.onclick = GetSectionContent;
                     document.getElementById("question").appendChild(button_i);

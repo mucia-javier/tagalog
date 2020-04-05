@@ -17,7 +17,10 @@ This is for full fledged website (currently not taken care of)
 	#sidenav_open{
 		top: 2.3em;	
 		}
-
+	.modal-content {
+		width: 50%;
+		left: 25%;
+		}
 
 	}
 
@@ -28,6 +31,10 @@ Small Device Styles
 @media screen and (max-width: 480px) {
 	#sidenav_div, #sidenav_open{
     	top: .3em;
+		}
+
+	.modal-content {
+		width: 100%;
 		}
 	}
 
@@ -552,7 +559,6 @@ back_btn:active {
 	position: fixed;
 	top: 8em;
 	background-color: #fefefe;
-	width: 100%;
 	-webkit-animation-name: slideIn;
 	-webkit-animation-duration: 0.3s;
 	animation-name: slideIn;

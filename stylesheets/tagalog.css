@@ -6,6 +6,7 @@ This is for full fledged website (currently not taken care of)
 		width: 70%;
 		margin-left: 15%;
 		margin-right: 15%;
+	    background-color: #F8F7FE;
 	    }
 	body{
 		zoom: 1.3;
@@ -27,6 +28,10 @@ Small Device Styles
 *******************************************************************************/
 
 @media screen and (max-width: 480px) {
+	html{
+	    background-color: #efeffE;
+		}
+
 	#sidenav_div, #sidenav_open{
     	top: .3em;
 		}
@@ -39,7 +44,6 @@ Small Device Styles
 
 html {
 	font-family: 'Open Sans';
-    background-color: #F8F7FE;
     }
 body {
 	color:#373737;

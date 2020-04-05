@@ -345,9 +345,16 @@ reviewTitle{
 .review_btn{
 	cursor: pointer;
 	background-color: rgba(0,0,0,0);
+	background-image: url("https://mucia-javier.github.io/tagalog/images/pa2.png");
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url("https://mucia-javier.github.io/tagalog/images/pa2.png"); //("images/back_arrow.png");
 
+
+	margin-top: 1em;
+	margin-left: 1em;
+	height: 3em;
+	width:  3em;
 
 	/*
 	font-size: 1em;

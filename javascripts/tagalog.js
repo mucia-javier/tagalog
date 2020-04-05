@@ -1,7 +1,7 @@
 window.onload = init;
 
 function init(){
-	document.getElementById("essentials_link").click(); // Set this tab as the front page  essentials_link review_link
+	document.getElementById("review_link").click(); // Set this tab as the front page  essentials_link review_link
     loadContent('vocabulary.txt');
     loadContent('phrases.txt');
     loadContent('essential.txt');
@@ -91,12 +91,10 @@ function MatchTranslationMode() {
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "none";
     
-    var words_btn = document.createElement("button");
-    var bt_id = "words_btn";
+    var words_btn = document.createElement("review_btn");
     var t =  document.createTextNode("Words");
     words_btn.appendChild(t);
-    words_btn.value = bt_id;
-    words_btn.id = bt_id;
+    words_btn.id = "words_btn";
     words_btn.classList.add("review_btn");
     words_btn.onclick = MatchWordsOrPhrases;
     document.getElementById("question").innerHTML = "<br>";
@@ -104,12 +102,10 @@ function MatchTranslationMode() {
     document.getElementById("question").appendChild(document.createElement("br"));
     document.getElementById("question").appendChild(document.createElement("br"));
 
-    var phrases_btn = document.createElement("button");
-    bt_id = "phrases_btn";
+    var phrases_btn = document.createElement("review_btn");
     t =  document.createTextNode("Phrases");
     phrases_btn.appendChild(t);
-    phrases_btn.value = bt_id;
-    phrases_btn.id = bt_id;
+    phrases_btn.id = "phrases_btn";
     phrases_btn.classList.add("review_btn");
     phrases_btn.onclick = MatchWordsOrPhrases;
     document.getElementById("question").appendChild(phrases_btn);

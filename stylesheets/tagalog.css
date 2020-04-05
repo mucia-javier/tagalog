@@ -29,7 +29,7 @@ Small Device Styles
 
 @media screen and (max-width: 480px) {
 	html{
-	    background-color: #efeffE;
+	    background-color: #efeffE !important;
 		}
 
 	#sidenav_div, #sidenav_open{

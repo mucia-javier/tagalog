@@ -15,11 +15,11 @@ function init(){
     }
 
 function openTab(evt, tabName) {
-    if(tabName ==""){
-        document.html.style.marginTop = "2.3em" 
+    if(tabName =="review"){
+        document.body.style.marginTop = "2.3em";
         }
     else{
-        document.html.style.marginTop = "0em" 
+        document.body.style.marginTop = "0em";
         }
 
     var i, tabcontent, tablinks;

@@ -15,6 +15,13 @@ function init(){
     }
 
 function openTab(evt, tabName) {
+    if(tabName ==""){
+        document.html.style.marginTop = "2.3em" 
+        }
+    else{
+        document.html.style.marginTop = "0em" 
+        }
+
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent"); // Will hide all the tab_content sections
     for (i = 0; i < tabcontent.length; i++) {

@@ -1,7 +1,7 @@
 window.onload = init;
 
 function init(){
-	document.getElementById("review_link").click(); // Set this tab as the front page  essentials_link 
+	document.getElementById("essentials_link").click(); // Set this tab as the front page  essentials_link review_link
     loadContent('vocabulary.txt');
     loadContent('phrases.txt');
     loadContent('essential.txt');

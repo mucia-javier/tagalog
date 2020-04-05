@@ -13,13 +13,14 @@ This is for full fledged website (currently not taken care of)
 	#sidenav_div, #sidenav_open, #sidenav_close{
 		margin-right: 15%;
 		}
-
+/*
 	#sidenav_div{
 		top: 3.5em;
 		}
 	#sidenav_open{
 		top: 2.3em;	
-		}
+		}*/
+		
 	.modal-content {
 		width: 50%;
 		left: 25%;

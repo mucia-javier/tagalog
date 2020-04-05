@@ -15,8 +15,13 @@ function init(){
     }
 
 function openTab(evt, tabName) {
-    document.getElementById("MainContent").style.marginTop = "8%";
 
+    if(tabName == "review"){
+        document.getElementById("MainContent").style.marginTop = "4em";
+        }
+    else{
+        document.getElementById("MainContent").style.marginTop = "8%";
+        }
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent"); // Will hide all the tab_content sections
     for (i = 0; i < tabcontent.length; i++) {

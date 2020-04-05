@@ -345,8 +345,8 @@ reviewTitle{
 .review_btn{
 	background-image: url("https://mucia-javier.github.io/tagalog/images/pa1.png");
 	background-color: rgba(0,0,0,0);
-   background-repeat:no-repeat;
-    background-size:100% 100%;
+	background-repeat: inherit;
+   // background-size:100% 100%;
 	}
 .review_btn:hover {
 	box-shadow: none;

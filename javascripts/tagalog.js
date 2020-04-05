@@ -15,9 +15,7 @@ function init(){
     }
 
 function openTab(evt, tabName) {
-            document.getElementById("MainContent").style.marginTop = "8%";
-
-
+    document.getElementById("MainContent").style.marginTop = "8%";
 
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent"); // Will hide all the tab_content sections

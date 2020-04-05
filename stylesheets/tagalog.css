@@ -332,9 +332,7 @@ reviewTitle{
 	font-size: 1.5em;
 	font-weight: bold;
 	}
-button {
-	font-family: 'Open Sans';
-	}
+
 .review_btn{
 	font-size: 1em;
 	display: inline-block;
@@ -379,43 +377,38 @@ button {
     }
 
 .back_btn {
-	margin-top:0.4em;
-	margin-left: 1.5em;
-	font-size: .8em;
-	display: inline-block;
-	outline: none;
 	cursor: pointer;
-	background-image: url("images/back_arrow.png");
+	height: 5em;
+	width:  5em;
+	background-color: rgba(0,0,0,0);
+	background-image: url("https://mucia-javier.github.io/tagalog/images/back_arrow.png"); //("images/back_arrow.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 	}
 .back_btn:hover {
- 
+	cursor: pointer;
+ 	height: 5em;
+	width:  5em;
+	background-color: rgba(0,0,0,0);
+	background-image: url("https://mucia-javier.github.io/tagalog/images/back_arrow.png"); //("images/back_arrow.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
     }
 
 .back_btn:active {
-    -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,.5);
-    -moz-box-shadow: 2px 2px 2px rgba(0,0,0,.5);
-    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	height: 5em;
+	width:  5em;
+	background-color: rgba(0,0,0,0);
+	background-image: url("https://mucia-javier.github.io/tagalog/images/back_arrow.png"); //("images/back_arrow.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
     }
-    
-.back_btn:before {
-	content:"";
-	border-top: 1.17em solid transparent; 
-    border-bottom: 1.17em solid transparent; 
-    border-right: 1.1em solid #c0c0c0;
-    position: absolute; 
-    left: 1.14em; 
-    margin-top: -.43em; 
-	}
-
-.back_btn:hover:before {
-    
-   }
-
-.back_btn:active:before {
-    
-   }
-
-
 
 .choice_btn {
 	font-weight: bold;

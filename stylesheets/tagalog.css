@@ -343,6 +343,13 @@ reviewTitle{
 	}
 
 .review_btn{
+	cursor: pointer;
+	background-color: rgba(0,0,0,0);
+	background-size: cover;
+	background-image: url("https://mucia-javier.github.io/tagalog/images/pa2.png"); //("images/back_arrow.png");
+
+
+	/*
 	font-size: 1em;
 	display: inline-block;
 	outline: none;
@@ -360,7 +367,7 @@ reviewTitle{
 	color: #fef4e9;
 	background: -webkit-gradient(linear, left top, left bottom, from(#30a0e0), to(#2590d9));
 	background: -moz-linear-gradient(top,  #30a0e0,  #2590d9);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');*/
 	}
 .review_btn:hover {
 	box-shadow: none;

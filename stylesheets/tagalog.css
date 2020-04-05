@@ -344,6 +344,7 @@ reviewTitle{
 	}
 
 .review_btn, .review_btn:hover, .review_btn:active{
+	font-family: 'Open Sans';
 	cursor: pointer;
 	background-color: rgba(0,0,0,0);
 	background-position: center;
@@ -355,7 +356,7 @@ reviewTitle{
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	color: #fff;
-	text-shadow:2px 2px #000;
+	text-shadow:2px 2px #777;
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
 	font-weight: bold; 

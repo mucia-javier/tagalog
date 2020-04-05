@@ -376,38 +376,29 @@ reviewTitle{
     top: 1;
     }
 
-.back_btn {
+back_btn, back_btn:hover, back_btn:active {
+	margin-top: 1em;
+	margin-left: 1em;
 	cursor: pointer;
-	height: 5em;
-	width:  5em;
+	height: 3em;
+	width:  3em;
 	background-color: rgba(0,0,0,0);
-	background-image: url("https://mucia-javier.github.io/tagalog/images/back_arrow.png"); //("images/back_arrow.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
+	position: fixed;
 	}
-.back_btn:hover {
-	cursor: pointer;
- 	height: 5em;
-	width:  5em;
-	background-color: rgba(0,0,0,0);
+
+back_btn{
 	background-image: url("https://mucia-javier.github.io/tagalog/images/back_arrow.png"); //("images/back_arrow.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+	}
+
+back_btn:hover {
+	background-image: url("https://mucia-javier.github.io/tagalog/images/back_arrow_hover.png"); //("images/back_arrow.png");
     }
 
-.back_btn:active {
-	height: 5em;
-	width:  5em;
-	background-color: rgba(0,0,0,0);
-	background-image: url("https://mucia-javier.github.io/tagalog/images/back_arrow.png"); //("images/back_arrow.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+back_btn:active {
+	background-image: url("https://mucia-javier.github.io/tagalog/images/back_arrow_pressed.png"); //("images/back_arrow.png");
     }
 
 .choice_btn {

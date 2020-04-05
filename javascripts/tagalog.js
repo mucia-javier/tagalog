@@ -118,11 +118,7 @@ function MatchTranslationMode() {
 // User has chosen to match words or phrases
 // Show all available cathegories as buttons
 function MatchWordsOrPhrases(){
-    var back_btn = document.createElement("button");
-    back_btn.value = "back_btn";
-    back_btn.id = "back_btn";
-    back_btn.appendChild(document.createTextNode("Previous Menu"));
-    back_btn.classList.add("back_btn");
+    var back_btn = document.createElement("back_btn");
     back_btn.onclick = MatchTranslationMode;
     document.getElementById("navigation_section").innerHTML = "";
     document.getElementById("navigation_section").appendChild(back_btn);
@@ -384,11 +380,7 @@ function loadSentencesContent(){
 function AddGoToMainBytton(){
 	document.getElementById("question").innerHTML = "";
     document.getElementById("question").style.display = "none";
-    var back_btn = document.createElement("button");
-    back_btn.value = "back_btn";
-    back_btn.id = "back_btn";
-    back_btn.appendChild(document.createTextNode("Main Menu"));
-    back_btn.classList.add("back_btn");
+    var back_btn = document.createElement("back_btn");
     back_btn.onclick = function(){
          window.location.href = window.location.href;
         }

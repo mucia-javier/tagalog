@@ -1,7 +1,7 @@
 window.onload = init;
 
 function init(){
-	document.getElementById("review_link").click(); // Set this tab as the front page  essentials_link
+	document.getElementById("review_link").click(); // Set this tab as the front page  essentials_link 
     loadContent('vocabulary.txt');
     loadContent('phrases.txt');
     loadContent('essential.txt');
@@ -15,8 +15,9 @@ function init(){
     }
 
 function openTab(evt, tabName) {
-    if(tabName =="review"){
-        document.body.style.marginTop = "2.3em";
+    if(tabName === "review"){
+        //document.body.style.marginTop = "2.3em";
+        document.getElementById("MainContent").style.marginTop = "3.3em";
         }
     else{
         document.body.style.marginTop = "0em";

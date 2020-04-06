@@ -4,7 +4,7 @@ si Ruth ay babae | Ruth is a woman
 si Peter ay lalaki | Peter is a man
 si Ruth ay maganda | Ruth is beautiful
 si Peter ay marunong | Peter is intelligent
-sina Helen at Tom ay mababait | Helen and Tomare kind
+sina Helen at Tom ay mababait | Helen and Tom are kind
 ang bata ay mabait | the kid is kind
 ang aso ay mabait | the dog is good
 ang babae at ang aso ay mababait | the woman and the dog are good

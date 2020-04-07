@@ -233,9 +233,9 @@ function GetSectionContent(){
                         sectionContent.english  = sectionContent.english.reverse();
                         sectionContent.tag_note = sectionContent.tag_note.reverse();
                         sectionContent.eng_note = sectionContent.eng_note.reverse();
-                        PlayMatch(sectionContent, 0);
                         }, 500);
                 } */
+            PlayMatch(sectionContent, 0);
         }, 'text');
     }
   

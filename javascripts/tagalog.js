@@ -226,6 +226,7 @@ function GetSectionContent(){
                     }
                 }
             }
+            /*
             if(sectionContent.tagalog.length != 0){
                 setTimeout(function () {           // Always start QUIZ with the newest entry
                         sectionContent.tagalog  = sectionContent.tagalog.reverse();
@@ -234,7 +235,7 @@ function GetSectionContent(){
                         sectionContent.eng_note = sectionContent.eng_note.reverse();
                         PlayMatch(sectionContent, 0);
                         }, 500);
-                }
+                } */
         }, 'text');
     }
   

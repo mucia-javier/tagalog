@@ -12,6 +12,15 @@ function init(){
     if (!(localStorage.sentenceIndex2)) {
         localStorage.sentenceIndex2 = 0;
         }
+
+        var theModalThing = document.getElementById("myModal");
+        theModalThing.addEventListener("keyup", function(event) {
+            document.getElementById('myModal').style.display = "none";
+          // if (event.keyCode === 13) {
+          //  event.preventDefault();
+          //  document.getElementById("myBtn").click();
+          // }
+        });
     }
 
 function openTab(evt, tabName) {

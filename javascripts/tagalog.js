@@ -17,6 +17,7 @@ function init(){
         // Added a listener. When Modal is open, a keypress will close it.
     var theModalThing = document.getElementById("myModal");
     theModalThing.addEventListener("keyup", function(event) {
+        event.preventDefault();
         document.getElementById('myModal').style.display = "none";
         alert("it's getting to this point");
         // if (event.keyCode === 13) {
@@ -737,6 +738,7 @@ function PlayTranslateSentenceMode(){
     document.getElementById("submit_area").appendChild(reveal_btn);
 
     }
+
 
 function showToast(theMessage) {
     var theToast = document.getElementById("toast");

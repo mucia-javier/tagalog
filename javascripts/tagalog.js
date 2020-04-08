@@ -13,13 +13,16 @@ function init(){
         localStorage.sentenceIndex2 = 0;
         }
 
-        var theModalThing = document.getElementById("myModal");
-        theModalThing.addEventListener("keyup", function(event) {
-            document.getElementById('myModal').style.display = "none";
-          // if (event.keyCode === 13) {
-          //  event.preventDefault();
-          //  document.getElementById("myBtn").click();
-          // }
+
+        // Added a listener. When Modal is open, a keypress will close it.
+    var theModalThing = document.getElementById("myModal");
+    theModalThing.addEventListener("keyup", function(event) {
+        document.getElementById('myModal').style.display = "none";
+        alert("it's getting to this point");
+        // if (event.keyCode === 13) {
+        //  event.preventDefault();
+        //  document.getElementById("myBtn").click();
+        // }
         });
     }
 

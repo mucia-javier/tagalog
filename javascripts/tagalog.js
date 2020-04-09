@@ -81,7 +81,7 @@ function loadContent(fileName){
                     }
                 else{
                     row = row.split("|");
-                    allEntries +="<row><ilo>"+row[0]+"</ilo>&nbsp; <trans>"+row[1]+"</trans></row><br>";
+                    allEntries +=`<row><ilo>${row[0]}</ilo>&nbsp; <trans>${row[1]}</trans></row><br>`;
                     }
                 }
             else
@@ -260,7 +260,7 @@ function PlayMatch(sectionContent, i){
     var completedElements = [];
         var currentQuestion = sectionContent.tagalog[i];
         document.getElementById("question").style.display = "block";
-        document.getElementById("question").innerHTML = "<tagq>"+currentQuestion+"</tagq><br><br><br>";
+        document.getElementById("question").innerHTML = `<tagq>${currentQuestion}</tagq><br><br><br>`;
         document.getElementById("answer").style.display = "block";
         document.getElementById("answer").innerHTML = "";
         
@@ -285,12 +285,12 @@ function PlayMatch(sectionContent, i){
                     modalFooter.innerHTML = "<h5>Continue</h5>";
                     var modal = document.getElementById('myModal');
                     modal.style.display = "block";
-                    document.getElementById('modal-body').innerHTML = "<may>May Tama Ka!</may><br><br><tag>"+ currentQuestion+"</tag> is <eng>"+currentButtonText+"</eng><br>"; 
+                    document.getElementById('modal-body').innerHTML = `<may>May Tama Ka!</may><br><br><tag>${currentQuestion}</tag> is <eng>${currentButtonText}</eng><br>`; 
                     if(!(typeof sectionContent.tag_note[this.id] === 'undefined')){
-                        document.getElementById('modal-body').innerHTML += "<br><strong><ilo>"+sectionContent.tag_note[this.id]+"</ilo></strong><br>";
+                        document.getElementById('modal-body').innerHTML += `<br><strong><ilo>${sectionContent.tag_note[this.id]}</ilo></strong><br>`;
                         }
                     if(!(typeof sectionContent.eng_note[this.id] === 'undefined')){
-                        document.getElementById('modal-body').innerHTML += "<trans>"+sectionContent.eng_note[this.id]+"</trans><br>";
+                        document.getElementById('modal-body').innerHTML += `<trans>${sectionContent.eng_note[this.id]}</trans><br>`;
                         }
                     document.getElementById('modal-body').innerHTML += "<br>";
                     modalFooter.onclick = function() {

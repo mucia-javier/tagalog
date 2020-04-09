@@ -77,7 +77,7 @@ function loadContent(fileName){
             if(row){
                 if(row.startsWith("*")){ //This is a title/header
                     row = row.slice(1, ); // ignore the '*' character
-                    allEntries += "</div><div class='entryStatic'><t0>"+row+"</t0><br>";
+                    allEntries += "</div><div class='entryStatic'><t0>${row}</t0><br>";
                     }
                 else{
                     row = row.split("|");

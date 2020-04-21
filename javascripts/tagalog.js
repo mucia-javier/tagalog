@@ -1,5 +1,5 @@
 window.onload = init;
-var lastUpdated = "Last updted: 4/21/2020, 3:35pm"
+var lastUpdated = "Last updted: 4/21/2020, 3:35pm";
 
 function init(){
 	console.log(lastUpdated);//<tag>"+currentQuestion+"</tag> is not <eng>"+randomElementText+"</eng><br><br>";

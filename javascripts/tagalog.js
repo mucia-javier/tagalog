@@ -333,7 +333,7 @@ function PlayMatch(sectionContent, i){
                     modalFooter.innerHTML = "<h5>Try Again</h5>";
                     var modal = document.getElementById('myModal');
                     modal.style.display = "block";
-                    document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><tag>"+this.value+"</tag> is <eng>"+this.translation+"</eng><br><br>";";
+                    document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><tag>"+this.value+"</tag> is <eng>"+this.translation+"</eng><br><br>";
                     modalFooter.onclick = function() {
                         modal.style.display = "none";
                         }

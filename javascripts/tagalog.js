@@ -1,5 +1,5 @@
 window.onload = init;
-var lastUpdated = "Last updted: 4/21/2020, 3:20pm"
+var lastUpdated = "Last updted: 4/21/2020, 3:31pm"
 
 function init(){
 	console.log(lastUpdated);//<tag>"+currentQuestion+"</tag> is not <eng>"+randomElementText+"</eng><br><br>";
@@ -325,19 +325,18 @@ function PlayMatch(sectionContent, i){
 								button_i.translation = randomElementTextAnswer;
                 button_i.classList.add("choice_btn");
                 button_i.onclick = function(){
-									  lastUpdated = "Last updted: 4/21/2020, 3:25pm"
-										showToastWithColor(this.value+" is "+this.translation, 240, 40, 40, .8);
-										// console.log(this.value+" is "+this.translation);//<tag>"+currentQuestion+"</tag> is not <eng>"+randomElementText+"</eng><br><br>";
-                    // var modalFooter = document.getElementById('modal-footer');
-                    // modalFooter.classList.remove("green-right");
-                    // modalFooter.classList.add("red-wrong");
-                    // modalFooter.innerHTML = "<h5>Try Again</h5>";
-                    // var modal = document.getElementById('myModal');
-                    // modal.style.display = "block";
-                    // document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br>";
-                    // modalFooter.onclick = function() {
-                    //     modal.style.display = "none";
-                    //     }
+										//showToastWithColor(this.value+" is "+this.translation, 240, 40, 40, .8);
+										console.log(this.value+" is "+this.translation);//
+                    var modalFooter = document.getElementById('modal-footer');
+                    modalFooter.classList.remove("green-right");
+                    modalFooter.classList.add("red-wrong");
+                    modalFooter.innerHTML = "<h5>Try Again</h5>";
+                    var modal = document.getElementById('myModal');
+                    modal.style.display = "block";
+                    document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><tag>"+this.value+"</tag> is not <eng>"+this.translation+"</eng><br><br>";";
+                    modalFooter.onclick = function() {
+                        modal.style.display = "none";
+                        }
                     }
                 document.getElementById("answer").appendChild(button_i);
                 }

@@ -329,7 +329,7 @@ function PlayMatch(sectionContent, i){
                     var modal = document.getElementById('myModal');
                     modal.style.display = "block";
                     document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br>";
-										console.log(randomElementText," = ", randomElementTextAnswer");//<tag>"+currentQuestion+"</tag> is not <eng>"+randomElementText+"</eng><br><br>";
+										console.log(randomElementText," = ", randomElementTextAnswer);//<tag>"+currentQuestion+"</tag> is not <eng>"+randomElementText+"</eng><br><br>";
                     modalFooter.onclick = function() {
                         modal.style.display = "none";
                         }

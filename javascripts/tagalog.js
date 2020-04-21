@@ -101,14 +101,14 @@ function loadContent(fileName){
 // with their translations
 function MatchTranslationMode() {
     AddGoToMainBytton();
-    
+
     // Clear page and populate it with new stuff
     document.getElementById("question").appendChild(document.createElement("br"));
     document.getElementById("instruction").innerHTML = "<br><h4>Match Words or Phrases?</h4>";
     document.getElementById("question").style.display = "block";
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "none";
-    
+
     var words_btn = document.createElement("review_btn");
     var t =  document.createTextNode("Words");
     words_btn.appendChild(t);
@@ -138,16 +138,16 @@ function MatchWordsOrPhrases(){
     back_btn.onclick = MatchTranslationMode;
     document.getElementById("navigation_section").innerHTML = "";
     document.getElementById("navigation_section").appendChild(back_btn);
-    document.getElementById("navigation_section").style.textAlign = "left"; 
-    
-    
+    document.getElementById("navigation_section").style.textAlign = "left";
+
+
     // Clear page and populate it with new stuff to give the feeling of a new window
     document.getElementById("question").innerHTML = "<br>";
     document.getElementById("instruction").innerHTML = "<h4>Select a Cathegory</h4>";
     document.getElementById("question").style.display = "block";
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "none";
-    
+
     var fileName = 'vocabulary.txt'; // By default load vocabulary
     if(this.id == "phrases_btn"){    // But load Phrases if user choses so
         fileName = 'phrases.txt';
@@ -155,7 +155,7 @@ function MatchWordsOrPhrases(){
     $.get(fileName, function(data) {
        //process text file line by line
         var lines = data.split("\n");
-        
+
         for (var i = 0, len = lines.length; i < len; i++) {
             var row = lines[i];
             if(row){ // Ignore empty lines in text file
@@ -174,7 +174,7 @@ function MatchWordsOrPhrases(){
                     }
                 }
             }
-        document.getElementById("question").appendChild(document.createElement("br"));                    
+        document.getElementById("question").appendChild(document.createElement("br"));
         }, 'text');
     }
 
@@ -186,12 +186,12 @@ function GetSectionContent(){
     document.getElementById("answer").innerHTML = "";
     document.getElementById("answer").style.display = "none";
     document.getElementById("instruction").innerHTML = "<br><br>";
-    
+
     var sec_type = "phrases";
     if(this.fileName == "vocabulary.txt"){
         sec_type = "words";
         }
-    
+
     var sectionContent = {
         section_type:sec_type,
         tagalog:[],
@@ -199,9 +199,9 @@ function GetSectionContent(){
         tag_note:[],
         eng_note:[],
         };
-    
+
     var sectionName = this.id;
-    
+
     $.get(this.fileName, function(data) {
        //process text file line by line
         var lines = data.split("\n");
@@ -212,11 +212,11 @@ function GetSectionContent(){
             if(row){ // Ignore empty lines in text file
                 if(row.startsWith("*") && sectionName == row_trimmed && copyEntry == false ){ //This is a title/header
                     copyEntry = true;
-                    continue;                    
+                    continue;
                     }
                 else if(row.startsWith("*") && sectionName != row_trimmed && copyEntry == true ){ // Detects end of a section/STOP COPYING
-                    copyEntry = false;                 
-                    break;    
+                    copyEntry = false;
+                    break;
                     }
                 else if(copyEntry == true){
                     row = row.split("|");
@@ -251,19 +251,19 @@ function GetSectionContent(){
             PlayMatch(sectionContent, 0);
         }, 'text');
     }
-  
+
 function PlayMatch(sectionContent, i){
     if(i == sectionContent.english.length){
         return MatchTranslationMode();
         }
-       
+
     var completedElements = [];
         var currentQuestion = sectionContent.tagalog[i];
         document.getElementById("question").style.display = "block";
         document.getElementById("question").innerHTML = `<tagq>${currentQuestion}</tagq><br><br><br>`;
         document.getElementById("answer").style.display = "block";
         document.getElementById("answer").innerHTML = "";
-        
+
         // give 8 choices including the right answer in a random order
         var answerHasBeenGiven = false;
         var maxNumOfChoices = Math.min(sectionContent.tagalog.length, 8); // Give up to 8 choices
@@ -285,7 +285,7 @@ function PlayMatch(sectionContent, i){
                     modalFooter.innerHTML = "<h5>Continue</h5>";
                     var modal = document.getElementById('myModal');
                     modal.style.display = "block";
-                    document.getElementById('modal-body').innerHTML = `<may>May Tama Ka!</may><br><br><tag>${currentQuestion}</tag> is <eng>${currentButtonText}</eng><br>`; 
+                    document.getElementById('modal-body').innerHTML = `<may>May Tama Ka!</may><br><br><tag>${currentQuestion}</tag> is <eng>${currentButtonText}</eng><br>`;
                     if(!(typeof sectionContent.tag_note[this.id] === 'undefined')){
                         document.getElementById('modal-body').innerHTML += `<br><strong><ilo>${sectionContent.tag_note[this.id]}</ilo></strong><br>`;
                         }
@@ -299,7 +299,7 @@ function PlayMatch(sectionContent, i){
                     setTimeout(function () {
                         PlayMatch(sectionContent, i+1);
                         }, 500);
-                    
+
                     }
                 document.getElementById("answer").appendChild(button_i);
                 //document.getElementById("question").appendChild(document.createElement("br"));
@@ -327,13 +327,13 @@ function PlayMatch(sectionContent, i){
                     modalFooter.innerHTML = "<h5>Try Again</h5>";
                     var modal = document.getElementById('myModal');
                     modal.style.display = "block";
-                    document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><tag>"+currentQuestion+"</tag> is <eng>"+randomElementText+"</eng><br><br>";
+                    document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><tag>"+currentQuestion+"</tag> is not <eng>"+randomElementText+"</eng><br><br>";
                     modalFooter.onclick = function() {
                         modal.style.display = "none";
                         }
                     }
                 document.getElementById("answer").appendChild(button_i);
-                }           
+                }
             }
        document.getElementById("answer").appendChild(document.createElement("ol"));
        document.getElementById("answer").appendChild(document.createElement("br"));
@@ -348,7 +348,7 @@ function loadSentencesContent(){
     $.get(fileName, function(data) {
        //process text file line by line
         var lines = data.split("\n");
-        
+
         var copyLines = true;
         var arrayName="";
         for (var i = 0, len = lines.length; i < len; i++) {
@@ -364,7 +364,7 @@ function loadSentencesContent(){
             if(copyLines==false){
                 continue;
                 }
-            
+
             if(row){ // Ignore empty lines in text file
                 if(row.startsWith("*")){ //This is a title/header
                     row = row.slice(1, ); // ignore the '*' character
@@ -387,7 +387,7 @@ function loadSentencesContent(){
                     row = row.split("|");
                     row = row[0].replace(/\s+/g, '');
                     nouns.push(row);
-                    }   
+                    }
                 }
             }
         }, 'text');
@@ -402,12 +402,12 @@ function AddGoToMainBytton(){
         }
     document.getElementById("navigation_section").innerHTML = "";
     document.getElementById("navigation_section").appendChild(back_btn);
-    document.getElementById("navigation_section").style.textAlign = "left"; 
+    document.getElementById("navigation_section").style.textAlign = "left";
 	}
 
 function CompleteSentenceMode(){
 	AddGoToMainBytton();
-    
+
     //sentences = sentences.sort(function() { return 0.5 - Math.random() });
     //descriptors = descriptors.sort(function() { return 0.5 - Math.random() });
     //markers = markers.sort(function() { return 0.5 - Math.random() });
@@ -422,7 +422,7 @@ function CompleteSentenceMode(){
                     PlayCompleteTheSentence(0);
                     }
                 }, 600);
-    
+
     }
 function startOverNewSession(){
     document.getElementById('sentenceIndexModal').style.display = "none";
@@ -434,7 +434,7 @@ function continueLastSession(){
 	showToast("Continuing at sentence "+localStorage.sentenceIndex);
 	PlayCompleteTheSentence(Number(localStorage.sentenceIndex));
 	}
-    
+
 function PlayCompleteTheSentence(sentence_index){
     if(sentence_index >= sentences.length){
     	sentence_index =0;
@@ -442,7 +442,7 @@ function PlayCompleteTheSentence(sentence_index){
         window.location.href = window.location.href;
         }
     localStorage.sentenceIndex = sentence_index;
-        
+
     var a_sentence = sentences[sentence_index].split("|");
     // Clear page and populate it with new stuff
     document.getElementById("submit_area").innerHTML = "";
@@ -453,7 +453,7 @@ function PlayCompleteTheSentence(sentence_index){
     document.getElementById("instruction").innerHTML = "<div id='number_index'>"+(sentence_index)+" / "+(sentences.length)+"</div><div id='eng_q'>"+a_sentence[1];+"</div>"; //Show the english equivalent
     document.getElementById("answer").innerHTML = "<br>";
     document.getElementById("answer").style.display = "block";
-    
+
     var sentArray = a_sentence[0].split(" ");
     sentArray.push(descriptors[Math.floor(Math.random() * descriptors.length)]);
     sentArray.push(descriptors[Math.floor(Math.random() * descriptors.length)]);
@@ -463,7 +463,7 @@ function PlayCompleteTheSentence(sentence_index){
     sentArray.push(markers[Math.floor(Math.random() * markers.length)]);
     sentArray = sentArray.sort(function() { return 0.5 - Math.random() });
     sentArray = sentArray.reverse();
-    
+
     for(var i=0; i<sentArray.length; i++){
         if(sentArray[i]=="")
             continue;
@@ -491,7 +491,7 @@ function PlayCompleteTheSentence(sentence_index){
                     }
         document.getElementById("answer").appendChild(button_i);
         }
-        
+
     var submit_button = document.createElement("button");
     var t =  document.createTextNode("Submit");
     submit_button.appendChild(t);
@@ -536,7 +536,7 @@ function PlayCompleteTheSentence(sentence_index){
     document.getElementById("submit_area").appendChild(submit_button);
     document.getElementById("submit_area").appendChild(document.createElement("br"));
     //document.getElementById("submit_area").appendChild(document.createElement("br"));
-        
+
     var reveal_btn = document.createElement("button");
     var t =  document.createTextNode("Reveal");
     reveal_btn.appendChild(t);
@@ -547,7 +547,7 @@ function PlayCompleteTheSentence(sentence_index){
         //put back all words as choices
         var str = document.getElementById("inquiry").textContent;
         str = str.substring(0, str.length-1); //remove trailing blank space
-        
+
         //alert("'"+str+"'");
         if(str){
             str = str.split(" ");
@@ -557,8 +557,8 @@ function PlayCompleteTheSentence(sentence_index){
                 document.getElementById(str[k]).classList.add("expuesto");
                 }
             }
-        
-        
+
+
         // Show the answer
         document.getElementById("inquiry").classList.remove("inquiryDisabled");
         document.getElementById("inquiry").classList.add("inquiry");
@@ -571,7 +571,7 @@ function PlayCompleteTheSentence(sentence_index){
             }
         }
     document.getElementById("submit_area").appendChild(reveal_btn);
-    
+
     var delete_button = document.createElement("button");
     var t =  document.createTextNode("< Delete");
     delete_button.appendChild(t);
@@ -589,7 +589,7 @@ function PlayCompleteTheSentence(sentence_index){
             // document.getElementById(wordDeleted).style.visibility = "visible";
             document.getElementById(wordDeleted).classList.remove("escondido");
             document.getElementById(wordDeleted).classList.add("expuesto");
-            
+
             str = str.substring(0, lastSpaceIndex+1);  //does not include space
             if(str)
                 document.getElementById("inquiry").innerHTML = str;
@@ -603,8 +603,8 @@ function PlayCompleteTheSentence(sentence_index){
         //document.getElementById("inquiry").classList.add("inquiryDisabled");
         }
     document.getElementById("submit_area").appendChild(delete_button);
-    
-    
+
+
     //  --
     var clear_button = document.createElement("button");
     var t =  document.createTextNode("× Clear");
@@ -622,9 +622,9 @@ function PlayCompleteTheSentence(sentence_index){
         }
     document.getElementById("submit_area").appendChild(clear_button);
     //--
-    
+
     document.getElementById("submit_area").appendChild(document.createElement("br"));
-    
+
     var previous_button = document.createElement("button");
     var t =  document.createTextNode("<<");
     previous_button.appendChild(t);
@@ -637,7 +637,7 @@ function PlayCompleteTheSentence(sentence_index){
             }
         }
     document.getElementById("submit_area").appendChild(previous_button);
-    
+
     var n_number = 10;
     var nextN_button = document.createElement("button");
     var t =  document.createTextNode(">>>"); //(n_number+"×>>>");
@@ -650,7 +650,7 @@ function PlayCompleteTheSentence(sentence_index){
         PlayCompleteTheSentence(n_index);
         }
     document.getElementById("submit_area").appendChild(nextN_button);
-    
+
     document.getElementById("submit_area").style.display = "block";
     }
 
@@ -666,7 +666,7 @@ function TranslateSentenceMode(){
                     PlayTranslateSentenceMode();
                     }
                 }, 600);
-    
+
 	}
 
 function startOverNewTranslateSession(){
@@ -692,8 +692,8 @@ function PlayTranslateSentenceMode(){
     document.getElementById("answer").style.display = "block";
     document.getElementById("submit_area").style.display = "block";
     document.getElementById("submit_area").innerHTML = "";
-    
-    
+
+
     var submit_button = document.createElement("button");
     var t =  document.createTextNode("Submit");
     submit_button.appendChild(t);
@@ -722,10 +722,10 @@ function PlayTranslateSentenceMode(){
             }
         }
     document.getElementById("submit_area").appendChild(submit_button);
-        
+
     document.getElementById("submit_area").appendChild(document.createElement("br"));
     //document.getElementById("submit_area").appendChild(document.createElement("br"));
-        
+
     var reveal_btn = document.createElement("button");
     var t =  document.createTextNode("Show the answer");
     reveal_btn.appendChild(t);
@@ -753,7 +753,3 @@ function showToastWithColor(theMessage, r, g, b, t){
     theToast.style.backgroundColor = "rgba("+r+", "+g+", "+b+", "+t+")";
     setTimeout(function(){ theToast.className = theToast.className.replace("show", ""); theToast.style.backgroundColor = "rgba(50, 50, 50, .8)";}, 3000);
 	}
-	
-	
-	
-	

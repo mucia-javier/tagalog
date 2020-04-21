@@ -309,6 +309,7 @@ function PlayMatch(sectionContent, i){
             else{
                 var randomElementIndex = Math.floor(Math.random() * sectionContent.english.length);
                 var randomElementText = sectionContent.english[randomElementIndex];
+								var randomElementTextAnswer = sectionContent.tagalog[randomElementIndex];
                 if(randomElementIndex == i || optionsShown.includes(randomElementIndex)){
                     j--;
                     continue;
@@ -327,7 +328,7 @@ function PlayMatch(sectionContent, i){
                     modalFooter.innerHTML = "<h5>Try Again</h5>";
                     var modal = document.getElementById('myModal');
                     modal.style.display = "block";
-                    document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><tag>"+currentQuestion+"</tag> is not <eng>"+randomElementText+"</eng><br><br>";
+                    document.getElementById('modal-body').innerHTML = "<nq>Not Quite!</nq><br><br><tag>"+currentQuestion+"</tag> is <eng>"+randomElementTextAnswer+"</eng><br><br>";
                     modalFooter.onclick = function() {
                         modal.style.display = "none";
                         }
